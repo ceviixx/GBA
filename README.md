@@ -1,6 +1,6 @@
 # GBA4iOS
 
-The number one Game Boy Advance emulator for iOS is back, and has been rewritten from the ground up for iOS 7.
+The number one Game Boy Advance emulator for iOS is back, and has been rewritten from the ground up for iOS 14.
 
 ## New Features
 
@@ -35,5 +35,5 @@ GBA4iOS can be opened in Xcode and deployed to an iOS device just like an other 
 
 ## Requirements
 
-• GBA4iOS 2.0 requires Xcode 5 or later, targeting iOS 7.0 and above.  
+• GBA4iOS 2.0 requires Xcode 5 or later, targeting iOS 14.0 and above.  
 • For deployment to iOS 6 devices, use the project in the 1.x branch.
