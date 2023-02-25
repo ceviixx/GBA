@@ -1,11 +1,8 @@
-GBA4iOS
-===========
-
-![GBA4iOS](http://gba4iosapp.com/images/download/gba4ios2_devices.png)
+# GBA4iOS
 
 The number one Game Boy Advance emulator for iOS is back, and has been rewritten from the ground up for iOS 7.
 
-### New Features ###
+## New Features
 
 • Completely new emulator core based on VBA-M  
 • iPad Support  
@@ -19,7 +16,7 @@ The number one Game Boy Advance emulator for iOS is back, and has been rewritten
 • iOS 7 Controller support  
 • URL Scheme support (gba4ios://ROM%20Name%20Here)  
 
-### Classic Features ###
+### Classic Features
 
 • Save States  
 • Portrait + Landscape layouts  
@@ -27,8 +24,7 @@ The number one Game Boy Advance emulator for iOS is back, and has been rewritten
 • iTunes File Sharing Support  
 • Fast Forward  
 
-Getting Started
-=============
+# Getting Started
 
 GBA4iOS can be opened in Xcode and deployed to an iOS device just like an other app, but there are a few steps that need to be completed first:
 
@@ -37,15 +33,7 @@ GBA4iOS can be opened in Xcode and deployed to an iOS device just like an other 
 `pod install`  
 • Open up the .xcworkspace file, and deploy to your device!
 
-Requirements
-=============
+## Requirements
 
 • GBA4iOS 2.0 requires Xcode 5 or later, targeting iOS 7.0 and above.  
 • For deployment to iOS 6 devices, use the project in the 1.x branch.
-
-Contact
-========
-
-GBA4iOS was created by developer [Riley Testut](http://twitter.com/rileytestut) and graphic designer [Paul Thorsen](http://twitter.com/pau1thor).
-
-Questions about GBA4iOS? Check http://gba4iosapp.com/faq/ or email support@gba4iosapp.com.
