@@ -1,0 +1,54 @@
+
+/* Class = "UIBarButtonItem"; title = "Save"; ObjectID = "6T1-6f-2Xr"; */
+"6T1-6f-2Xr.title" = "Speichern";
+
+/* Class = "UINavigationItem"; title = "New Cheat Code"; ObjectID = "Hys-sS-FQH"; */
+"Hys-sS-FQH.title" = "Neuer Cheat Code";
+
+/* Class = "UITableViewSection"; headerTitle = "Name"; ObjectID = "IRp-bi-6xE"; */
+"IRp-bi-6xE.headerTitle" = "Name";
+
+/* Class = "UIBarButtonItem"; title = "Cancel"; ObjectID = "NmM-8t-Spy"; */
+"NmM-8t-Spy.title" = "Abbrechen";
+
+/* Class = "UITableViewSection"; headerTitle = "Description"; ObjectID = "ObR-JF-dpC"; */
+"ObR-JF-dpC.headerTitle" = "Beschreibung";
+
+/* Class = "UILabel"; text = "Start Event"; ObjectID = "eIQ-hB-MjB"; */
+"eIQ-hB-MjB.text" = "Event starten";
+
+/* Class = "UISegmentedControl"; fl2-uD-BuI.segmentTitles[0] = "Action Replay"; ObjectID = "fl2-uD-BuI"; */
+"fl2-uD-BuI.segmentTitles[0]" = "Aktionswiederholung";
+
+/* Class = "UISegmentedControl"; fl2-uD-BuI.segmentTitles[1] = "GameShark"; ObjectID = "fl2-uD-BuI"; */
+"fl2-uD-BuI.segmentTitles[1]" = "GameShark";
+
+/* Class = "UISegmentedControl"; fl2-uD-BuI.segmentTitles[2] = "Code Breaker"; ObjectID = "fl2-uD-BuI"; */
+"fl2-uD-BuI.segmentTitles[2]" = "Code Breaker";
+
+/* Class = "UITableViewSection"; footerTitle = "Code will be formatted automatically as you type."; ObjectID = "iX4-B9-cGU"; */
+"iX4-B9-cGU.footerTitle" = "Der Code wird während der Eingabe automatisch formatiert.";
+
+/* Class = "UITableViewSection"; headerTitle = "Code"; ObjectID = "iX4-B9-cGU"; */
+"iX4-B9-cGU.headerTitle" = "Code";
+
+/* Class = "UITextField"; placeholder = "Cheat Name"; ObjectID = "l8o-9P-x4c"; */
+"l8o-9P-x4c.placeholder" = "Cheat Name";
+
+/* Class = "UILabel"; text = "Delete Event"; ObjectID = "oDn-sc-hVn"; */
+"oDn-sc-hVn.text" = "Event löschen";
+
+/* Class = "UITableViewSection"; footerTitle = "Code format is XXXXXXXX YYYYYYYY."; ObjectID = "rb8-cQ-kZU"; */
+"rb8-cQ-kZU.footerTitle" = "Code Format ist XXXXXXXX YYYYYYYY.";
+
+/* Class = "UITableViewSection"; headerTitle = "Type"; ObjectID = "rb8-cQ-kZU"; */
+"rb8-cQ-kZU.headerTitle" = "Type";
+
+/* Class = "UISegmentedControl"; vw4-Ob-Njc.segmentTitles[0] = "ALL"; ObjectID = "vw4-Ob-Njc"; */
+"vw4-Ob-Njc.segmentTitles[0]" = "ALLE";
+
+/* Class = "UISegmentedControl"; vw4-Ob-Njc.segmentTitles[1] = "GBA"; ObjectID = "vw4-Ob-Njc"; */
+"vw4-Ob-Njc.segmentTitles[1]" = "GBA";
+
+/* Class = "UISegmentedControl"; vw4-Ob-Njc.segmentTitles[2] = "GBC"; ObjectID = "vw4-Ob-Njc"; */
+"vw4-Ob-Njc.segmentTitles[2]" = "GBC";

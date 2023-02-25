@@ -1,0 +1,6 @@
+
+/* Class = "UILabel"; text = "No Games"; ObjectID = "7Ot-WV-YtB"; */
+"7Ot-WV-YtB.text" = "Keine Spiele";
+
+/* Class = "UILabel"; text = "If you previously had Dropbox Sync enabled, simply re-download your games, and then your saved data will be synced to this device."; ObjectID = "i9Y-xu-Qui"; */
+"i9Y-xu-Qui.text" = "Wenn Du zuvor Dropbox Sync aktiviert hattest, lade Deine Spiele einfach erneut herunter, und Deine gespeicherten Daten werden dann mit diesem Gerät synchronisiert.";

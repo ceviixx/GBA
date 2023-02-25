@@ -1,0 +1,291 @@
+
+/* Class = "UINavigationItem"; title = "Color Palette"; ObjectID = "0Lx-Rr-UoP"; */
+"0Lx-Rr-UoP.title" = "Farbpalette";
+
+/* Class = "UILabel"; text = "Blue"; ObjectID = "3Pe-Ua-wT7"; */
+"3Pe-Ua-wT7.text" = "Blau";
+
+/* Class = "UITableViewSection"; footerTitle = "Customize appearance of original Game Boy games."; ObjectID = "3QS-s6-Mol"; */
+"3QS-s6-Mol.footerTitle" = "Passen Sie das Erscheinungsbild von originalen Game Boy-Spielen an.";
+
+/* Class = "UITableViewSection"; headerTitle = "Original Game Boy  "; ObjectID = "3QS-s6-Mol"; */
+"3QS-s6-Mol.headerTitle" = "Original Game Boy";
+
+/* Class = "UILabel"; text = "Red"; ObjectID = "4j4-nH-Qtv"; */
+"4j4-nH-Qtv.text" = "Rot";
+
+/* Class = "UILabel"; text = "Brown"; ObjectID = "52b-gJ-xtf"; */
+"52b-gJ-xtf.text" = "Braun";
+
+/* Class = "UITableViewSection"; footerTitle = "Alternatively, you can temporarily override the selected palette by pressing and holding different combinations of the D-Pad, A, and B buttons during the GBA4iOS intro animation (if enabled)."; ObjectID = "5eF-q4-CKV"; */
+"5eF-q4-CKV.footerTitle" = "Alternativ können Sie die ausgewählte Palette vorübergehend außer Kraft setzen, indem Sie während der GBA4iOS-Intro-Animation (falls aktiviert) verschiedene Kombinationen der D-Pad-, A- und B-Tasten gedrückt halten.";
+
+/* Class = "UINavigationItem"; title = "Push Notifications"; ObjectID = "67e-4s-fQP"; */
+"67e-4s-fQP.title" = "Benachrichtigungen";
+
+/* Class = "UILabel"; text = "Yahoo"; ObjectID = "689-GB-6ud"; */
+"689-GB-6ud.text" = "Yahoo";
+
+/* Class = "UILabel"; text = "Orange"; ObjectID = "6He-Co-vnt"; */
+"6He-Co-vnt.text" = "Orange";
+
+/* Class = "UITableViewSection"; headerTitle = "Controller Skins"; ObjectID = "6xa-Dc-Gfk"; */
+"6xa-Dc-Gfk.headerTitle" = "Controller-Skins";
+
+/* Class = "UILabel"; text = "5.0 MB"; ObjectID = "7bk-MD-Hx0"; */
+"7bk-MD-Hx0.text" = "5.0 MB";
+
+/* Class = "UILabel"; text = "Super Cheats"; ObjectID = "9EK-df-6nA"; */
+"9EK-df-6nA.text" = "Super Cheats";
+
+/* Class = "UILabel"; text = "Homepage"; ObjectID = "AU0-rt-Yc9"; */
+"AU0-rt-Yc9.text" = "Internetseite";
+
+/* Class = "UILabel"; text = "Download Update"; ObjectID = "BMU-EP-k3X"; */
+"BMU-EP-k3X.text" = "Update herunterladen";
+
+/* Class = "UILabel"; text = "Learn More"; ObjectID = "HqQ-FS-Tb3"; */
+"HqQ-FS-Tb3.text" = "Weitere Informationen";
+
+/* Class = "UITableViewSection"; footerTitle = "Game music will only play if no other app is playing audio."; ObjectID = "BQC-TG-YXN"; */
+"BQC-TG-YXN.footerTitle" = "Spielmusik wird nur abgespielt, wenn keine andere App Audio abspielt.";
+
+/* Class = "UITableViewSection"; headerTitle = "Audio"; ObjectID = "BQC-TG-YXN"; */
+"BQC-TG-YXN.headerTitle" = "Audio";
+
+/* Class = "UILabel"; text = "Wireless Linking"; ObjectID = "Bvg-Ir-Tff"; */
+"Bvg-Ir-Tff.text" = "Drahtlose Verbindung";
+
+/* Class = "UILabel"; text = "Beta"; ObjectID = "C9H-Vq-fws"; */
+"C9H-Vq-fws.text" = "Beta";
+
+/* Class = "UITableViewSection"; headerTitle = "Palettes"; ObjectID = "D3t-Sf-IaO"; */
+"D3t-Sf-IaO.headerTitle" = "Paletten";
+
+/* Class = "UILabel"; text = "50%"; ObjectID = "DCB-nd-WvQ"; */
+"DCB-nd-WvQ.text" = "50%";
+
+/* Class = "UILabel"; text = "Intro Animation"; ObjectID = "DgH-FF-EUW"; */
+"DgH-FF-EUW.text" = "Start Animation";
+
+/* Class = "UITableViewSection"; footerTitle = "Linking allows you to use multiplayer features that normally require a Link Cable."; ObjectID = "EN5-5q-GTX"; */
+"EN5-5q-GTX.footerTitle" = "Durch die Verknüpfung können Sie Multiplayer-Funktionen nutzen, für die normalerweise ein Verbindungskabel erforderlich ist.";
+
+/* Class = "UITableViewSection"; headerTitle = "Multiplayer"; ObjectID = "EN5-5q-GTX"; */
+"EN5-5q-GTX.headerTitle" = "Mehrspieler";
+
+/* Class = "UITableViewSection"; footerTitle = "Higher numbers yield better performance, but at the cost of lower frame rates."; ObjectID = "HXr-np-Neh"; */
+"HXr-np-Neh.footerTitle" = "Höhere Zahlen führen zu einer besseren Leistung, jedoch auf Kosten niedrigerer Bildraten.";
+
+/* Class = "UITableViewSection"; headerTitle = "Frame Skip"; ObjectID = "HXr-np-Neh"; */
+"HXr-np-Neh.headerTitle" = "Frame Skip";
+
+/* Class = "UILabel"; text = "Gray"; ObjectID = "Hi9-5g-Q3a"; */
+"Hi9-5g-Q3a.text" = "Grau";
+
+/* Class = "UILabel"; text = "Open Settings"; ObjectID = "Hny-dp-MQF"; */
+"Hny-dp-MQF.text" = "Einstellungen öffnen";
+
+/* Class = "UINavigationItem"; title = "Homepage"; ObjectID = "KGs-La-7TX"; */
+"KGs-La-7TX.title" = "Internetseite";
+
+/* Class = "UILabel"; text = "Color Palette"; ObjectID = "L0P-0l-40q"; */
+"L0P-0l-40q.text" = "Farbpalette";
+
+/* Class = "UITextField"; placeholder = "http://gba4iosapp.com"; ObjectID = "MFx-SK-tmk"; */
+"MFx-SK-tmk.placeholder" = "https://example.com/";
+
+/* Class = "UITableViewSection"; footerTitle = "Get notified of new Event Distributions and Software Updates when they become available."; ObjectID = "N7e-LM-1A1"; */
+"N7e-LM-1A1.footerTitle" = "Lassen Sie sich über neue Event-Verteilungen und Software-Updates benachrichtigen, sobald diese verfügbar sind.";
+
+/* Class = "UITableViewSection"; headerTitle = "Notifications"; ObjectID = "N7e-LM-1A1"; */
+"N7e-LM-1A1.headerTitle" = "Benachrichtigungen";
+
+/* Class = "UILabel"; text = "Use As Second Screen"; ObjectID = "NKr-hg-BjW"; */
+"NKr-hg-BjW.text" = "Als zweiten Bildschirm verwenden";
+
+/* Class = "UILabel"; text = "Game Boy Advance"; ObjectID = "OHm-pT-NFJ"; */
+"OHm-pT-NFJ.text" = "Game Boy Advance";
+
+/* Class = "UITableViewSection"; footerTitle = "Subsequent launches of the in-app web browser will return you to the previously loaded webpage, instead of the homepage. However, this may lead to increased memory usage."; ObjectID = "Pc7-qy-nxo"; */
+"Pc7-qy-nxo.footerTitle" = "Nachfolgende Starts des In-App-Webbrowsers kehren zur zuvor geladenen Webseite statt zur Startseite zurück. Dies kann jedoch zu einer erhöhten Speicherauslastung führen.";
+
+/* Class = "UITableViewSection"; headerTitle = "Web Browser"; ObjectID = "Pc7-qy-nxo"; */
+"Pc7-qy-nxo.headerTitle" = "Internet Browser";
+
+/* Class = "UILabel"; text = "GameFAQs"; ObjectID = "Piu-QE-yQt"; */
+"Piu-QE-yQt.text" = "GameFAQs";
+
+/* Class = "UILabel"; text = "Bing"; ObjectID = "QC4-wG-1Np"; */
+"QC4-wG-1Np.text" = "Bing";
+
+/* Class = "UINavigationItem"; title = "Configure Buttons"; ObjectID = "QGa-sU-qVs"; */
+"QGa-sU-qVs.title" = "Schaltflächen konfigurieren";
+
+/* Class = "UILabel"; text = "Off"; ObjectID = "QJX-D8-fJ9"; */
+"QJX-D8-fJ9.text" = "Aus";
+
+/* Class = "UITableViewSection"; footerTitle = "Determines how transparent the controller is, if supported by the skin."; ObjectID = "SNw-c2-3jm"; */
+"SNw-c2-3jm.footerTitle" = "Legt fest, wie transparent der Controller ist, falls vom Skin unterstützt.";
+
+/* Class = "UITableViewSection"; headerTitle = "Controller Opacity"; ObjectID = "SNw-c2-3jm"; */
+"SNw-c2-3jm.headerTitle" = "Deckkraft des Controllers";
+
+/* Class = "UITableViewSection"; footerTitle = "Play GBA4iOS animation when starting a new game."; ObjectID = "TL8-vo-bMg"; */
+"TL8-vo-bMg.footerTitle" = "Spielen Sie die GBA4iOS-Animation ab, wenn Sie ein neues Spiel starten.";
+
+/* Class = "UITableViewSection"; headerTitle = "Emulation"; ObjectID = "TL8-vo-bMg"; */
+"TL8-vo-bMg.headerTitle" = "Emulation";
+
+/* Class = "UILabel"; text = "Tap a button to change what action it performs"; ObjectID = "TUx-2B-J2m"; */
+"TUx-2B-J2m.text" = "Tippen Sie auf eine Schaltfläche, um die auszuführende Aktion zu ändern";
+
+/* Class = "UITableViewSection"; footerTitle = "A save state will be created whenever another save state is loaded, you quit the game, or the app crashes. This is intended to be used as a backup and not your primary saving method."; ObjectID = "Ui4-u6-rdp"; */
+"Ui4-u6-rdp.footerTitle" = "Ein Speicherstatus wird erstellt, wenn ein anderer Speicherstatus geladen wird, Sie das Spiel beenden oder die App abstürzt. Dies soll als Backup und nicht als primäre Speichermethode verwendet werden.";
+
+/* Class = "UITableViewSection"; headerTitle = "Saving"; ObjectID = "Ui4-u6-rdp"; */
+"Ui4-u6-rdp.headerTitle" = "Speichern";
+
+/* Class = "UILabel"; text = "Dark Blue"; ObjectID = "XyG-Uh-6nW"; */
+"XyG-Uh-6nW.text" = "Dunkelblau";
+
+/* Class = "UITableViewSection"; headerTitle = "Syncing"; ObjectID = "Y91-iU-ZZA"; */
+"Y91-iU-ZZA.headerTitle" = "Synchronisieren";
+
+/* Class = "UITableViewSection"; footerTitle = "Receive a notification whenever a new Event Distribution for one of your games is available for download."; ObjectID = "a05-EZ-EDr"; */
+"a05-EZ-EDr.footerTitle" = "Erhalten Sie eine Benachrichtigung, wenn eine neue Event-Distribution für eines Ihrer Spiele zum Download verfügbar ist.";
+
+/* Class = "UITableViewSection"; footerTitle = "The palette you select will determine the color of any original Game Boy games you play. "; ObjectID = "aVQ-aM-RQB"; */
+"aVQ-aM-RQB.footerTitle" = "Die von Ihnen ausgewählte Palette bestimmt die Farbe aller originalen Game Boy-Spiele, die Sie spielen.";
+
+/* Class = "UILabel"; text = "Yellow"; ObjectID = "af0-4z-U6i"; */
+"af0-4z-U6i.text" = "Gelb";
+
+/* Class = "UILabel"; text = "Event Distributions"; ObjectID = "bB7-k3-96J"; */
+"bB7-k3-96J.text" = "Ereignisverteilungen";
+
+/* Class = "UILabel"; text = "Dropbox Sync"; ObjectID = "bQm-NJ-XIL"; */
+"bQm-NJ-XIL.text" = "Dropbox Sync";
+
+/* Class = "UIViewController"; title = "External Controller"; ObjectID = "bqr-aX-GSp"; */
+"bqr-aX-GSp.title" = "Externer Controller";
+
+/* Class = "UITableViewSection"; headerTitle = "Custom Homepage"; ObjectID = "cOS-nZ-pon"; */
+"cOS-nZ-pon.headerTitle" = "Benutzerdefinierte Homepage";
+
+/* Class = "UILabel"; text = "Software Updates"; ObjectID = "ccJ-F6-oWX"; */
+"ccJ-F6-oWX.text" = "Software Updates";
+
+/* Class = "UINavigationItem"; title = "Software Update"; ObjectID = "dSC-oI-Iej"; */
+"dSC-oI-Iej.title" = "Software Update";
+
+/* Class = "UITableViewSection"; footerTitle = "When AirPlaying or connected via HDMI, the game will appear on the second screen, and the controller will remain on this device's screen."; ObjectID = "dsn-Yk-7nW"; */
+"dsn-Yk-7nW.footerTitle" = "Beim AirPlaying oder bei einer HDMI-Verbindung erscheint das Spiel auf dem zweiten Bildschirm und der Controller verbleibt auf dem Bildschirm dieses Geräts.";
+
+/* Class = "UITableViewSection"; headerTitle = "AirPlay"; ObjectID = "dsn-Yk-7nW"; */
+"dsn-Yk-7nW.headerTitle" = "AirPlay";
+
+/* Class = "UILabel"; text = "GBA4iOS 2.1"; ObjectID = "eBc-Ut-ebM"; */
+"eBc-Ut-ebM.text" = "GBA4iOS 2.1";
+
+/* Class = "UITableViewController"; title = "Settings"; ObjectID = "fFF-zm-sH1"; */
+"fFF-zm-sH1.title" = "Einstellungen";
+
+/* Class = "UILabel"; text = "Reverse"; ObjectID = "iLl-zW-6sG"; */
+"iLl-zW-6sG.text" = "Umkehren";
+
+/* Class = "UITableViewSection"; footerTitle = "To make sure GBA4iOS can check for new data and send push notifications, please make sure “Background App Refresh” is turned ON for GBA4iOS in the Settings app."; ObjectID = "igE-0h-kuN"; */
+"igE-0h-kuN.footerTitle" = "Um sicherzustellen, dass GBA4iOS nach neuen Daten suchen und Push-Benachrichtigungen senden kann, vergewissere Dich bitte, dass „Hintergrund-App-Aktualisierung“ für GBA4iOS in der App „Einstellungen“ aktiviert ist.";
+
+/* Class = "UITableViewSection"; headerTitle = " "; ObjectID = "igE-0h-kuN"; */
+"igE-0h-kuN.headerTitle" = " ";
+
+/* Class = "UILabel"; text = "Push Notifications"; ObjectID = "j5n-VH-SfQ"; */
+"j5n-VH-SfQ.text" = "Mitteilungen";
+
+/* Class = "UILabel"; text = "Green"; ObjectID = "jP6-8t-SsW"; */
+"jP6-8t-SsW.text" = "Grün";
+
+/* Class = "UITableViewSection"; footerTitle = "The device will vibrate whenever you press a button on the controller. Make sure vibrate is ON in the Settings app for ring, silent, or both, depending on which mode you're in."; ObjectID = "k3M-IC-7Nd"; */
+"k3M-IC-7Nd.footerTitle" = "Das Gerät vibriert, wenn Sie eine Taste auf dem Controller drücken. Stellen Sie sicher, dass das Vibrieren in der App „Einstellungen“ für „Klingeln“, „Stumm“ oder beides aktiviert ist, je nachdem, in welchem Modus Sie sich befinden.";
+
+/* Class = "UITableViewSection"; headerTitle = "Controller Vibration"; ObjectID = "k3M-IC-7Nd"; */
+"k3M-IC-7Nd.headerTitle" = "Controller-Vibration";
+
+/* Class = "UILabel"; text = "Custom"; ObjectID = "lP5-7t-EIE"; */
+"lP5-7t-EIE.text" = "Benutzerdefiniert";
+
+/* Class = "UILabel"; text = "Off"; ObjectID = "lcU-P5-yPJ"; */
+"lcU-P5-yPJ.text" = "Aus";
+
+/* Class = "UILabel"; text = "Game Boy Color"; ObjectID = "mcv-Gs-kLe"; */
+"mcv-Gs-kLe.text" = "Game Boy Color";
+
+/* Class = "UINavigationItem"; title = "Settings"; ObjectID = "nvY-tQ-ZRC"; */
+"nvY-tQ-ZRC.title" = "Einstellungen";
+
+/* Class = "UILabel"; text = "Original"; ObjectID = "o3m-h0-A1w"; */
+"o3m-h0-A1w.text" = "Original";
+
+/* Class = "UILabel"; text = "Google"; ObjectID = "o7B-E3-2i0"; */
+"o7B-E3-2i0.text" = "Google";
+
+/* Class = "UITableViewSection"; footerTitle = "Receive a notification whenever an update to GBA4iOS is available for download."; ObjectID = "pnm-kB-mkb"; */
+"pnm-kB-mkb.footerTitle" = "Erhalte eine Benachrichtigung, wenn ein Update für GBA4iOS zum Download verfügbar ist.";
+
+/* Class = "UILabel"; text = "Riley Testut"; ObjectID = "rdf-Gf-sBN"; */
+"rdf-Gf-sBN.text" = "Riley Testut";
+
+/* Class = "UILabel"; text = "Auto Save"; ObjectID = "ret-tW-Wta"; */
+"ret-tW-Wta.text" = "Autospeichern";
+
+/* Class = "UITableViewSection"; headerTitle = "External Controller"; ObjectID = "s3c-lR-3lq"; */
+"s3c-lR-3lq.headerTitle" = "Externer Controller";
+
+/* Class = "UILabel"; text = "Remember Last Webpage"; ObjectID = "sdl-mC-tHg"; */
+"sdl-mC-tHg.text" = "Letzte Internetseite merken";
+
+/* Class = "UILabel"; text = "Configure Buttons"; ObjectID = "tNu-VX-c2N"; */
+"tNu-VX-c2N.text" = "Schaltflächen konfigurieren";
+
+/* Class = "UILabel"; text = "Dark Brown"; ObjectID = "u57-Nm-5mj"; */
+"u57-Nm-5mj.text" = "Dunkelbraun";
+
+/* Class = "UISegmentedControl"; wCX-6F-d72.segmentTitles[0] = "Auto"; ObjectID = "wCX-6F-d72"; */
+"wCX-6F-d72.segmentTitles[0]" = "Auto";
+
+/* Class = "UISegmentedControl"; wCX-6F-d72.segmentTitles[1] = "0"; ObjectID = "wCX-6F-d72"; */
+"wCX-6F-d72.segmentTitles[1]" = "0";
+
+/* Class = "UISegmentedControl"; wCX-6F-d72.segmentTitles[2] = "1"; ObjectID = "wCX-6F-d72"; */
+"wCX-6F-d72.segmentTitles[2]" = "1";
+
+/* Class = "UISegmentedControl"; wCX-6F-d72.segmentTitles[3] = "2"; ObjectID = "wCX-6F-d72"; */
+"wCX-6F-d72.segmentTitles[3]" = "2";
+
+/* Class = "UISegmentedControl"; wCX-6F-d72.segmentTitles[4] = "3"; ObjectID = "wCX-6F-d72"; */
+"wCX-6F-d72.segmentTitles[4]" = "3";
+
+/* Class = "UISegmentedControl"; wCX-6F-d72.segmentTitles[5] = "4"; ObjectID = "wCX-6F-d72"; */
+"wCX-6F-d72.segmentTitles[5]" = "4";
+
+/* Class = "UILabel"; text = "Google"; ObjectID = "wJt-pc-6cL"; */
+"wJt-pc-6cL.text" = "Google";
+
+/* Class = "UILabel"; text = "Pastel Mix"; ObjectID = "x56-em-w1o"; */
+"x56-em-w1o.text" = "Pastel Mix";
+
+/* Class = "UILabel"; text = "Off"; ObjectID = "xfN-uz-80c"; */
+"xfN-uz-80c.text" = "Aus";
+
+/* Class = "UILabel"; text = "Prefer External Audio"; ObjectID = "yfw-hw-HXs"; */
+"yfw-hw-HXs.text" = "Externes Audio bevorzugen";
+
+/* Class = "UILabel"; text = "Vibrate On Button Press"; ObjectID = "yyX-GY-xjr"; */
+"yyX-GY-xjr.text" = "Bei Tastendruck vibrieren";
+
+/* Class = "UILabel"; text = "Dark Green"; ObjectID = "zO5-cb-KP1"; */
+"zO5-cb-KP1.text" = "Dunkelgrün";
+
+/* Class = "UITextView"; text = "This version of GBA4iOS includes:\n\n• Multiplayer support!"; ObjectID = "zdt-lk-gA2"; */
+"zdt-lk-gA2.text" = "This version of GBA4iOS includes:\n\n• Multiplayer support!";

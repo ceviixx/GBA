@@ -1,0 +1,669 @@
+/* No comment provided by engineer. */
+"Accept" = "Akzeptieren";
+
+/* No comment provided by engineer. */
+"Account" = "Konto";
+
+/* No comment provided by engineer. */
+"Acknowledgements" = "Danksagungen";
+
+/* No comment provided by engineer. */
+"Already Exists" = "Bereits vorahnden";
+
+/* No comment provided by engineer. */
+"Are you sure you want to delete this event? You can download it again at any time until the event distribution period ends." = "Möchtest Du dieses Ereignis wirklich löschen? Du kannst es jederzeit erneut herunterladen, bis der Verteilungszeitraum des Ereignisses endet.";
+
+/* No comment provided by engineer. */
+"Are you sure you want to delete this event? You can download it again at any time." = "Möchtest Du dieses Ereignis wirklich löschen? Du kannst es jederzeit erneut herunterladen.";
+
+/* No comment provided by engineer. */
+"Are you sure you want to delete this game and all of its saved data?" = "Möchtest Du dieses Spiel und alle gespeicherten Daten wirklich löschen?";
+
+/* No comment provided by engineer. */
+"Are you sure you want to download the “%@” event?" = "Möchtest Du das Event “%@” wirklich herunterladen?";
+
+/* No comment provided by engineer. */
+"Are you sure you want to download “%@” skin?" = "Möchtest du den Skin “%@” wirklich herunterladen?";
+
+/* No comment provided by engineer. */
+"Are you sure you want to keep syncing disabled?" = "Bist Du dir sicher, dass die Syncronisierung deaktiviertw werden soll?";
+
+/* No comment provided by engineer. */
+"Are you sure you want to log out of Dropbox?" = "Möchtest Du dich bei Dropbox abmelden?";
+
+/* No comment provided by engineer. */
+"Are you sure you want to permanently delete this save state?" = "Möchtest Du den Speicherpunkt permanent löschen?";
+
+/* No comment provided by engineer. */
+"Are you sure you want to update GBA4iOS?" = "Möchtest Du GBA4iOS aktualisieren?";
+
+/* No comment provided by engineer. */
+"Are you sure?" = "Bist Du sicher?";
+
+/* No comment provided by engineer. */
+"Auto Save" = "Automatisches speichern";
+
+/* No comment provided by engineer. */
+"Before updating, make sure you have set the date back on this device at least 24 hours. Failure to do so may result in an incomplete update and prevent the app from opening." = "Stelle vor der Aktualisierung sicher, dass Du das Datum auf diesem Gerät um mindestens 24 Stunden zurückgesetzt hast. Andernfalls kann es zu einem unvollständigen Update kommen und das Öffnen der App verhindern.";
+
+/* No comment provided by engineer. */
+"Beta Testers" = "Beta Tester";
+
+/* No comment provided by engineer. */
+"Bing" = "Bing";
+
+/* No comment provided by engineer. */
+"Blue" = "Blau";
+
+/* No comment provided by engineer. */
+"Brown" = "Braun";
+
+/* No comment provided by engineer. */
+"By" = "von";
+
+/* No comment provided by engineer. */
+"By tapping “Download” below, you confirm that you legally own a physical copy of this game. GBA4iOS does not promote pirating in any form." = "Indem Du unten auf „Herunterladen“ tippst, bestätigst Du, dass Du rechtmäßig eine physische Kopie dieses Spiels besitzen. GBA4iOS fördert keine Piraterie in irgendeiner Form.";
+
+/* No comment provided by engineer. */
+"Cancel" = "Abbrechen";
+
+/* No comment provided by engineer. */
+"Cannot Delete Currently Running Game" = "Laufende Spiele können nicht gelöscht werden.";
+
+/* No comment provided by engineer. */
+"Cannot Rename Currently Running Game" = "Laufende Spiele können nicht umbenannt werden.";
+
+/* No comment provided by engineer. */
+"Cannot overwrite protected save state" = "Geschützte Speicherpunkte können nicht überschrieben werden.";
+
+/* No comment provided by engineer. */
+"Cheat Codes" = "Cheat Codes";
+
+/* No comment provided by engineer. */
+"Cheats should only be used if you know exactly what you are doing. Incorrect usage of cheats, such as entering codes incorrectly or using potentially dangerous codes, can have serious side effects in the game. These can result in anything from major graphical glitches to the loss of save data." = "Cheats sollten nur verwendet werden, wenn Du genau weißt, was Du tust. Die falsche Verwendung von Cheats, wie z. B. die falsche Eingabe von Codes oder die Verwendung potenziell gefährlicher Codes, kann schwerwiegende Nebenwirkungen im Spiel haben. Diese können zu allem möglichen führen, von größeren Grafikfehlern bis hin zum Verlust gespeicherter Daten.";
+
+/* No comment provided by engineer. */
+"Checking for Update…" = "Nach Update suchen ...";
+
+/* The X's, Y's, and Z's are just to show placeholder characters. No need to translate them */
+"Code format is XXX YYY ZZZ." = "Code Format ist XXX YYY ZZZ.";
+
+/* The X's and Y's are just to show placeholder characters. No need to translate them */
+"Code format is XXXXXXXX YYYY." = "Code Format ist XXXXXXXX YYYY.";
+
+/* The X's and Y's are just to show placeholder characters. No need to translate them */
+"Code format is XXXXXXXX YYYYYYYY." = "Code Format ist XXXXXXXX YYYYYYYY.";
+
+/* The X's and Y's are just to show placeholder characters. No need to translate them */
+"Code format is XXXXXXXX YYYYYYYY.\nOnly GameShark Advance codes are supported, not GameShark SP." = "Code Format ist XXXXXXXX YYYYYYYY.\nNur GameShark Advance Codes werden unterstützt nicht GameShark SP.";
+
+/* The X's are just to show placeholder characters. No need to translate them */
+"Code format is XXXXXXXX." = "Code Format ist XXXXXXXX.";
+
+/* No comment provided by engineer. */
+"Conflicted" = "Widersprüchlich";
+
+/* No comment provided by engineer. */
+"Connected" = "Verbunden";
+
+/* No comment provided by engineer. */
+"Connection Type" = "Verbindungsart";
+
+/* No comment provided by engineer. */
+"Current" = "Aktuell";
+
+/* No comment provided by engineer. */
+"Current Skins" = "Aktuelle Skins";
+
+/* No comment provided by engineer. */
+"Custom" = "Benutzerdefiniert";
+
+/* No comment provided by engineer. */
+"Dark Blue" = "Dunkelblau";
+
+/* No comment provided by engineer. */
+"Dark Brown" = "Dunkelbraun";
+
+/* No comment provided by engineer. */
+"Dark Green" = "Dunkelgrün";
+
+/* No comment provided by engineer. */
+"Data for this game is currently being downloaded. To prevent data loss, please wait until the download is complete, then launch the game." = "Daten für dieses Spiel werden gerade heruntergeladen. Um Datenverlust zu vermeiden, warte bitte, bis der Download abgeschlossen ist, und starte dann das Spiel.";
+
+/* No comment provided by engineer. */
+"Data for this game is currently being downloaded. To prevent data loss, please wait until the download is complete, then tap Done" = "Daten für dieses Spiel werden gerade heruntergeladen. Um Datenverlust zu vermeiden, warte bitte, bis der Download abgeschlossen ist, und tippe dann auf „Fertig“.";
+
+/* No comment provided by engineer. */
+"Data for this game is not in sync with Dropbox, so syncing has been disabled. Please either tap View Details below to resolve the conflict manually, or ignore this message and start the game anyway. If you choose to not resolve the conflict now, you can resolve it later in the Dropbox settings." = "Die Daten für dieses Spiel sind nicht mit Dropbox synchronisiert, daher wurde die Synchronisierung deaktiviert. Bitte tippe entweder unten auf Details anzeigen, um den Konflikt manuell zu lösen, oder ignoriere diese Meldung und starte das Spiel trotzdem. Wenn Du den Konflikt jetzt nicht lösen möchten, kannst Du ihn später in den Dropbox-Einstellungen lösen.";
+
+/* No comment provided by engineer. */
+"Decline" = "Ablehnen";
+
+/* No comment provided by engineer. */
+"Delete Event" = "Event löschen";
+
+/* No comment provided by engineer. */
+"Delete Game and Data" = "Spiel und Daten löschen";
+
+/* No comment provided by engineer. */
+"Delete Save State" = "Speicherpunkt löschen";
+
+/* No comment provided by engineer. */
+"Dismiss" = "Zurück";
+
+/* No comment provided by engineer. */
+"Download" = "Download";
+
+/* No comment provided by engineer. */
+"Download Complete!" = "Download abgeschlossen!";
+
+/* No comment provided by engineer. */
+"Download Failed" = "Download fehlgeschlagen";
+
+/* No comment provided by engineer. */
+"Download Skins" = "Skins herunterladen";
+
+/* No comment provided by engineer. */
+"Downloading" = "Herhunterladen";
+
+/* No comment provided by engineer. */
+"Downloading…" = "Herunterladen...";
+
+/* No comment provided by engineer. */
+"Dropbox" = "Dropbox";
+
+/* No comment provided by engineer. */
+"Dropbox Sync" = "Dropbox Sync";
+
+/* The Pokemon game Emerald, not the jewel */
+"Emerald" = "Smaragd";
+
+/* No comment provided by engineer. */
+"Enable" = "Enable";
+
+/* No comment provided by engineer. */
+"Enabled" = "Enabled";
+
+/* Date ends */
+"Ends" = "Endet";
+
+/* No comment provided by engineer. */
+"Error Loading Save Info" = "Fehler beim Laden des Speicherpunktes";
+
+/* No comment provided by engineer. */
+"Error communicating with Dropbox" = "Fehler bei der Kummunikation mit Dropbox";
+
+/* No comment provided by engineer. */
+"Error loading account info" = "Kontoinformationen konnten nicht geladen werden";
+
+/* No comment provided by engineer. */
+"Event Distribution" = "Eventverteilung";
+
+/* No comment provided by engineer. */
+"Events unlock certain features that are not normally in the game. However, they can only be completed once per save file." = "Ereignisse schalten bestimmte Funktionen frei, die normalerweise nicht im Spiel vorhanden sind. Sie können jedoch nur einmal pro Speicherdatei abgeschlossen werden";
+
+/* No comment provided by engineer. */
+"Exit" = "Verlassen";
+
+/* No comment provided by engineer. */
+"Exit Event Distribution" = "Eventverteilung verlassen.";
+
+/* No comment provided by engineer. */
+"Exit this event?" = "Dieses Event verlassen?";
+
+/* No comment provided by engineer. */
+"Failed to check for update." = "Fehler beim Prüfen auf Updates.";
+
+/* No comment provided by engineer. */
+"Failed to sync with Dropbox" = "Fehler beim Syncronisieren mit Dropbox";
+
+/* No comment provided by engineer. */
+"Fast Forward" = "Schneller Vorlauf";
+
+/* No comment provided by engineer. */
+"File Already Exists" = "Datei bereits vorhanden";
+
+/* No comment provided by engineer. */
+"Files" = "Dateien";
+
+/* The Pokemon game FireRed */
+"FireRed" = "Feuerrot";
+
+/* No comment provided by engineer. */
+"GBA" = "GBA";
+
+/* No comment provided by engineer. */
+"GBA Controller Skins" = "GBA Controller Skins";
+
+/* No comment provided by engineer. */
+"GBC" = "GBC";
+
+/* No comment provided by engineer. */
+"GBC Controller Skins" = "GBC Controller Skins";
+
+/* No comment provided by engineer. */
+"Game Already Exists With The Name" = "Spiel mit diesem Namen bereits vorhanden";
+
+/* No comment provided by engineer. */
+"Game Currently Running" = "Spiel aktuell geöffnet";
+
+/* No comment provided by engineer. */
+"Game Data is Conflicted" = "Spieldaten stehen in Konflikt";
+
+/* No comment provided by engineer. */
+"Game Genie" = "Game Genie";
+
+/* No comment provided by engineer. */
+"Game Name" = "Spielname";
+
+/* No comment provided by engineer. */
+"Game Uses Gyroscope" = "Spiel verwendet Gyroscope";
+
+/* No comment provided by engineer. */
+"Game already in use" = "Spiel bereits aktiv";
+
+/* No comment provided by engineer. */
+"GameFAQs" = "GameFAQs";
+
+/* No comment provided by engineer. */
+"GameShark" = "GameShark";
+
+/* No comment provided by engineer. */
+"General" = "Allgemein";
+
+/* No comment provided by engineer. */
+"Google" = "Google";
+
+/* No comment provided by engineer. */
+"Gray" = "Grau";
+
+/* No comment provided by engineer. */
+"Green" = "Grün";
+
+/* No comment provided by engineer. */
+"Host" = "Host";
+
+/* No comment provided by engineer. */
+"I Understand" = "OK";
+
+/* No comment provided by engineer. */
+"If at any time the app fails to open, please set the date back on your device at least 24 hours, then try opening the app again. Once the app is opened, you can set the date back to the correct time, and the app will continue to open normally. However, you'll need to repeat this process every time you restart your device." = "Wenn sich die App zu irgendeinem Zeitpunkt nicht öffnen lässt, stelle bitte das Datum auf Deinem Gerät um mindestens 24 Stunden zurück und versuchen dann erneut, die App zu öffnen. Sobald die App geöffnet ist, kannst Du das Datum auf die richtige Uhrzeit zurücksetzen, und die App wird weiterhin normal geöffnet. Du musst diesen Vorgang jedoch jedes Mal wiederholen, wenn Du Dein Gerät neu starten.";
+
+/* No comment provided by engineer. */
+"If syncing remains disabled, data for this game will not be updated on your other devices." = "Wenn die Synchronisierung deaktiviert bleibt, werden die Daten für dieses Spiel nicht auf Deinen anderen Geräten aktualisiert.";
+
+/* No comment provided by engineer. */
+"If turned off, the save data for this game will not be synced to other devices, regardless of whether Dropbox Sync is turned on or not." = "Wenn diese Option deaktiviert ist, werden die Speicherdaten für dieses Spiel nicht mit anderen Geräten synchronisiert, unabhängig davon, ob Dropbox Sync aktiviert ist oder nicht.";
+
+/* No comment provided by engineer. */
+"If you want to delete this save state, swipe it to the left then tap Delete" = "Wenn Du diesen Speicherstatus löschen möchtest, wische ihn nach links und tippe dann auf Löschen";
+
+/* No comment provided by engineer. */
+"Invalid Cheat" = "Ungültiger Cheat";
+
+/* No comment provided by engineer. */
+"It'll be removed from all of your Dropbox connected devices." = "Es wird von all Deinen mit Dropbox verbundenen Geräten entfernt.";
+
+/* No comment provided by engineer. */
+"Join" = "Beitreten";
+
+/* No comment provided by engineer. */
+"Keep Disabled" = "Deaktiviert halten";
+
+/* No comment provided by engineer. */
+"Landscape" = "Landscape";
+
+/* No comment provided by engineer. */
+"Later" = "Später";
+
+/* The Pokemon game LeafGreen */
+"LeafGreen" = "Blattgrün";
+
+/* No comment provided by engineer. */
+"Load State" = "Lade Status";
+
+/* No comment provided by engineer. */
+"Loading account info…" = "Lade Kontoinformationen...";
+
+/* No comment provided by engineer. */
+"Loading..." = "Laden...";
+
+/* No comment provided by engineer. */
+"Log Out" = "Abmelden";
+
+/* No comment provided by engineer. */
+"Log out of Dropbox" = "Bei Dropbox abmelden";
+
+/* No comment provided by engineer. */
+"Logging out then logging back in to the same Dropbox account will mark your games as conflicted, causing you to manually resolve the conflicts yourself." = "Wenn Du dich abmeldest und dann wieder bei demselben Dropbox-Konto anmeldest, werden Deine Spiele als in Konflikt stehend markiert, sodass Du die Konflikte manuell selbst lösen musst.";
+
+/* No comment provided by engineer. */
+"Mail" = "Mail";
+
+/* No comment provided by engineer. */
+"Make sure the zip file contains either a GBA or GBC ROM and try again." = "Stelle sicher, dass die ZIP-Datei entweder ein GBA- oder ein GBC-ROM enthält, und versuche es erneut.";
+
+/* No comment provided by engineer. */
+"Nearby" = "Nahe";
+
+/* No comment provided by engineer. */
+"Nearby Hosts" = "Nahe Hosts";
+
+/* No comment provided by engineer. */
+"New Event Available" = "Neues Event verfügar";
+
+/* No comment provided by engineer. */
+"No Save Selected" = "Kein Speichern gewählt";
+
+/* No comment provided by engineer. */
+"No local save file" = "Keine lokale Sicherungsdatei";
+
+/* No comment provided by engineer. */
+"Normal Speed" = "Normale Geschwindigkeit";
+
+/* RSTAlertView Dismiss Button Title */
+"OK" = "OK";
+
+/* No comment provided by engineer. */
+"Off" = "Aus";
+
+/* No comment provided by engineer. */
+"On" = "An";
+
+/* No comment provided by engineer. */
+"Once syncing is enabled, the save file for this game on all your other devices will be overwritten with the one you selected. Please make sure you have selected the correct save file, then tap Enable." = "Sobald die Synchronisierung aktiviert ist, wird die Speicherdatei für dieses Spiel auf all Deinen anderen Geräten mit der von Dir ausgewählten überschrieben. Bitte stelle sicher, dass Du die richtige Speicherdatei ausgewählt hast, und tippe dann auf Aktivieren.";
+
+/* No comment provided by engineer. */
+"Only one copy of a game is supported at a time. To use a new version of this game, please delete the previous version and try again." = "Es wird jeweils nur eine Kopie eines Spiels unterstützt. Um eine neue Version dieses Spiels zu verwenden, lösche bitte die vorherige Version und versuchen es erneut.";
+
+/* No comment provided by engineer. */
+"Orange" = "Orange";
+
+/* No comment provided by engineer. */
+"Original" = "Original";
+
+/* No comment provided by engineer. */
+"Pastel Mix" = "Pastell-Mix";
+
+/* No comment provided by engineer. */
+"Paused" = "Pausiert";
+
+/* No comment provided by engineer. */
+"Player Name" = "Spielername";
+
+/* No comment provided by engineer. */
+"Please make sure you are connected to the internet and try again." = "Stelle sicher, dass Du mit dem Internet verbunden bist und versuche es erneut.";
+
+/* No comment provided by engineer. */
+"Please make sure you typed the cheat code in the correct format and try again." = "Stelle sicher, dass Du den Check Code im richtigen Format eingegeben hast und versuche es erneut.";
+
+/* No comment provided by engineer. */
+"Please rename either the existing file or the file to be imported and try again." = "Bitte benenne entweder die vorhandene Datei oder die zu importierende Datei um und versuche es erneut.";
+
+/* No comment provided by engineer. */
+"Please rename the existing file and try again." = "Bitte benenne die vorhandene Datei um und versuche es erneut.";
+
+/* No comment provided by engineer. */
+"Please wait for the initial sync to be complete, then launch the game. This is to ensure no save data is lost." = "Bitte warte, bis die anfängliche Synchronisierung abgeschlossen ist, und starte dann das Spiel. Dadurch wird sichergestellt, dass keine gespeicherten Daten verloren gehen.";
+
+/* No comment provided by engineer. */
+"Pokémon" = "Pokémon";
+
+/* No comment provided by engineer. */
+"Portrait" = "Portrait";
+
+/* No comment provided by engineer. */
+"Press Beta Testers" = "Press Beta Testers";
+
+/* No comment provided by engineer. */
+"Press the button you want to sustain.\n\nTo cancel or unsustain a previously sustained button, either tap the screen or press the Menu button." = "点按需要保持的按键.\n\n 要取消操作，单击屏幕或菜单键。";
+
+/* No comment provided by engineer. */
+"Protect Save State" = "Speicherstand schützen";
+
+/* No comment provided by engineer. */
+"Protected" = "Geschützt";
+
+/* No comment provided by engineer. */
+"Quit" = "Beenden";
+
+/* No comment provided by engineer. */
+"Red" = "Rot";
+
+/* No comment provided by engineer. */
+"Rename" = "Umbenennen";
+
+/* No comment provided by engineer. */
+"Rename Game" = "Spiel umbenennen";
+
+/* No comment provided by engineer. */
+"Rename Save State" = "Speicherstand umbenennen";
+
+/* No comment provided by engineer. */
+"Restart" = "Neustart";
+
+/* No comment provided by engineer. */
+"Resume" = "Fortsetzen";
+
+/* No comment provided by engineer. */
+"Return To Menu" = "Zurück zum Menü";
+
+/* No comment provided by engineer. */
+"Reverse" = "Rückwärts";
+
+/* No comment provided by engineer. */
+"Rotate To Device Orientation" = "In Geräteausrichtung drehen";
+
+/* The Pokemon game Ruby, not the jewel */
+"Ruby" = "Rubin";
+
+/* The Pokemon game Sapphire, not the jewel */
+"Sapphire" = "Saphir";
+
+/* No comment provided by engineer. */
+"Save" = "Speichern";
+
+/* No comment provided by engineer. */
+"Save Data Conflicted" = "Konflikt beim Speichern von Daten";
+
+/* No comment provided by engineer. */
+"Save State" = "Speichern";
+
+/* No comment provided by engineer. */
+"Save states are intended to be used as a convenience, and not as the primary saving method. To ensure that save data is never lost or corrupted, please save in-game as you would if you were playing on an actual Game Boy Advance." = "Speicherzustände sollen der Einfachheit halber und nicht als primäre Speichermethode verwendet werden. Um sicherzustellen, dass gespeicherte Daten niemals verloren gehen oder beschädigt werden, speichere bitte im Spiel so, wie Du es tun würdest, wenn Du auf einem echten Game Boy Advance spielen würden.";
+
+/* No comment provided by engineer. */
+"Searching…" = "Suchen...";
+
+/* No comment provided by engineer. */
+"Select" = "Wählen";
+
+/* No comment provided by engineer. */
+"Share Game" = "Spiel teilen";
+
+/* No comment provided by engineer. */
+"Show Game List" = "Spielliste anzeigen";
+
+/* No comment provided by engineer. */
+"Software Update Available" = "Softare Update verfügbar";
+
+/* No comment provided by engineer. */
+"Start" = "Start";
+
+/* No comment provided by engineer. */
+"Start Anyway" = "Trotzdem starten";
+
+/* No comment provided by engineer. */
+"Start Game" = "Spiel starten";
+
+/* No comment provided by engineer. */
+"Start this event?" = "Event starten?";
+
+/* No comment provided by engineer. */
+"Super Cheats" = "Super Cheats";
+
+/* No comment provided by engineer. */
+"Suspend" = "Aussetzen";
+
+/* No comment provided by engineer. */
+"Suspend this game?" = "Dieses Spiel aussetzen?";
+
+/* No comment provided by engineer. */
+"Sustain Button" = "Substain Taste";
+
+/* No comment provided by engineer. */
+"Sync Complete!" = "Sync abgeschlossen!";
+
+/* No comment provided by engineer. */
+"Sync Save Data" = "Syncronisiere Speicherstände";
+
+/* No comment provided by engineer. */
+"Syncing with Dropbox" = "Mit Dropbox syncronisieren";
+
+/* No comment provided by engineer. */
+"Syncing…" = "Syncronisieren...";
+
+/* No comment provided by engineer. */
+"Tap a name to go to their Twitter profile or personal website." = "Tippe auf einen Namen, um zu seinem Twitter-Profil oder seiner persönlichen Website zu gelangen.";
+
+/* No comment provided by engineer. */
+"Tap the button you want to sustain.\n\nTo cancel or unsustain a previously sustained button, tap anywhere there isn't a button." = "点按需要保持的按键.\n\n 要取消操作，单击屏幕或任何非按键区域。";
+
+/* Leave the %@'s, they are placeholders for the event name and Pokemon games */
+"The event “%@” is now available for download for %@." = "--------";
+
+/* Leave the %@'s, they are placeholders for the event name */
+"The event “%@” is now available for download." = "-------";
+
+/* No comment provided by engineer. */
+"The game will be suspended, which may cause link errors for connected players." = "Das Spiel wird unterbrochen, was bei verbundenen Spielern zu Verbindungsfehlern führen kann.";
+
+/* No comment provided by engineer. */
+"The game will restart, and any unsaved data will be lost." = "Das Spiel wird neu gestartet und alle nicht gespeicherten Daten gehen verloren.";
+
+/* No comment provided by engineer. */
+"The game will restart, and any unsaved data will be lost. If you haven't yet completed the event, you may start it again at any time." = "Das Spiel wird neu gestartet und alle nicht gespeicherten Daten gehen verloren. Wenn Du das Event noch nicht abgeschlossen hast, kannst Du es jederzeit erneut starten.";
+
+/* No comment provided by engineer. */
+"The save data for this game is not in sync with Dropbox. If you want to re-enable syncing, please select the save file you want to use, then toggle the above switch on." = "Die Speicherdaten für dieses Spiel sind nicht mit Dropbox synchronisiert. Wenn Du die Synchronisierung wieder aktivieren möchstest, wähle bitte die Speicherdatei aus, die Du verwenden möchtest, und schalten dann den obigen Schalter ein.";
+
+/* No comment provided by engineer. */
+"The save data for this game is not in sync with Dropbox. Please select the save file you want to sync to your other devices, then try again.\n\nNOTE: This will overwrite the save file for this game on your other devices." = "Die Speicherdaten für dieses Spiel sind nicht mit Dropbox synchronisiert. Bitte wähle die Speicherdatei aus, die Du mit Deinen anderen Geräten synchronisieren möchtest, und versuche es dann erneut.\n\nHINWEIS: Dadurch wird die Speicherdatei für dieses Spiel auf Deinen anderen Geräten überschrieben.";
+
+/* No comment provided by engineer. */
+"To delete this game, please quit it so it is no longer running." = "Um dieses Spiel zu löschen, beende es bitte, damit es nicht mehr läuft.";
+
+/* No comment provided by engineer. */
+"To prevent GBA4iOS from rotating between portrait and landscape accidentally, automatic rotation has been disabled. To manually rotate the interface, pause the game, then rotate the device." = "Um zu verhindern, dass GBA4iOS versehentlich zwischen Hoch- und Querformat wechselt, wurde die automatische Drehung deaktiviert. Um die Benutzeroberfläche manuell zu drehen, halte das Spiel an und drehe dann das Gerät.";
+
+/* No comment provided by engineer. */
+"To prevent GBA4iOS from rotating between portrait and landscape accidentally, automatic rotation has been disabled. To manually rotate to the device orientation, pause the game, then tap “Rotate To Device Orientation”." = "Um zu verhindern, dass GBA4iOS versehentlich zwischen Hoch- und Querformat wechselt, wurde die automatische Drehung deaktiviert. Um manuell in die Geräteausrichtung zu drehen, pausiere das Spiel und tippe dann auf „In Geräteausrichtung drehen“.";
+
+/* No comment provided by engineer. */
+"To rename this game, please quit it so it is no longer running. All unsaved data will be lost." = "Um dieses Spiel umzubenennen, beende es bitte, damit es nicht mehr läuft. Alle nicht gespeicherten Daten gehen verloren.";
+
+/* No comment provided by engineer. */
+"Today" = "Heute";
+
+/* No comment provided by engineer. */
+"Tomorrow" = "Morgen";
+
+/* No comment provided by engineer. */
+"Unknown" = "Unbekannt";
+
+/* No comment provided by engineer. */
+"Unprotect Save State" = "Schutz des Spielstandes aufheben";
+
+/* No comment provided by engineer. */
+"Unsupported File" = "Nicht unterstützte Datei";
+
+/* No comment provided by engineer. */
+"Update" = "Aktualisieren";
+
+/* No comment provided by engineer. */
+"Updating Dropbox status…" = "Aktualisiere Dropbox Status…";
+
+/* No comment provided by engineer. */
+"Updating Dropbox…" = "Aktualisiere Dropbox…";
+
+/* No comment provided by engineer. */
+"Upload Complete!" = "Upload abgeschlossen！";
+
+/* No comment provided by engineer. */
+"Upload Failed" = "Upload fehlgeschlagen";
+
+/* No comment provided by engineer. */
+"Uploading" = "Hochladen";
+
+/* No comment provided by engineer. */
+"View" = "Ansicht";
+
+/* No comment provided by engineer. */
+"View Details" = "Einzelheiten anzeigen";
+
+/* No comment provided by engineer. */
+"Waiting…" = "Warten...";
+
+/* No comment provided by engineer. */
+"Warning!" = "Warnung";
+
+/* No comment provided by engineer. */
+"Welcome to GBA4iOS!" = "Willkommen bei GBA4iOS!";
+
+/* No comment provided by engineer. */
+"When Wireless Link is connected, the game cannot be paused." = "Wenn Wireless Link verbunden ist, kann das Spiel nicht angehalten werden.";
+
+/* No comment provided by engineer. */
+"Wireless Linking" = "Wireless Linking";
+
+/* No comment provided by engineer. */
+"Wireless Linking uses either local Wi-Fi or Bluetooth. However, for best performance, all devices should be connected to the same Wi-Fi network." = "Wireless Linking verwendet entweder lokales Wi-Fi oder Bluetooth. Für eine optimale Leistung sollten jedoch alle Geräte mit demselben Wi-Fi-Netzwerk verbunden sein.";
+
+/* No comment provided by engineer. */
+"Would you like to end %@ and start %@? All unsaved data will be lost." = "Möchtest Du %1$@ beenden und %2$@ starten? Alle nicht gespeicherten Daten gehen verloren.";
+
+/* No comment provided by engineer. */
+"Would you like to resume where you left off, or restart the game?" = "Möchtest Du dort weitermachen, wo Du aufgehört hast, oder das Spiel neu starten?";
+
+/* No comment provided by engineer. */
+"Yahoo" = "Yahoo";
+
+/* No comment provided by engineer. */
+"Yellow" = "Gelb";
+
+/* No comment provided by engineer. */
+"You can import other .gbaskin or .gbcskin files via iTunes, or by downloading them in Safari and opening in GBA4iOS." = "Du kannst andere .gbaskin- oder .gbcskin-Dateien über iTunes importieren oder sie in Safari herunterladen und in GBA4iOS öffnen.";
+
+/* No comment provided by engineer. */
+"Your software is up to date." = "Deine Software ist aktuell.";
+
+/* No comment provided by engineer. */
+"and" = "und";
+
+/* No comment provided by engineer. */
+"cheats" = "Cheats";
+
+/* No comment provided by engineer. */
+"files" = "Dateien";
+
+/* No comment provided by engineer. */
+"is now available for download." = "steht jetzt zum Download bereit.";
+
+/* No comment provided by engineer. */
+"save" = "speichern";
+
+/* No comment provided by engineer". */
+"save states" = "Stände speichern";
+
+/* No comment provided by engineer. */
+"would like to link with you." = "würde gerne mit dir verlinken.";
+
+/* No comment provided by engineer. */
+"Share" = "Teilen";
+
+/* No comment provided by engineer. */
+"Delete" = "Löschen";
+
+"Quit game?" = "Spiel beenden?";
+
+"If you quit this game all unsaved data will be lost." = "Alle ungespeicherten Spielstände gehen verloren.";
