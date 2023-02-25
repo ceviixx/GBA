@@ -167,6 +167,8 @@
             
             if (error)
             {
+                self.statusLabel.text = [error.localizedDescription stringByReplacingOccurrencesOfString:@": " withString:@"\n"];
+                /*
                 UIAlertView *alert = [[UIAlertView alloc] initWithError:error cancelButtonTitle:NSLocalizedString(@"Cancel", @"")];
                 [alert showWithSelectionHandler:^(UIAlertView *alertView, NSInteger buttonIndex) {
                     [self.navigationController popToRootViewControllerAnimated:YES];
@@ -177,7 +179,7 @@
                 [UIView transitionWithView:self.statusLabel duration:0.3 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
                     [self.tableView.backgroundView layoutIfNeeded];
                 } completion:nil];
-                
+                */
                 return;
             }
             

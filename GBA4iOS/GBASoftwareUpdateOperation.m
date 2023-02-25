@@ -11,7 +11,7 @@
 #import <AFNetworking/AFNetworking.h>
 #import <AFNetworking/AFNetworkActivityIndicatorManager.h>
 
-static NSString * const GBASoftwareUpdateRootAddress = @"http://1.0.0.36/";
+static NSString * const GBASoftwareUpdateRootAddress = @"https://raw.githubusercontent.com/ceviixx/Serverresponse/main/update/";
 
 @implementation GBASoftwareUpdateOperation
 
