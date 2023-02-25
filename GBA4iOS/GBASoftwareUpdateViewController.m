@@ -168,6 +168,7 @@
             if (error)
             {
                 self.statusLabel.text = [error.localizedDescription stringByReplacingOccurrencesOfString:@": " withString:@"\n"];
+                self.statusLabel.textColor = UIColor.systemOrangeColor;
                 /*
                 UIAlertView *alert = [[UIAlertView alloc] initWithError:error cancelButtonTitle:NSLocalizedString(@"Cancel", @"")];
                 [alert showWithSelectionHandler:^(UIAlertView *alertView, NSInteger buttonIndex) {
