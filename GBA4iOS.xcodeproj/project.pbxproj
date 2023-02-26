@@ -13,6 +13,18 @@
 		1AD65D7B17D2DCFD00E2CF0C /* GBAControllerSkinSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD65D7917D2DCFD00E2CF0C /* GBAControllerSkinSelectionViewController.m */; };
 		1AD971E717D2B6EC007097BC /* GBAControllerSkinDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD971E617D2B6EC007097BC /* GBAControllerSkinDetailViewController.m */; };
 		1AD971F317D2C6ED007097BC /* GBAControllerSkin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD971F117D2C6ED007097BC /* GBAControllerSkin.m */; };
+		39DBCF3229ABE22200A4CCF1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 39DBCF2C29ABE22000A4CCF1 /* Default-568h@2x.png */; };
+		39DBCF3329ABE22200A4CCF1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 39DBCF2C29ABE22000A4CCF1 /* Default-568h@2x.png */; };
+		39DBCF3429ABE22200A4CCF1 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 39DBCF2D29ABE22100A4CCF1 /* Default-Landscape@2x~ipad.png */; };
+		39DBCF3529ABE22200A4CCF1 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 39DBCF2D29ABE22100A4CCF1 /* Default-Landscape@2x~ipad.png */; };
+		39DBCF3629ABE22200A4CCF1 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 39DBCF2E29ABE22100A4CCF1 /* Default-Landscape~ipad.png */; };
+		39DBCF3729ABE22200A4CCF1 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 39DBCF2E29ABE22100A4CCF1 /* Default-Landscape~ipad.png */; };
+		39DBCF3829ABE22200A4CCF1 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 39DBCF2F29ABE22100A4CCF1 /* Default-Portrait@2x~ipad.png */; };
+		39DBCF3929ABE22200A4CCF1 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 39DBCF2F29ABE22100A4CCF1 /* Default-Portrait@2x~ipad.png */; };
+		39DBCF3A29ABE22200A4CCF1 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 39DBCF3029ABE22200A4CCF1 /* Default-Portrait~ipad.png */; };
+		39DBCF3B29ABE22200A4CCF1 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 39DBCF3029ABE22200A4CCF1 /* Default-Portrait~ipad.png */; };
+		39DBCF3C29ABE22200A4CCF1 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 39DBCF3129ABE22200A4CCF1 /* Default@2x.png */; };
+		39DBCF3D29ABE22200A4CCF1 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 39DBCF3129ABE22200A4CCF1 /* Default@2x.png */; };
 		AED1727B0C66F5B4067FF536 /* libPods-GBA4iOS-Simulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB593B152ECAB4C31CAC7F4A /* libPods-GBA4iOS-Simulator.a */; };
 		BF02AFDB182F3E590031B8B6 /* GBASyncingOverviewViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BF02AFDA182F3E590031B8B6 /* GBASyncingOverviewViewController.mm */; };
 		BF02AFDF182F6E200031B8B6 /* GBASyncingDetailViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BF02AFDE182F6E200031B8B6 /* GBASyncingDetailViewController.mm */; };
@@ -473,6 +485,12 @@
 		39CA8FFB2927E9A200D245BC /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/GBANoGamesView.strings; sourceTree = "<group>"; };
 		39CA8FFC2927E9AA00D245BC /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Emulation.strings; sourceTree = "<group>"; };
 		39CA8FFD2927E9B100D245BC /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Settings.strings; sourceTree = "<group>"; };
+		39DBCF2C29ABE22000A4CCF1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		39DBCF2D29ABE22100A4CCF1 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
+		39DBCF2E29ABE22100A4CCF1 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		39DBCF2F29ABE22100A4CCF1 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
+		39DBCF3029ABE22200A4CCF1 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		39DBCF3129ABE22200A4CCF1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		435533468BE0AFA9062BB305 /* Pods-GBA4iOS-Simulator.enterprise.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBA4iOS-Simulator.enterprise.xcconfig"; path = "Pods/Target Support Files/Pods-GBA4iOS-Simulator/Pods-GBA4iOS-Simulator.enterprise.xcconfig"; sourceTree = "<group>"; };
 		8918774AC40A694CD1822D06 /* Pods-GBA4iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBA4iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-GBA4iOS/Pods-GBA4iOS.release.xcconfig"; sourceTree = "<group>"; };
 		93DEC42F154D6D497A1FA930 /* Pods-GBA4iOS-Simulator.jailbreak.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBA4iOS-Simulator.jailbreak.xcconfig"; path = "Pods/Target Support Files/Pods-GBA4iOS-Simulator/Pods-GBA4iOS-Simulator.jailbreak.xcconfig"; sourceTree = "<group>"; };
@@ -986,6 +1004,19 @@
 				BF104A8217EB7B8F003C86F5 /* Cells */,
 			);
 			name = "Controller Skins";
+			sourceTree = "<group>";
+		};
+		39DBCF2B29ABE17300A4CCF1 /* SplashScreenImages */ = {
+			isa = PBXGroup;
+			children = (
+				39DBCF2C29ABE22000A4CCF1 /* Default-568h@2x.png */,
+				39DBCF2D29ABE22100A4CCF1 /* Default-Landscape@2x~ipad.png */,
+				39DBCF2E29ABE22100A4CCF1 /* Default-Landscape~ipad.png */,
+				39DBCF2F29ABE22100A4CCF1 /* Default-Portrait@2x~ipad.png */,
+				39DBCF3029ABE22200A4CCF1 /* Default-Portrait~ipad.png */,
+				39DBCF3129ABE22200A4CCF1 /* Default@2x.png */,
+			);
+			path = SplashScreenImages;
 			sourceTree = "<group>";
 		};
 		7D3FD93519510A8BED28BBEB /* Pods */ = {
@@ -1560,6 +1591,7 @@
 		CC2D57381798F40E00C616EB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				39DBCF2B29ABE17300A4CCF1 /* SplashScreenImages */,
 				BF40C32F19E09974003C73B5 /* Intro.mp4 */,
 				CC2D571A1798F2EC00C616EB /* Images.xcassets */,
 				BF0EBB1019C026E500703623 /* Launch Screen.xib */,
@@ -2018,13 +2050,19 @@
 				BF58D30F19B91550003B2B62 /* LICENSE.txt in Resources */,
 				BF2F35C7183FF6F9002ACE90 /* Emulation.storyboard in Resources */,
 				BF2F35C8183FF6F9002ACE90 /* Default.gbaskin in Resources */,
+				39DBCF3529ABE22200A4CCF1 /* Default-Landscape@2x~ipad.png in Resources */,
 				BF2F35C9183FF6F9002ACE90 /* xButton.png in Resources */,
 				BF359B9C187A6A8200B4CA53 /* eventDistributionROMs.plist in Resources */,
 				BF0EBB1219C026E500703623 /* Launch Screen.xib in Resources */,
 				BF3B2B721A2E3F3400301AE1 /* GBA4iOS-Info-SimulatorPlist.strings in Resources */,
+				39DBCF3729ABE22200A4CCF1 /* Default-Landscape~ipad.png in Resources */,
 				BF2F35CA183FF6F9002ACE90 /* Images.xcassets in Resources */,
+				39DBCF3329ABE22200A4CCF1 /* Default-568h@2x.png in Resources */,
 				BF2F35CB183FF6F9002ACE90 /* padButton.png in Resources */,
+				39DBCF3D29ABE22200A4CCF1 /* Default@2x.png in Resources */,
+				39DBCF3929ABE22200A4CCF1 /* Default-Portrait@2x~ipad.png in Resources */,
 				BF8C11441A2D01DF00126A3D /* GBANoGamesView.xib in Resources */,
+				39DBCF3B29ABE22200A4CCF1 /* Default-Portrait~ipad.png in Resources */,
 				BF2F35CC183FF6F9002ACE90 /* overlays128.png in Resources */,
 				BF2F35CE183FF6F9002ACE90 /* Default.gbcskin in Resources */,
 				BF40C33119E09974003C73B5 /* Intro.mp4 in Resources */,
@@ -2036,19 +2074,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39DBCF3629ABE22200A4CCF1 /* Default-Landscape~ipad.png in Resources */,
 				BF58D30E19B91550003B2B62 /* LICENSE.txt in Resources */,
 				CC58C8F817E64A20008F472E /* Emulation.storyboard in Resources */,
 				BFFA355217ECD2A70038D34F /* Default.gbaskin in Resources */,
+				39DBCF3429ABE22200A4CCF1 /* Default-Landscape@2x~ipad.png in Resources */,
 				CC58C8FC17E64A91008F472E /* xButton.png in Resources */,
 				BF359B9B187A6A8200B4CA53 /* eventDistributionROMs.plist in Resources */,
+				39DBCF3A29ABE22200A4CCF1 /* Default-Portrait~ipad.png in Resources */,
 				BF0EBB1119C026E500703623 /* Launch Screen.xib in Resources */,
 				CC96F01717C2A0AD00C7DD0C /* Images.xcassets in Resources */,
+				39DBCF3829ABE22200A4CCF1 /* Default-Portrait@2x~ipad.png in Resources */,
 				BF49397617CD947C0072CFC7 /* padButton.png in Resources */,
+				39DBCF3C29ABE22200A4CCF1 /* Default@2x.png in Resources */,
 				BF3B2B6B1A2E3F3300301AE1 /* Localizable.strings in Resources */,
 				BF8C11431A2D01DF00126A3D /* GBANoGamesView.xib in Resources */,
 				1A5BAE7F17D04B0A00BABC01 /* overlays128.png in Resources */,
 				CC5044E71814C474009F7B9E /* Default.gbcskin in Resources */,
 				BF3B2B771A2E3F3500301AE1 /* GBA4iOS-InfoPlist.strings in Resources */,
+				39DBCF3229ABE22200A4CCF1 /* Default-568h@2x.png in Resources */,
 				BF40C33019E09974003C73B5 /* Intro.mp4 in Resources */,
 				BF8C11471A2D01ED00126A3D /* Settings.storyboard in Resources */,
 			);
