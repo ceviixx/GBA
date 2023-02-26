@@ -143,6 +143,37 @@ dispatch_queue_t directoryContentsChangedQueue() {
     
 }
 
+- (UIContextMenuConfiguration *)tableView:(UITableView *)tableView contextMenuConfigurationForRowAtIndexPath:(NSIndexPath *)indexPath point:(CGPoint)point {
+    NSString *filepath = [self filepathForIndexPath:indexPath];
+    NSString *romName = [[filepath lastPathComponent] stringByDeletingPathExtension];
+    
+    GBAROM *rom = [GBAROM romWithContentsOfFile:filepath];
+    
+    UIContextMenuConfiguration* config = [UIContextMenuConfiguration configurationWithIdentifier:nil
+                                                                                 previewProvider:nil
+                                                                                  actionProvider:^UIMenu* _Nullable(NSArray<UIMenuElement*>* _Nonnull suggestedActions) {
+
+        NSMutableArray* actions = [[NSMutableArray alloc] init];
+
+        [actions addObject:[UIAction actionWithTitle:NSLocalizedString(@"Share", @"") image:[UIImage systemImageNamed:@"square.and.arrow.up"] identifier:nil handler:^(__kindof UIAction* _Nonnull action) {
+            [self shareROMAtIndexPath:indexPath];
+        }]];
+        
+        if (![self.emulationViewController.rom isEqual:rom]) {
+            [actions addObject:[UIAction actionWithTitle:NSLocalizedString(@"Rename", @"") image:[UIImage systemImageNamed:@"pencil"] identifier:nil handler:^(__kindof UIAction* _Nonnull action) {
+                
+            }]];
+        }
+        
+        UIMenu* menu = [UIMenu menuWithTitle:@"" children:actions];
+        return menu;
+
+    }];
+    return config;
+    
+}
+
+
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
@@ -505,22 +536,8 @@ dispatch_queue_t directoryContentsChangedQueue() {
         {
         [self deleteForAtIndexPath:indexPath];
         }];
-    deleteRowAction.image = [UIImage imageNamed:@"delete"];
-    deleteRowAction.backgroundColor = UIColor.secondarySystemBackgroundColor;
-    
-    UIContextualAction *renameRowAction = [UIContextualAction contextualActionWithStyle:UIContextualActionStyleNormal title:nil handler:^(UIContextualAction * _Nonnull action, __kindof UIView * _Nonnull sourceView, void (^ _Nonnull completionHandler)(BOOL))
-        {
-        [self showRenameAlertForROMAtIndexPath:indexPath];
-        }];
-    renameRowAction.image = [UIImage imageNamed:@"rename"];
-    renameRowAction.backgroundColor = UIColor.secondarySystemBackgroundColor;
-    
-    UIContextualAction *shareRowAction = [UIContextualAction contextualActionWithStyle:UIContextualActionStyleNormal title:nil handler:^(UIContextualAction * _Nonnull action, __kindof UIView * _Nonnull sourceView, void (^ _Nonnull completionHandler)(BOOL))
-        {
-        [self shareROMAtIndexPath:indexPath];
-        }];
-    shareRowAction.image = [UIImage imageNamed:@"share"];
-    shareRowAction.backgroundColor = UIColor.secondarySystemBackgroundColor;
+    deleteRowAction.image = [UIImage systemImageNamed:@"trash"];
+    deleteRowAction.backgroundColor = UIColor.systemRedColor;
     
     
     UIContextualAction *quitGameRowAction = [UIContextualAction contextualActionWithStyle:UIContextualActionStyleNormal title: NSLocalizedString(@"Quit", @"") handler:^(UIContextualAction * _Nonnull action, __kindof UIView * _Nonnull sourceView, void (^ _Nonnull completionHandler)(BOOL))
@@ -549,8 +566,7 @@ dispatch_queue_t directoryContentsChangedQueue() {
 
         
         }];
-    quitGameRowAction.backgroundColor = UIColor.secondarySystemBackgroundColor;
-    
+    quitGameRowAction.backgroundColor = UIColor.tertiaryLabelColor;
     
     
     
@@ -563,7 +579,7 @@ dispatch_queue_t directoryContentsChangedQueue() {
         UISwipeActionsConfiguration *config = [UISwipeActionsConfiguration configurationWithActions:@[quitGameRowAction]];
             return config;
     } else if (![self.emulationViewController.rom isEqual:rom]) {
-        UISwipeActionsConfiguration *config = [UISwipeActionsConfiguration configurationWithActions:@[deleteRowAction, renameRowAction, shareRowAction]];
+        UISwipeActionsConfiguration *config = [UISwipeActionsConfiguration configurationWithActions:@[deleteRowAction]];
             return config;
     }
     
@@ -579,6 +595,8 @@ dispatch_queue_t directoryContentsChangedQueue() {
     [self themeTableViewCell:cell];
     
     NSString *lowercaseFileExtension = [filename.pathExtension lowercaseString];
+    
+    cell.accessoryView = nil;
     
     if ([self isDownloadingFile:filename] || [self.unavailableFiles containsObject:filename])
     {
@@ -1058,12 +1076,21 @@ dispatch_queue_t directoryContentsChangedQueue() {
 //    backgroundView.backgroundColor = UIColor.systemBackgroundColor;
 //    backgroundView.alpha = 0.6;
     
+    /*
     CGFloat cellHeight = cell.frame.size.height;
     CGFloat cellWidth = cell.frame.size.width - 10;
     UIView *activeView = [[UIView alloc] initWithFrame:(CGRectMake(cellWidth, 0, 10, cellHeight))];
     activeView.backgroundColor = UIColor.systemGreenColor;
     
     [backgroundView addSubview:activeView];
+    */
+//    cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    
+    UIActivityIndicatorView *activityIndicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleMedium];
+    activityIndicatorView.hidesWhenStopped = YES;
+    activityIndicatorView.color = UIColor.secondaryLabelColor;
+    cell.accessoryView = activityIndicatorView;
+    [activityIndicatorView startAnimating];
     
     cell.backgroundView = backgroundView;
 }
@@ -1109,8 +1136,6 @@ dispatch_queue_t directoryContentsChangedQueue() {
         return;
     }
     
-    GBAROM *rom = [GBAROM romWithContentsOfFile:filepath];
-    
     // SET Short Cut Item with latest played game
     /*
     NSString *filename = [self filenameForIndexPath:indexPath];
@@ -1124,7 +1149,7 @@ dispatch_queue_t directoryContentsChangedQueue() {
     */
     // SET Short Cut Item with latest played game
     
-    
+    GBAROM *rom = [GBAROM romWithContentsOfFile:filepath];
     [self startROM:rom];
 }
 
