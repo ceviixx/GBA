@@ -1111,6 +1111,20 @@ dispatch_queue_t directoryContentsChangedQueue() {
     
     GBAROM *rom = [GBAROM romWithContentsOfFile:filepath];
     
+    // SET Short Cut Item with latest played game
+    /*
+    NSString *filename = [self filenameForIndexPath:indexPath];
+    filename = [filename stringByReplacingOccurrencesOfString:@".gba" withString:@""];
+    filename = [filename stringByReplacingOccurrencesOfString:@".gbc" withString:@""];
+    NSLog(@"Start rom: %@", filename);
+    UIApplicationShortcutIcon * photoIcon = [UIApplicationShortcutIcon iconWithTemplateImageName: @"selfie-100.png"]; // your customize icon
+    UIApplication *app = [UIApplication sharedApplication];
+    UIMutableApplicationShortcutItem *runGame = [[UIMutableApplicationShortcutItem alloc] initWithType:@"StartLatestRom" localizedTitle:filename localizedSubtitle:@"Last played" icon:nil userInfo:nil];
+    app.shortcutItems = @[runGame];
+    */
+    // SET Short Cut Item with latest played game
+    
+    
     [self startROM:rom];
 }
 

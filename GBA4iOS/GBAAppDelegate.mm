@@ -62,6 +62,14 @@ static GBAAppDelegate *_appDelegate;
 {
     _appDelegate = self;
     
+    // Handle Shortcut Item
+    UIApplicationShortcutItem *shortcutItem = [launchOptions objectForKey:UIApplicationLaunchOptionsShortcutItemKey];
+    if(shortcutItem){
+        [self handleShortCutItem:shortcutItem];
+    }
+    // Handle Shortcut Item
+    
+    
     //[UIView toggleViewMainThreadChecking];
     NSLog(@"%@",[[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject]);
     if (![[NSUserDefaults standardUserDefaults] objectForKey:@"showedWarningAlert"])
@@ -142,6 +150,22 @@ static GBAAppDelegate *_appDelegate;
     
     return YES;
 }
+
+// Handle Shortcut Item
+- (void)handleShortCutItem:(UIApplicationShortcutItem *)shortcutItem  {
+    if([shortcutItem.type isEqualToString:@"StartLatestRom"]){
+        DLog("Start Latest Rom from Shortcut Button");
+    }
+}
+
+- (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler {
+    NSLog(@"%@", shortcutItem.type);
+    if([shortcutItem.type isEqualToString:@"StartLatestRom"]){
+        //ACTION HERE
+    }
+}
+// Handle Shortcut Item
+
 
 -(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
 {
