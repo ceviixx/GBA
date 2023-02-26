@@ -532,15 +532,12 @@ dispatch_queue_t directoryContentsChangedQueue() {
 
 - (UISwipeActionsConfiguration *)tableView:(UITableView *)tableView trailingSwipeActionsConfigurationForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    UIContextualAction *deleteRowAction = [UIContextualAction contextualActionWithStyle:UIContextualActionStyleNormal title:nil handler:^(UIContextualAction * _Nonnull action, __kindof UIView * _Nonnull sourceView, void (^ _Nonnull completionHandler)(BOOL))
+    UIContextualAction *deleteRowAction = [UIContextualAction contextualActionWithStyle:UIContextualActionStyleDestructive title:NSLocalizedString(@"Delete", @"") handler:^(UIContextualAction * _Nonnull action, __kindof UIView * _Nonnull sourceView, void (^ _Nonnull completionHandler)(BOOL))
         {
         [self deleteForAtIndexPath:indexPath];
         }];
-    deleteRowAction.image = [UIImage systemImageNamed:@"trash"];
-    deleteRowAction.backgroundColor = UIColor.systemRedColor;
     
-    
-    UIContextualAction *quitGameRowAction = [UIContextualAction contextualActionWithStyle:UIContextualActionStyleNormal title: NSLocalizedString(@"Quit", @"") handler:^(UIContextualAction * _Nonnull action, __kindof UIView * _Nonnull sourceView, void (^ _Nonnull completionHandler)(BOOL))
+    UIContextualAction *quitGameRowAction = [UIContextualAction contextualActionWithStyle:UIContextualActionStyleDestructive title: NSLocalizedString(@"Quit", @"") handler:^(UIContextualAction * _Nonnull action, __kindof UIView * _Nonnull sourceView, void (^ _Nonnull completionHandler)(BOOL))
         {
         
         
@@ -566,8 +563,7 @@ dispatch_queue_t directoryContentsChangedQueue() {
 
         
         }];
-    quitGameRowAction.backgroundColor = UIColor.tertiaryLabelColor;
-    
+    quitGameRowAction.backgroundColor = UIColor.systemOrangeColor;
     
     
     
@@ -1072,25 +1068,8 @@ dispatch_queue_t directoryContentsChangedQueue() {
 //    cell.textLabel.backgroundColor = [UIColor clearColor];
 //    cell.detailTextLabel.backgroundColor = [UIColor clearColor];
     UIView *backgroundView = [[UIView alloc] initWithFrame:CGRectZero];
-//    backgroundView.backgroundColor = GBA4iOS_PURPLE_COLOR;
-//    backgroundView.backgroundColor = UIColor.systemBackgroundColor;
-//    backgroundView.alpha = 0.6;
-    
-    /*
-    CGFloat cellHeight = cell.frame.size.height;
-    CGFloat cellWidth = cell.frame.size.width - 10;
-    UIView *activeView = [[UIView alloc] initWithFrame:(CGRectMake(cellWidth, 0, 10, cellHeight))];
-    activeView.backgroundColor = UIColor.systemGreenColor;
-    
-    [backgroundView addSubview:activeView];
-    */
-//    cell.accessoryType = UITableViewCellAccessoryCheckmark;
-    
-    UIActivityIndicatorView *activityIndicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleMedium];
-    activityIndicatorView.hidesWhenStopped = YES;
-    activityIndicatorView.color = UIColor.secondaryLabelColor;
-    cell.accessoryView = activityIndicatorView;
-    [activityIndicatorView startAnimating];
+    backgroundView.backgroundColor = UIColor.tintColor;
+    backgroundView.alpha = 0.6;
     
     cell.backgroundView = backgroundView;
 }
