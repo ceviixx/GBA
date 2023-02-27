@@ -197,11 +197,13 @@ NSString *const GBASettingsDropboxStatusChangedNotification = @"GBASettingsDropb
     else if (section == [tableView numberOfSections] - 1)
     {
         NSString *bundleVersion = [[NSBundle mainBundle] objectForInfoDictionaryKey:(NSString*)kCFBundleVersionKey];
-        return [NSString stringWithFormat:@"\nGBA4iOS %@\n\nRemastered by\nceviixx", bundleVersion];
+        
+        return [NSString stringWithFormat:@"\nGBA4iOS %@\n\nRemastered by\nceviixx\n", bundleVersion];
     }
     
     return [super tableView:tableView titleForFooterInSection:section];
 }
+
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
@@ -307,10 +309,15 @@ NSString *const GBASettingsDropboxStatusChangedNotification = @"GBASettingsDropb
 {
     if (section == [tableView numberOfSections] - 1)
     {
+        NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:[self tableView:tableView titleForFooterInSection:section]];
+        [attributedString addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:12.0f weight:UIFontWeightBold] range:NSMakeRange(12, 23)];
+        
+        
         UILabel *versionLabel = [[UILabel alloc] init];
         versionLabel.textAlignment = NSTextAlignmentCenter;
         versionLabel.numberOfLines = 0;
-        versionLabel.text = [self tableView:tableView titleForFooterInSection:section];
+//        versionLabel.text = [self tableView:tableView titleForFooterInSection:section];
+        versionLabel.attributedText = attributedString;
         return versionLabel;
     }
     
@@ -475,7 +482,10 @@ NSString *const GBASettingsDropboxStatusChangedNotification = @"GBASettingsDropb
         GBASoftwareUpdateViewController *softwareUpdateViewController = [[GBASoftwareUpdateViewController alloc] init];
         [self.navigationController pushViewController:softwareUpdateViewController animated:YES];
     }
+    
+    [self.tableView deselectRowAtIndexPath:indexPath animated:TRUE];
 }
+
 
 #pragma mark - Device Capabilities
 
