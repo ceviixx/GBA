@@ -663,3 +663,15 @@
 
 /* No comment provided by engineer. */
 "Delete" = "Delete";
+
+/* No comment provided by engineer. */
+"Quit game?" = "Spiel beenden?";
+
+/* No comment provided by engineer. */
+"If you quit this game all unsaved data will be lost." = "If you quit this game all unsaved data will be lost.";
+
+/* No comment provided by engineer. */
+"Filter games" = "Filter games";
+
+/* No comment provided by engineer. */
+"ALL" = "ALL";

@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -117,7 +118,7 @@
             </objects>
             <point key="canvasLocation" x="3042" y="154"/>
         </scene>
-        <!--Table View Controller-->
+        <!--GBA4iOS-->
         <scene sceneID="bNH-Jp-jcd">
             <objects>
                 <tableViewController storyboardIdentifier="romTableViewController" id="8cV-d5-THO" customClass="GBAROMTableViewController" sceneMemberID="viewController">
@@ -131,34 +132,25 @@
                             <outlet property="delegate" destination="8cV-d5-THO" id="tCy-Hq-wbu"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="faj-ib-eYG">
-                        <nil key="title"/>
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="gear" catalog="system" id="hbZ-3u-c9Y">
+                    <navigationItem key="navigationItem" title="GBA4iOS" id="faj-ib-eYG">
+                        <barButtonItem key="leftBarButtonItem" title="Settings" landscapeImage="gear" catalog="system" id="hbZ-3u-c9Y">
+                            <imageReference key="image" image="gear" catalog="system" variableValue="1"/>
                             <connections>
                                 <action selector="presentSettings:" destination="8cV-d5-THO" id="rOE-bb-Ca1"/>
                             </connections>
                         </barButtonItem>
-                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="vw4-Ob-Njc">
-                            <rect key="frame" x="88" y="5.6666666666666679" width="217" height="33"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <segments>
-                                <segment title="ALL"/>
-                                <segment title="GBA"/>
-                                <segment title="GBC"/>
-                            </segments>
-                            <connections>
-                                <action selector="switchROMTypes:" destination="8cV-d5-THO" eventType="valueChanged" id="peA-y8-8YM"/>
-                            </connections>
-                        </segmentedControl>
-                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="lhi-LK-iGI">
-                            <connections>
-                                <action selector="searchForROMs:" destination="8cV-d5-THO" id="4U1-ve-tRv"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem image="plus" catalog="system" landscapeImage="plus" style="plain" id="lhi-LK-iGI">
+                                <connections>
+                                    <action selector="searchForROMs:" destination="8cV-d5-THO" id="4U1-ve-tRv"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Filter" image="line.3.horizontal.decrease" catalog="system" landscapeImage="line.3.horizontal.decrease" style="plain" id="a1o-ls-KMJ"/>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
-                        <outlet property="romTypeSegmentedControl" destination="vw4-Ob-Njc" id="JRr-6i-pIu"/>
+                        <outlet property="filterButton" destination="a1o-ls-KMJ" id="nsc-25-m7h"/>
                         <outlet property="settingsButton" destination="hbZ-3u-c9Y" id="oIS-j2-UYi"/>
                     </connections>
                 </tableViewController>
@@ -367,6 +359,7 @@
     </scenes>
     <resources>
         <image name="gear" catalog="system" width="128" height="122"/>
+        <image name="line.3.horizontal.decrease" catalog="system" width="128" height="73"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="darkTextColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

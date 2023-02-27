@@ -52,8 +52,10 @@ typedef NS_ENUM(NSInteger, GBAVisibleROMType) {
 }
 
 @property (assign, nonatomic) GBAVisibleROMType visibleRomType;
-@property (weak, nonatomic) IBOutlet UISegmentedControl *romTypeSegmentedControl;
 @property (strong, nonatomic) NSMutableSet *currentUnzippingOperations;
+
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *filterButton;
+
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *settingsButton;
 @property (strong, nonatomic) UIPopoverController *activityPopoverController;
 @property (strong, nonatomic) NSIndexPath *selectedROMIndexPath;
@@ -69,7 +71,6 @@ typedef NS_ENUM(NSInteger, GBAVisibleROMType) {
 @property (strong, nonatomic) UIProgressView *downloadProgressView;
 @property (strong, nonatomic) NSMutableDictionary *currentDownloadsDictionary;
 
-- (IBAction)switchROMTypes:(UISegmentedControl *)segmentedControl;
 - (IBAction)searchForROMs:(UIBarButtonItem *)barButtonItem;
 - (IBAction)presentSettings:(UIBarButtonItem *)barButtonItem;
 
@@ -141,6 +142,21 @@ dispatch_queue_t directoryContentsChangedQueue() {
         [(GBASplitViewController *)self.splitViewController setEmulationDelegate:self];
     }
     
+    
+    NSMutableArray* actions = [[NSMutableArray alloc] init];
+    [actions addObject:[UIAction actionWithTitle:NSLocalizedString(@"ALL", @"") image:nil identifier:nil handler:^(__kindof UIAction* _Nonnull action) {
+        [self setRomType: GBAVisibleROMTypeAll];
+    }]];
+    [actions addObject:[UIAction actionWithTitle:NSLocalizedString(@"GBA", @"") image:nil identifier:nil handler:^(__kindof UIAction* _Nonnull action) {
+        [self setRomType: GBAVisibleROMTypeGBA];
+    }]];
+    [actions addObject:[UIAction actionWithTitle:NSLocalizedString(@"GBC", @"") image:nil identifier:nil handler:^(__kindof UIAction* _Nonnull action) {
+        [self setRomType: GBAVisibleROMTypeGBC];
+    }]];
+    
+    UIMenu *menu = [UIMenu menuWithTitle:NSLocalizedString(@"Filter games", @"") children:actions];
+    self.filterButton.menu = menu;
+    
 }
 
 - (UIContextMenuConfiguration *)tableView:(UITableView *)tableView contextMenuConfigurationForRowAtIndexPath:(NSIndexPath *)indexPath point:(CGPoint)point {
@@ -201,6 +217,9 @@ dispatch_queue_t directoryContentsChangedQueue() {
     {
         [self.tableView scrollToRowAtIndexPath:self.selectedROMIndexPath atScrollPosition:UITableViewScrollPositionMiddle animated:NO];
     }
+    
+//    self.navigationController.navigationBar.prefersLargeTitles = true;
+    self.navigationController.navigationBar.tintColor = UIColor.secondaryLabelColor;
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -253,25 +272,6 @@ dispatch_queue_t directoryContentsChangedQueue() {
 {
     [super viewWillLayoutSubviews];
     
-    self.romTypeSegmentedControl.frame = ({
-        CGRect frame = self.romTypeSegmentedControl.frame;
-        frame.size.width = self.navigationController.navigationBar.bounds.size.width - (self.navigationItem.leftBarButtonItem.width + self.navigationItem.rightBarButtonItem.width);
-        
-        if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
-        {
-            if (UIInterfaceOrientationIsPortrait(self.interfaceOrientation))
-            {
-                frame.size.height = 29.0f;
-            }
-            else
-            {
-                frame.size.height = 25.0f;
-            }
-        }
-        
-        frame;
-    });
-    // Fixes a bug with the status bar hiding after the transition between emulation view and the ROM tableview when the device is rotated while emulation is running
 //    [[UIApplication sharedApplication] setStatusBarHidden:[self prefersStatusBarHidden]];
 }
 
@@ -1638,14 +1638,6 @@ dispatch_queue_t directoryContentsChangedQueue() {
 
 #pragma mark - IBActions
 
-- (IBAction)switchROMTypes:(UISegmentedControl *)segmentedControl
-{
-    self.selectedROMIndexPath = nil;
-    
-    GBAVisibleROMType romType = (GBAVisibleROMType)segmentedControl.selectedSegmentIndex;
-    self.romType = romType;
-}
-
 - (IBAction)presentSettings:(UIBarButtonItem *)barButtonItem
 {
     GBASettingsViewController *settingsViewController = [[GBASettingsViewController alloc] init];
@@ -1681,7 +1673,7 @@ dispatch_queue_t directoryContentsChangedQueue() {
 
 - (void)setRomType:(GBAVisibleROMType)romType
 {
-    self.romTypeSegmentedControl.selectedSegmentIndex = romType;
+//    self.romTypeSegmentedControl.selectedSegmentIndex = romType;
     [[NSUserDefaults standardUserDefaults] setInteger:romType forKey:@"romType"];
     
     switch (romType) {
@@ -1710,18 +1702,6 @@ dispatch_queue_t directoryContentsChangedQueue() {
     }*/
     
     _theme = theme;
-    
-    switch (theme) {
-        case GBAThemedTableViewControllerThemeOpaque:
-            [self.romTypeSegmentedControl setTitleTextAttributes:@{NSForegroundColorAttributeName: GBA4iOS_PURPLE_COLOR} forState:UIControlStateNormal];
-            [self.romTypeSegmentedControl setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]} forState:UIControlStateSelected];
-            break;
-            
-        case GBAThemedTableViewControllerThemeTranslucent:
-            [self.romTypeSegmentedControl setTitleTextAttributes:@{NSForegroundColorAttributeName: UIColor.labelColor} forState:UIControlStateNormal];
-            [self.romTypeSegmentedControl setTitleTextAttributes:@{NSForegroundColorAttributeName: UIColor.labelColor} forState:UIControlStateSelected];
-            break;
-    }
     
     [self updateTheme];
     

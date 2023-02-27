@@ -664,6 +664,14 @@
 /* No comment provided by engineer. */
 "Delete" = "Löschen";
 
+/* No comment provided by engineer. */
 "Quit game?" = "Spiel beenden?";
 
+/* No comment provided by engineer. */
 "If you quit this game all unsaved data will be lost." = "Alle ungespeicherten Spielstände gehen verloren.";
+
+/* No comment provided by engineer. */
+"Filter games" = "Spiele filtern";
+
+/* No comment provided by engineer. */
+"ALL" = "ALLE";
