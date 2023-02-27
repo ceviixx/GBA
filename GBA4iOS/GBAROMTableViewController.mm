@@ -1068,8 +1068,21 @@ dispatch_queue_t directoryContentsChangedQueue() {
 //    cell.textLabel.backgroundColor = [UIColor clearColor];
 //    cell.detailTextLabel.backgroundColor = [UIColor clearColor];
     UIView *backgroundView = [[UIView alloc] initWithFrame:CGRectZero];
-    backgroundView.backgroundColor = UIColor.tintColor;
-    backgroundView.alpha = 0.6;
+//    backgroundView.backgroundColor = UIColor.tintColor;
+    backgroundView.backgroundColor = UIColor.clearColor;
+//    backgroundView.alpha = 0.6;
+    
+    
+    CGFloat activeF = 10;
+    CGFloat cellHeight = (cell.frame.size.height - activeF) / 2;
+    CGSize textSize = [cell.textLabel.text sizeWithAttributes:@{NSFontAttributeName:[cell.textLabel font]}];
+    UIView *active = [[UIView alloc] initWithFrame:CGRectMake(textSize.width + 25, cellHeight, activeF, activeF)];
+    active.backgroundColor = UIColor.systemGreenColor;
+    active.layer.cornerRadius = activeF / 2;
+    active.layer.masksToBounds = true;
+    [backgroundView addSubview:active];
+    
+    
     
     cell.backgroundView = backgroundView;
 }
