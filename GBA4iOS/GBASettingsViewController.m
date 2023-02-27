@@ -312,7 +312,6 @@ NSString *const GBASettingsDropboxStatusChangedNotification = @"GBASettingsDropb
         NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:[self tableView:tableView titleForFooterInSection:section]];
         [attributedString addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:12.0f weight:UIFontWeightBold] range:NSMakeRange(12, 23)];
         
-        
         UILabel *versionLabel = [[UILabel alloc] init];
         versionLabel.textAlignment = NSTextAlignmentCenter;
         versionLabel.numberOfLines = 0;

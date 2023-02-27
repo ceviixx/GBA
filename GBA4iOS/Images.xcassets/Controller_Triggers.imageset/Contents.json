@@ -17,6 +17,7 @@
       "scale" : "1x"
     },
     {
+      "filename" : "Controller_Triggers_Light_Mode@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
@@ -27,10 +28,12 @@
           "value" : "dark"
         }
       ],
+      "filename" : "Controller_Triggers_Dark_Mode@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "Controller_Triggers_Light_Mode@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     },
@@ -41,6 +44,7 @@
           "value" : "dark"
         }
       ],
+      "filename" : "Controller_Triggers_Dark_Mode@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
