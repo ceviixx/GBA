@@ -592,8 +592,6 @@ dispatch_queue_t directoryContentsChangedQueue() {
     
     NSString *lowercaseFileExtension = [filename.pathExtension lowercaseString];
     
-    cell.accessoryView = nil;
-    
     if ([self isDownloadingFile:filename] || [self.unavailableFiles containsObject:filename])
     {
         cell.userInteractionEnabled = NO;
@@ -1062,16 +1060,8 @@ dispatch_queue_t directoryContentsChangedQueue() {
 
 - (void)highlightCell:(UITableViewCell *)cell
 {
-    cell.textLabel.textColor = [UIColor whiteColor];
-//    cell.detailTextLabel.textColor = [UIColor colorWithWhite:0.8 alpha:1.0];
-    cell.detailTextLabel.textColor = UIColor.clearColor;
-//    cell.textLabel.backgroundColor = [UIColor clearColor];
-//    cell.detailTextLabel.backgroundColor = [UIColor clearColor];
     UIView *backgroundView = [[UIView alloc] initWithFrame:CGRectZero];
-//    backgroundView.backgroundColor = UIColor.tintColor;
     backgroundView.backgroundColor = UIColor.clearColor;
-//    backgroundView.alpha = 0.6;
-    
     
     CGFloat activeF = 10;
     CGFloat cellHeight = (cell.frame.size.height - activeF) / 2;
@@ -1081,8 +1071,6 @@ dispatch_queue_t directoryContentsChangedQueue() {
     active.layer.cornerRadius = activeF / 2;
     active.layer.masksToBounds = true;
     [backgroundView addSubview:active];
-    
-    
     
     cell.backgroundView = backgroundView;
 }
@@ -1140,7 +1128,6 @@ dispatch_queue_t directoryContentsChangedQueue() {
     app.shortcutItems = @[runGame];
     */
     // SET Short Cut Item with latest played game
-    
     GBAROM *rom = [GBAROM romWithContentsOfFile:filepath];
     [self startROM:rom];
 }

@@ -266,7 +266,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Type" footerTitle="Code format is XXXXXXXX YYYYYYYY." id="rb8-cQ-kZU">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CheatTypeCell" id="gAs-q5-UHI" customClass="GBASettingsTableViewCell">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CheatTypeCell" rowHeight="44" id="gAs-q5-UHI" customClass="GBASettingsTableViewCell">
                                         <rect key="frame" x="20" y="162.66666221618652" width="353" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gAs-q5-UHI" id="Goz-4w-FPB">
@@ -274,7 +274,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fl2-uD-BuI">
-                                                    <rect key="frame" x="10" y="8" width="333" height="30"/>
+                                                    <rect key="frame" x="10" y="6.6666666666666679" width="333" height="32"/>
                                                     <segments>
                                                         <segment title="Action Replay"/>
                                                         <segment title="GameShark"/>
@@ -287,10 +287,9 @@
                                             </subviews>
                                             <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="fl2-uD-BuI" secondAttribute="bottom" constant="7" id="Eu7-T9-FsC"/>
                                                 <constraint firstAttribute="trailing" secondItem="fl2-uD-BuI" secondAttribute="trailing" constant="10" id="ZyV-Jc-kKS"/>
-                                                <constraint firstItem="fl2-uD-BuI" firstAttribute="top" secondItem="Goz-4w-FPB" secondAttribute="top" constant="8" id="caT-Qf-r8s"/>
                                                 <constraint firstItem="fl2-uD-BuI" firstAttribute="leading" secondItem="Goz-4w-FPB" secondAttribute="leading" constant="10" id="mI0-pC-NtH"/>
+                                                <constraint firstItem="fl2-uD-BuI" firstAttribute="centerY" secondItem="Goz-4w-FPB" secondAttribute="centerY" id="zDl-OM-3Fp"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -365,24 +364,6 @@
             </objects>
             <point key="canvasLocation" x="3788.5496183206105" y="153.52112676056339"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="JVY-dn-zYk">
-            <objects>
-                <viewController storyboardIdentifier="peekPreviewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UGy-Fi-178" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="In2-8u-Tr5"/>
-                        <viewControllerLayoutGuide type="bottom" id="3BX-jG-F00"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="c4t-f1-lRb">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6Oh-nV-vnx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4506" y="154"/>
-        </scene>
     </scenes>
     <resources>
         <image name="gear" catalog="system" width="128" height="122"/>
@@ -398,9 +379,6 @@
         </systemColor>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGroupedBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
