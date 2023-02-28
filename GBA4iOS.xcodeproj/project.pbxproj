@@ -25,6 +25,10 @@
 		39DBCF3B29ABE22200A4CCF1 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 39DBCF3029ABE22200A4CCF1 /* Default-Portrait~ipad.png */; };
 		39DBCF3C29ABE22200A4CCF1 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 39DBCF3129ABE22200A4CCF1 /* Default@2x.png */; };
 		39DBCF3D29ABE22200A4CCF1 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 39DBCF3129ABE22200A4CCF1 /* Default@2x.png */; };
+		39DBCF6729AE1AB100A4CCF1 /* WelcomeScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DBCF6529AE1AB100A4CCF1 /* WelcomeScreen.m */; };
+		39DBCF6829AE1AB100A4CCF1 /* WelcomeScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DBCF6529AE1AB100A4CCF1 /* WelcomeScreen.m */; };
+		39DBCF6929AE1AB100A4CCF1 /* WelcomeScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39DBCF6629AE1AB100A4CCF1 /* WelcomeScreen.xib */; };
+		39DBCF6A29AE1AB100A4CCF1 /* WelcomeScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39DBCF6629AE1AB100A4CCF1 /* WelcomeScreen.xib */; };
 		AED1727B0C66F5B4067FF536 /* libPods-GBA4iOS-Simulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB593B152ECAB4C31CAC7F4A /* libPods-GBA4iOS-Simulator.a */; };
 		BF02AFDB182F3E590031B8B6 /* GBASyncingOverviewViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BF02AFDA182F3E590031B8B6 /* GBASyncingOverviewViewController.mm */; };
 		BF02AFDF182F6E200031B8B6 /* GBASyncingDetailViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BF02AFDE182F6E200031B8B6 /* GBASyncingDetailViewController.mm */; };
@@ -491,6 +495,9 @@
 		39DBCF2F29ABE22100A4CCF1 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
 		39DBCF3029ABE22200A4CCF1 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
 		39DBCF3129ABE22200A4CCF1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		39DBCF6429AE1AB100A4CCF1 /* WelcomeScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WelcomeScreen.h; sourceTree = "<group>"; };
+		39DBCF6529AE1AB100A4CCF1 /* WelcomeScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WelcomeScreen.m; sourceTree = "<group>"; };
+		39DBCF6629AE1AB100A4CCF1 /* WelcomeScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeScreen.xib; sourceTree = "<group>"; };
 		435533468BE0AFA9062BB305 /* Pods-GBA4iOS-Simulator.enterprise.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBA4iOS-Simulator.enterprise.xcconfig"; path = "Pods/Target Support Files/Pods-GBA4iOS-Simulator/Pods-GBA4iOS-Simulator.enterprise.xcconfig"; sourceTree = "<group>"; };
 		8918774AC40A694CD1822D06 /* Pods-GBA4iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBA4iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-GBA4iOS/Pods-GBA4iOS.release.xcconfig"; sourceTree = "<group>"; };
 		93DEC42F154D6D497A1FA930 /* Pods-GBA4iOS-Simulator.jailbreak.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBA4iOS-Simulator.jailbreak.xcconfig"; path = "Pods/Target Support Files/Pods-GBA4iOS-Simulator/Pods-GBA4iOS-Simulator.jailbreak.xcconfig"; sourceTree = "<group>"; };
@@ -1017,6 +1024,16 @@
 				39DBCF3129ABE22200A4CCF1 /* Default@2x.png */,
 			);
 			path = SplashScreenImages;
+			sourceTree = "<group>";
+		};
+		39DBCF6329AE1A8300A4CCF1 /* WelcomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				39DBCF6629AE1AB100A4CCF1 /* WelcomeScreen.xib */,
+				39DBCF6429AE1AB100A4CCF1 /* WelcomeScreen.h */,
+				39DBCF6529AE1AB100A4CCF1 /* WelcomeScreen.m */,
+			);
+			name = WelcomeScreen;
 			sourceTree = "<group>";
 		};
 		7D3FD93519510A8BED28BBEB /* Pods */ = {
@@ -1554,6 +1571,7 @@
 				CC2D573F1798F44700C616EB /* GBAROMTableViewController.h */,
 				CC2D57401798F44700C616EB /* GBAROMTableViewController.mm */,
 				BF8C11461A2D01DF00126A3D /* GBANoGamesView.xib */,
+				39DBCF6329AE1A8300A4CCF1 /* WelcomeScreen */,
 				BF73C2ED1822EA2F00DD69FD /* Dropbox Sync */,
 				CC7AC2EB17C694E800FB7642 /* Emulation */,
 				CCE3CDF917AE9E4500FAB9C8 /* Settings */,
@@ -2060,6 +2078,7 @@
 				39DBCF3329ABE22200A4CCF1 /* Default-568h@2x.png in Resources */,
 				BF2F35CB183FF6F9002ACE90 /* padButton.png in Resources */,
 				39DBCF3D29ABE22200A4CCF1 /* Default@2x.png in Resources */,
+				39DBCF6A29AE1AB100A4CCF1 /* WelcomeScreen.xib in Resources */,
 				39DBCF3929ABE22200A4CCF1 /* Default-Portrait@2x~ipad.png in Resources */,
 				BF8C11441A2D01DF00126A3D /* GBANoGamesView.xib in Resources */,
 				39DBCF3B29ABE22200A4CCF1 /* Default-Portrait~ipad.png in Resources */,
@@ -2092,6 +2111,7 @@
 				1A5BAE7F17D04B0A00BABC01 /* overlays128.png in Resources */,
 				CC5044E71814C474009F7B9E /* Default.gbcskin in Resources */,
 				BF3B2B771A2E3F3500301AE1 /* GBA4iOS-InfoPlist.strings in Resources */,
+				39DBCF6929AE1AB100A4CCF1 /* WelcomeScreen.xib in Resources */,
 				39DBCF3229ABE22200A4CCF1 /* Default-568h@2x.png in Resources */,
 				BF40C33019E09974003C73B5 /* Intro.mp4 in Resources */,
 				BF8C11471A2D01ED00126A3D /* Settings.storyboard in Resources */,
@@ -2293,6 +2313,7 @@
 				BF2F3534183FF6F9002ACE90 /* GBASettingsViewController.m in Sources */,
 				BF2F353B183FF6F9002ACE90 /* main.mm in Sources */,
 				BF216BDD1868DEBD000A0DB8 /* SMCalloutView.m in Sources */,
+				39DBCF6829AE1AB100A4CCF1 /* WelcomeScreen.m in Sources */,
 				BF02D2C9197347740034A515 /* GBASoftwareUpdateOperation.m in Sources */,
 				BF6ED579185102D40014B6A8 /* GBASyncInitialSyncOperation.mm in Sources */,
 				BF2F353E183FF6F9002ACE90 /* UIImage+ImageEffects.m in Sources */,
@@ -2433,6 +2454,7 @@
 				CC157AEE179D1BC60068A54E /* pngtrans.c in Sources */,
 				CCC9B8A21815AC7E005C90EE /* kaiser50sinc.cpp in Sources */,
 				CCC9B8A61815AC7E005C90EE /* u48div.cpp in Sources */,
+				39DBCF6729AE1AB100A4CCF1 /* WelcomeScreen.m in Sources */,
 				CCFA7237179D340400768D24 /* apple.mm in Sources */,
 				BF47B37319C6B3FF00030431 /* GBAPeer.m in Sources */,
 				BF3E2BBB18206D64004231F6 /* RSTFileBrowserViewController.m in Sources */,

@@ -20,6 +20,7 @@
 #import "GBAAppDelegate.h"
 #import "NSFileManager+ForcefulMove.h"
 #import "GBAWebViewController.h"
+#import "WelcomeScreen.h"
 
 #import <Crashlytics/Crashlytics.h>
 
@@ -78,6 +79,7 @@ typedef NS_ENUM(NSInteger, GBAVisibleROMType) {
 
 @implementation GBAROMTableViewController
 @synthesize theme = _theme;
+
 
 
 
@@ -145,15 +147,8 @@ dispatch_queue_t directoryContentsChangedQueue() {
         [(GBASplitViewController *)self.splitViewController setEmulationDelegate:self];
     }
     
-    
-    /*
-    UISearchController *search = [[UISearchController alloc] initWithSearchResultsController:nil];
-    [self navigationItem].searchController = search;
-    */
-    
     [self setupFilterMenu:@"all"];
 }
-
 
 -(void) setupFilterMenu:(NSString *) activeRomType
 {
@@ -894,7 +889,15 @@ dispatch_queue_t directoryContentsChangedQueue() {
             [[GBASyncManager sharedManager] start];
         });
         
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (![[NSUserDefaults standardUserDefaults] objectForKey:@"showedWarningAlert"])
+            {
+                WelcomeScreen *test = [[WelcomeScreen alloc] initWithNibName:@"WelcomeScreen" bundle:nil];
+                [self presentViewController:test animated:true completion:nil];
+            }
+        });
     });
+    
     
 }
 #pragma mark - Filepaths

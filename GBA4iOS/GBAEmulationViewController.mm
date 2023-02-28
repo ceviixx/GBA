@@ -122,7 +122,6 @@ static GBAEmulationViewController *_emulationViewController;
 {
     [super viewDidLoad];
     
-    
 #if !(TARGET_IPHONE_SIMULATOR)
     self.emulatorScreen.backgroundColor = [UIColor blackColor]; // It's set to blue in the storyboard for easier visual debugging
 #endif
