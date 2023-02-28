@@ -146,6 +146,11 @@ dispatch_queue_t directoryContentsChangedQueue() {
     }
     
     
+    /*
+    UISearchController *search = [[UISearchController alloc] initWithSearchResultsController:nil];
+    [self navigationItem].searchController = search;
+    */
+    
     [self setupFilterMenu:@"all"];
 }
 

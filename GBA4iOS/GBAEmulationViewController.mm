@@ -116,9 +116,12 @@ static GBAEmulationViewController *_emulationViewController;
     return self;
 }
 
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     
 #if !(TARGET_IPHONE_SIMULATOR)
     self.emulatorScreen.backgroundColor = [UIColor blackColor]; // It's set to blue in the storyboard for easier visual debugging
@@ -1071,6 +1074,7 @@ static GBAEmulationViewController *_emulationViewController;
     
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
     {
+//        Display ActionSheet
         [self.pausedActionSheet showInView:self.view selectionHandler:selectionHandler];
         
         return;
@@ -1099,8 +1103,10 @@ static GBAEmulationViewController *_emulationViewController;
         convertedRect.size.width = self.controllerView.bounds.size.width;
     }
     
+    
     [self.pausedActionSheet showFromRect:convertedRect inView:self.view animated:YES selectionHandler:selectionHandler];
 }
+
 
 - (unsigned int)numberOfCPUCoresForCurrentDevice
 {
