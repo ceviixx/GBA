@@ -79,6 +79,8 @@ typedef NS_ENUM(NSInteger, GBAVisibleROMType) {
 @implementation GBAROMTableViewController
 @synthesize theme = _theme;
 
+
+
 dispatch_queue_t directoryContentsChangedQueue() {
     static dispatch_once_t queueCreationGuard;
     static dispatch_queue_t queue;
@@ -123,6 +125,7 @@ dispatch_queue_t directoryContentsChangedQueue() {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -143,20 +146,35 @@ dispatch_queue_t directoryContentsChangedQueue() {
     }
     
     
-    NSMutableArray* actions = [[NSMutableArray alloc] init];
-    [actions addObject:[UIAction actionWithTitle:NSLocalizedString(@"ALL", @"") image:nil identifier:nil handler:^(__kindof UIAction* _Nonnull action) {
+    [self setupFilterMenu:@"all"];
+}
+
+
+-(void) setupFilterMenu:(NSString *) activeRomType
+{
+    
+    NSMutableArray* filterActions = [[NSMutableArray alloc] init];
+    [filterActions addObject:[
+        UIAction actionWithTitle:NSLocalizedString(@"ALL", @"") image:nil identifier:@"all" handler:^(__kindof UIAction* _Nonnull action) {
         [self setRomType: GBAVisibleROMTypeAll];
     }]];
-    [actions addObject:[UIAction actionWithTitle:NSLocalizedString(@"GBA", @"") image:nil identifier:nil handler:^(__kindof UIAction* _Nonnull action) {
+    [filterActions addObject:[UIAction actionWithTitle:NSLocalizedString(@"Gameboy Advance", @"") image:nil identifier:@"gba" handler:^(__kindof UIAction* _Nonnull action) {
         [self setRomType: GBAVisibleROMTypeGBA];
     }]];
-    [actions addObject:[UIAction actionWithTitle:NSLocalizedString(@"GBC", @"") image:nil identifier:nil handler:^(__kindof UIAction* _Nonnull action) {
+    [filterActions addObject:[UIAction actionWithTitle:NSLocalizedString(@"Comeboy Color", @"") image:nil identifier:@"gbc" handler:^(__kindof UIAction* _Nonnull action) {
         [self setRomType: GBAVisibleROMTypeGBC];
     }]];
     
-    UIMenu *menu = [UIMenu menuWithTitle:NSLocalizedString(@"Filter games", @"") children:actions];
-    self.filterButton.menu = menu;
+    for (UIAction *action in filterActions)
+    {
+        if (action.identifier == activeRomType)
+        {
+            action.state = UIMenuElementStateOn;
+        }
+    }
     
+    UIMenu *filterMenu = [UIMenu menuWithTitle:NSLocalizedString(@"Filter games", @"") children:filterActions];
+    self.filterButton.menu = filterMenu;
 }
 
 - (UIContextMenuConfiguration *)tableView:(UITableView *)tableView contextMenuConfigurationForRowAtIndexPath:(NSIndexPath *)indexPath point:(CGPoint)point {
@@ -218,7 +236,7 @@ dispatch_queue_t directoryContentsChangedQueue() {
         [self.tableView scrollToRowAtIndexPath:self.selectedROMIndexPath atScrollPosition:UITableViewScrollPositionMiddle animated:NO];
     }
     
-//    self.navigationController.navigationBar.prefersLargeTitles = true;
+    self.navigationController.navigationBar.prefersLargeTitles = true;
     self.navigationController.navigationBar.tintColor = UIColor.secondaryLabelColor;
 }
 
@@ -1674,19 +1692,23 @@ dispatch_queue_t directoryContentsChangedQueue() {
 - (void)setRomType:(GBAVisibleROMType)romType
 {
 //    self.romTypeSegmentedControl.selectedSegmentIndex = romType;
+    
     [[NSUserDefaults standardUserDefaults] setInteger:romType forKey:@"romType"];
     
     switch (romType) {
         case GBAVisibleROMTypeAll:
             self.supportedFileExtensions = @[@"gba", @"gbc", @"gb", @"zip"];
+            [self setupFilterMenu:@"all"];
             break;
             
         case GBAVisibleROMTypeGBA:
             self.supportedFileExtensions = @[@"gba", @"gba"];
+            [self setupFilterMenu:@"gba"];
             break;
             
         case GBAVisibleROMTypeGBC:
             self.supportedFileExtensions = @[@"gb", @"gbc", @"gbc"];
+            [self setupFilterMenu:@"gbc"];
             break;
     }
     
