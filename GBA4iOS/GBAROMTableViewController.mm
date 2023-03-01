@@ -48,7 +48,7 @@ typedef NS_ENUM(NSInteger, GBAVisibleROMType) {
 
 // PEEK POP
 // UIViewControllerPreviewingDelegate, UIViewControllerPreviewing
-@interface GBAROMTableViewController () <RSTWebViewControllerDownloadDelegate, UIAlertViewDelegate, UIViewControllerTransitioningDelegate, UIPopoverControllerDelegate, RSTWebViewControllerDelegate, GBASettingsViewControllerDelegate, GBASyncingDetailViewControllerDelegate, GBASplitViewControllerEmulationDelegate>
+@interface GBAROMTableViewController () <RSTWebViewControllerDownloadDelegate, UIAlertViewDelegate, UIViewControllerTransitioningDelegate, UIPopoverControllerDelegate, RSTWebViewControllerDelegate, GBASettingsViewControllerDelegate, GBASyncingDetailViewControllerDelegate, GBASplitViewControllerEmulationDelegate, UITextFieldDelegate>
 {
     BOOL _performedInitialRefreshDirectory;
 }
@@ -75,6 +75,7 @@ typedef NS_ENUM(NSInteger, GBAVisibleROMType) {
 
 - (IBAction)searchForROMs:(UIBarButtonItem *)barButtonItem;
 - (IBAction)presentSettings:(UIBarButtonItem *)barButtonItem;
+
 
 @end
 
@@ -196,10 +197,37 @@ dispatch_queue_t directoryContentsChangedQueue() {
         
         if (![self.emulationViewController.rom isEqual:rom]) {
             [actions addObject:[UIAction actionWithTitle:NSLocalizedString(@"Rename", @"") image:[UIImage systemImageNamed:@"pencil"] identifier:nil handler:^(__kindof UIAction* _Nonnull action) {
-                [self showRenameAlertForROMAtIndexPath:indexPath];
+//                [self showRenameAlertForROMAtIndexPath:indexPath];
+                
+                
+                UITapGestureRecognizer *cancelRenamingGesture = [[UITapGestureRecognizer alloc] initWithTarget:self
+                                                          action:@selector(cancelRenameRomName:)];
+                [self.view addGestureRecognizer:cancelRenamingGesture];
+                
+                
+                [tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionMiddle animated:true];
+                RSTFileBrowserTableViewCell *renamingCell = [tableView cellForRowAtIndexPath:indexPath];
+                [[renamingCell textLabel] setHidden:true];
+                [[renamingCell detailTextLabel] setHidden:true];
+                
+                UITextField *renameText = [[UITextField alloc] initWithFrame:CGRectMake(15, 0, renamingCell.frame.size.width - 25, renamingCell.frame.size.height)];
+                [renameText setTag:99];
+                [renameText setAutocorrectionType:UITextAutocorrectionTypeYes];
+                [renameText setReturnKeyType:UIReturnKeyDone];
+                [renameText setText:romName];
+                [renameText setPlaceholder:romName];
+                [renameText setClearButtonMode:UITextFieldViewModeAlways];
+                [renameText setDelegate:self];
+                [renameText addTarget:self action:@selector(updateRomName:) forControlEvents:UIControlEventEditingDidEndOnExit];
+                [renameText forwardingTargetForSelector:@selector(updateRomName:)];
+                
+                [renamingCell addSubview:renameText];
+                [renameText becomeFirstResponder];
+                
+                [[self tableView] setScrollEnabled:false];
+                [[self tableView] setAllowsSelection:false];
             }]];
         }
-        
         
         [actions addObject:[UIAction actionWithTitle:NSLocalizedString(@"Cheats", @"") image:[UIImage systemImageNamed:@"ellipsis.curlybraces"] identifier:nil handler:^(__kindof UIAction * _Nonnull action) {
             GBACheatManagerViewController *cheatManagerViewController = [[GBACheatManagerViewController alloc] initWithROM:rom];
@@ -225,7 +253,7 @@ dispatch_queue_t directoryContentsChangedQueue() {
             UIStackView *stackVw = [[UIStackView alloc]initWithArrangedSubviews:@[title,subtitle]];
             stackVw.distribution = UIStackViewDistributionEqualCentering;
             stackVw.axis = UILayoutConstraintAxisVertical;
-            stackVw.alignment =UIStackViewAlignmentCenter;
+            stackVw.alignment = UIStackViewAlignmentCenter;
             
             [stackVw setFrame:CGRectMake(0, 0, MAX(title.frame.size.width, subtitle.frame.size.width), 35)];
             
@@ -242,7 +270,45 @@ dispatch_queue_t directoryContentsChangedQueue() {
     
 }
 
+- (void) updateRomName:(UITextField*) textField {
+    RSTFileBrowserTableViewCell *cell = [textField superview];
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:cell.detailTextLabel.tag inSection:cell.textLabel.tag];
+    NSString *newName = [textField text];
+    
+    if ([[textField text] length] == 0) {
+        newName = [textField placeholder];
+    }
+    
+    [self renameROMAtIndexPath:indexPath toName:newName];
+    
+    [[cell textLabel] setText:newName];
+    [[cell textLabel] setHidden:false];
+    [[cell detailTextLabel] setHidden:false];
+    [textField removeFromSuperview];
+    [[self tableView] setScrollEnabled:true];
+    [[self tableView] setAllowsSelection:true];
+}
 
+
+// Takes a long time or multible touches to go back to normal view
+// Check this out later
+- (void) cancelRenameRomName:(UITapGestureRecognizer *)recognizer {
+    NSLog(@"Cancel renaming tap");
+    
+    CGPoint location = [recognizer locationInView:[recognizer.view superview]];
+    NSIndexPath *indexPath = [[self tableView] indexPathForRowAtPoint:location];
+    RSTFileBrowserTableViewCell *cell = [[self tableView] cellForRowAtIndexPath:indexPath];
+    
+    UITextField *textField = [cell viewWithTag:99];
+    [textField resignFirstResponder];
+    [textField removeFromSuperview];
+    
+    [[cell textLabel] setHidden:false];
+    [[cell detailTextLabel] setHidden:false];
+    
+    [[self tableView] setScrollEnabled:true];
+    [[self tableView] setAllowsSelection:true];
+}
 
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -643,6 +709,9 @@ dispatch_queue_t directoryContentsChangedQueue() {
     NSString *filename = [self filenameForIndexPath:indexPath];
     
     [self themeTableViewCell:cell];
+    
+    cell.textLabel.tag = indexPath.section;
+    cell.detailTextLabel.tag = indexPath.row;
     
     NSString *lowercaseFileExtension = [filename.pathExtension lowercaseString];
     
