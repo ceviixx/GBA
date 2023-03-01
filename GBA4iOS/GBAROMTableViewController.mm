@@ -188,48 +188,79 @@ dispatch_queue_t directoryContentsChangedQueue() {
     UIContextMenuConfiguration* config = [UIContextMenuConfiguration configurationWithIdentifier:nil
                                                                                  previewProvider:nil
                                                                                   actionProvider:^UIMenu* _Nullable(NSArray<UIMenuElement*>* _Nonnull suggestedActions) {
+        
+        UIAction *deleteAction = [UIAction actionWithTitle:NSLocalizedString(@"Delete", @"") image:[UIImage systemImageNamed:@"trash"] identifier:nil handler:^(__kindof UIAction* _Nonnull action) {
+            [self deleteForAtIndexPath:indexPath];
+        }];
+        
+        UIAction *renameAction = [UIAction actionWithTitle:NSLocalizedString(@"Rename", @"") image:[UIImage systemImageNamed:@"pencil"] identifier:nil handler:^(__kindof UIAction* _Nonnull action) {
+            UITapGestureRecognizer *cancelRenamingGesture = [[UITapGestureRecognizer alloc] initWithTarget:self
+                                                                      action:@selector(cancelRenameRomName:)];
+            [self.view addGestureRecognizer:cancelRenamingGesture];
+            
+            
+            [tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionMiddle animated:true];
+            RSTFileBrowserTableViewCell *renamingCell = [tableView cellForRowAtIndexPath:indexPath];
+            [[renamingCell textLabel] setHidden:true];
+            [[renamingCell detailTextLabel] setHidden:true];
+            
+            UITextField *renameText = [[UITextField alloc] initWithFrame:CGRectMake(15, 0, renamingCell.frame.size.width - 25, renamingCell.frame.size.height)];
+            [renameText setTag:99];
+            [renameText setAutocorrectionType:UITextAutocorrectionTypeYes];
+            [renameText setReturnKeyType:UIReturnKeyDone];
+            [renameText setText:romName];
+            [renameText setPlaceholder:romName];
+            [renameText setClearButtonMode:UITextFieldViewModeAlways];
+            [renameText setDelegate:self];
+            [renameText addTarget:self action:@selector(updateRomName:) forControlEvents:UIControlEventEditingDidEndOnExit];
+            [renameText forwardingTargetForSelector:@selector(updateRomName:)];
+            
+            [renamingCell addSubview:renameText];
+            [renameText becomeFirstResponder];
+            
+            [[self tableView] setScrollEnabled:false];
+            [[self tableView] setAllowsSelection:false];
 
-        NSMutableArray* actions = [[NSMutableArray alloc] init];
-
-        [actions addObject:[UIAction actionWithTitle:NSLocalizedString(@"Share", @"") image:[UIImage systemImageNamed:@"square.and.arrow.up"] identifier:nil handler:^(__kindof UIAction* _Nonnull action) {
+        }];
+        
+        UIMenu* editMenu = [UIMenu menuWithTitle:@"" image:nil identifier:nil options:UIMenuOptionsDisplayInline children:@[renameAction, deleteAction]];
+        
+        
+        
+        
+        UIAction *closeGameAction = [UIAction actionWithTitle:NSLocalizedString(@"Quit", @"") image:nil identifier:nil handler:^(__kindof UIAction * _Nonnull action) {
+            
+            
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Quit game?", @"")
+                                                            message:NSLocalizedString(@"If you quit this game all unsaved data will be lost.", @"")
+                                                           delegate:nil
+                                                  cancelButtonTitle:NSLocalizedString(@"Cancel", @"")
+                                                  otherButtonTitles:NSLocalizedString(@"Quit", @""), nil];
+            [alert showWithSelectionHandler:^(UIAlertView *alertView, NSInteger buttonIndex) {
+                if (buttonIndex == 1)
+                {
+                    self.emulationViewController.rom = nil;
+                    [self.tableView reloadData];
+                }
+                if (buttonIndex == 0)
+                {
+                    [self.tableView reloadData];
+                }
+            }];
+            
+            
+        }];
+        
+        UIMenu *closeGameMenu = [UIMenu menuWithTitle:@"" image:nil identifier:nil options:UIMenuOptionsDisplayInline children:@[closeGameAction]];
+        
+        
+        
+        
+        UIAction *shareAction = [UIAction actionWithTitle:NSLocalizedString(@"Share", @"") image:[UIImage systemImageNamed:@"square.and.arrow.up"] identifier:nil handler:^(__kindof UIAction* _Nonnull action) {
             [self shareROMAtIndexPath:indexPath];
-        }]];
+        }];
         
-        if (![self.emulationViewController.rom isEqual:rom]) {
-            [actions addObject:[UIAction actionWithTitle:NSLocalizedString(@"Rename", @"") image:[UIImage systemImageNamed:@"pencil"] identifier:nil handler:^(__kindof UIAction* _Nonnull action) {
-//                [self showRenameAlertForROMAtIndexPath:indexPath];
-                
-                
-                UITapGestureRecognizer *cancelRenamingGesture = [[UITapGestureRecognizer alloc] initWithTarget:self
-                                                          action:@selector(cancelRenameRomName:)];
-                [self.view addGestureRecognizer:cancelRenamingGesture];
-                
-                
-                [tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionMiddle animated:true];
-                RSTFileBrowserTableViewCell *renamingCell = [tableView cellForRowAtIndexPath:indexPath];
-                [[renamingCell textLabel] setHidden:true];
-                [[renamingCell detailTextLabel] setHidden:true];
-                
-                UITextField *renameText = [[UITextField alloc] initWithFrame:CGRectMake(15, 0, renamingCell.frame.size.width - 25, renamingCell.frame.size.height)];
-                [renameText setTag:99];
-                [renameText setAutocorrectionType:UITextAutocorrectionTypeYes];
-                [renameText setReturnKeyType:UIReturnKeyDone];
-                [renameText setText:romName];
-                [renameText setPlaceholder:romName];
-                [renameText setClearButtonMode:UITextFieldViewModeAlways];
-                [renameText setDelegate:self];
-                [renameText addTarget:self action:@selector(updateRomName:) forControlEvents:UIControlEventEditingDidEndOnExit];
-                [renameText forwardingTargetForSelector:@selector(updateRomName:)];
-                
-                [renamingCell addSubview:renameText];
-                [renameText becomeFirstResponder];
-                
-                [[self tableView] setScrollEnabled:false];
-                [[self tableView] setAllowsSelection:false];
-            }]];
-        }
-        
-        [actions addObject:[UIAction actionWithTitle:NSLocalizedString(@"Cheats", @"") image:[UIImage systemImageNamed:@"ellipsis.curlybraces"] identifier:nil handler:^(__kindof UIAction * _Nonnull action) {
+        UIAction *showCheatsAction = [UIAction actionWithTitle:NSLocalizedString(@"Cheats", @"") image:[UIImage systemImageNamed:@"ellipsis.curlybraces"] identifier:nil handler:^(__kindof UIAction* _Nonnull action) {
             GBACheatManagerViewController *cheatManagerViewController = [[GBACheatManagerViewController alloc] initWithROM:rom];
             UINavigationController *navigationController = RST_CONTAIN_IN_NAVIGATION_CONTROLLER(cheatManagerViewController);
             
@@ -260,11 +291,14 @@ dispatch_queue_t directoryContentsChangedQueue() {
             [[cheatManagerViewController navigationItem] setTitleView:stackVw];
             
             [self presentViewController:navigationController animated:true completion:nil];
-        }]];
+        }];
         
-        UIMenu* menu = [UIMenu menuWithTitle:@"" children:actions];
+        
+        UIMenu* menu = [UIMenu menuWithTitle:@"" children:@[shareAction, showCheatsAction, editMenu]];
+        if ([self.emulationViewController.rom isEqual:rom]) {
+            menu = [UIMenu menuWithTitle:@"" children:@[shareAction, showCheatsAction, closeGameMenu]];
+        }
         return menu;
-
     }];
     return config;
     
