@@ -105,6 +105,8 @@
 {
     UITableViewCell *cell = [super tableView:tableView cellForRowAtIndexPath:indexPath];
     
+    [cell setTintColor:UIColor.linkColor];
+    
     if (indexPath.section != 0)
     {
         return cell;
