@@ -31,7 +31,7 @@
     [super layoutSubviews];
     
     [self.detailTextLabel sizeToFit];
-        
+    
     CGFloat padding = self.textLabel.frame.origin.x;
     CGFloat paddingMultiplier = 3;
     

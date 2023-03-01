@@ -21,6 +21,7 @@
 #import "NSFileManager+ForcefulMove.h"
 #import "GBAWebViewController.h"
 #import "WelcomeScreen.h"
+#import "GBACheatManagerViewController.h"
 
 #import <Crashlytics/Crashlytics.h>
 
@@ -198,6 +199,15 @@ dispatch_queue_t directoryContentsChangedQueue() {
                 [self showRenameAlertForROMAtIndexPath:indexPath];
             }]];
         }
+        
+        
+        [actions addObject:[UIAction actionWithTitle:NSLocalizedString(@"Cheats", @"") image:[UIImage systemImageNamed:@"ellipsis.curlybraces"] identifier:nil handler:^(__kindof UIAction * _Nonnull action) {
+            GBACheatManagerViewController *cheatManagerViewController = [[GBACheatManagerViewController alloc] initWithROM:rom];
+            UINavigationController *navigationController = RST_CONTAIN_IN_NAVIGATION_CONTROLLER(cheatManagerViewController);
+            navigationController.navigationBar.prefersLargeTitles = true;
+            navigationController.navigationBar.tintColor = UIColor.secondaryLabelColor;
+            [self presentViewController:navigationController animated:true completion:nil];
+        }]];
         
         UIMenu* menu = [UIMenu menuWithTitle:@"" children:actions];
         return menu;
@@ -1155,6 +1165,7 @@ dispatch_queue_t directoryContentsChangedQueue() {
     */
     // SET Short Cut Item with latest played game
     GBAROM *rom = [GBAROM romWithContentsOfFile:filepath];
+    
     [self startROM:rom];
 }
 

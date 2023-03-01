@@ -20,6 +20,9 @@
 @property (strong, nonatomic) NSMutableArray *cheatsArray;
 @property (strong, nonatomic) NSMutableDictionary *enabledCheatsDictionary;
 
+@property (strong, nonatomic) IBOutlet UILabel *noGamesLabel;
+@property (strong, nonatomic) IBOutlet UILabel *noGamesDescriptionLabel;
+
 @end
 
 @implementation GBACheatManagerViewController
