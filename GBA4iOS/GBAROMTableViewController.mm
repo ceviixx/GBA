@@ -204,8 +204,33 @@ dispatch_queue_t directoryContentsChangedQueue() {
         [actions addObject:[UIAction actionWithTitle:NSLocalizedString(@"Cheats", @"") image:[UIImage systemImageNamed:@"ellipsis.curlybraces"] identifier:nil handler:^(__kindof UIAction * _Nonnull action) {
             GBACheatManagerViewController *cheatManagerViewController = [[GBACheatManagerViewController alloc] initWithROM:rom];
             UINavigationController *navigationController = RST_CONTAIN_IN_NAVIGATION_CONTROLLER(cheatManagerViewController);
-            navigationController.navigationBar.prefersLargeTitles = true;
-            navigationController.navigationBar.tintColor = UIColor.secondaryLabelColor;
+            
+            [cheatManagerViewController setTitle:nil];
+            
+            UILabel *title = [[UILabel alloc]init];
+            UILabel *subtitle = [[UILabel alloc]init];
+
+            [title setFont:[UIFont systemFontOfSize:12]];
+            [title setTextColor:[UIColor labelColor]];
+            [title setFont:[UIFont systemFontOfSize:17]];
+            [title sizeToFit];
+            title.text = NSLocalizedString(@"Cheats", @"");
+
+            [subtitle setTextColor:[UIColor secondaryLabelColor]];
+            [subtitle setFont:[UIFont systemFontOfSize:12]];
+            [subtitle setTextAlignment:NSTextAlignmentCenter];
+            [subtitle sizeToFit];
+            subtitle.text = romName;
+
+            UIStackView *stackVw = [[UIStackView alloc]initWithArrangedSubviews:@[title,subtitle]];
+            stackVw.distribution = UIStackViewDistributionEqualCentering;
+            stackVw.axis = UILayoutConstraintAxisVertical;
+            stackVw.alignment =UIStackViewAlignmentCenter;
+            
+            [stackVw setFrame:CGRectMake(0, 0, MAX(title.frame.size.width, subtitle.frame.size.width), 35)];
+            
+            [[cheatManagerViewController navigationItem] setTitleView:stackVw];
+            
             [self presentViewController:navigationController animated:true completion:nil];
         }]];
         
@@ -216,6 +241,7 @@ dispatch_queue_t directoryContentsChangedQueue() {
     return config;
     
 }
+
 
 
 - (void)viewWillAppear:(BOOL)animated
