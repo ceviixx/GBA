@@ -214,6 +214,9 @@ UITapGestureRecognizer *cancelRenamingGesture;
             
             [renamingCell addSubview:renameText];
             [renameText becomeFirstResponder];
+            
+            [renamingCell setTag:indexPath.section];
+            [renamingCell.textLabel setTag:indexPath.row];
         }];
         
         UIMenu* editMenu = [UIMenu menuWithTitle:@"" image:nil identifier:nil options:UIMenuOptionsDisplayInline children:@[renameAction, deleteAction]];
@@ -275,6 +278,7 @@ UITapGestureRecognizer *cancelRenamingGesture;
 }
 
 UITapGestureRecognizer *endEditingTapRecognizer;
+
 - (void)textFieldDidBeginEditing:(UITextField *)textField {
     NSLog(@"Did begin editing");
     
@@ -303,8 +307,13 @@ UITapGestureRecognizer *endEditingTapRecognizer;
 
 
 - (void) updateRomName:(UITextField*) textField {
+    
     RSTFileBrowserTableViewCell *cell = [textField superview];
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:cell.detailTextLabel.tag inSection:cell.textLabel.tag];
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:cell.textLabel.tag inSection:cell.tag];
+    
+    NSLog(@"Edit for %@ - %@", indexPath);
+    
+    NSLog(@"Indexpaht for editing: %@", indexPath);
     NSString *newName = [textField text];
     
     if ([[textField text] length] == 0) {
@@ -314,6 +323,7 @@ UITapGestureRecognizer *endEditingTapRecognizer;
     [self renameROMAtIndexPath:indexPath toName:newName];
     
     [self.view endEditing:true];
+    [self.tableView reloadData];
 }
 
 
@@ -728,6 +738,7 @@ UITapGestureRecognizer *endEditingTapRecognizer;
     
     cell.textLabel.tag = indexPath.section;
     cell.detailTextLabel.tag = indexPath.row;
+    [cell setTag:indexPath.section];
     
     NSString *lowercaseFileExtension = [filename.pathExtension lowercaseString];
     
