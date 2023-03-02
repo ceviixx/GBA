@@ -256,9 +256,6 @@ NSString *const GBASettingsDropboxStatusChangedNotification = @"GBASettingsDropb
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [super tableView:tableView cellForRowAtIndexPath:indexPath];
-//    cell.backgroundColor = UIColor.clearColor;
-//    cell.contentView.backgroundColor = UIColor.clearColor;
-    
     return cell;
 }
 

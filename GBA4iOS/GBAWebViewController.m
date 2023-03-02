@@ -42,11 +42,11 @@
 {
     [super viewDidLoad];
     
-    self.navigationController.modalInPresentation = true;
-    self.navigationController.navigationBar.backgroundColor = UIColor.systemGroupedBackgroundColor;
-    self.navigationController.navigationBar.tintColor = UIColor.labelColor;
+    self.modalInPresentation = true;
     
-    self.navigationController.toolbar.tintColor = UIColor.labelColor;
+    [self.navigationController.navigationBar setTintColor:UIColor.labelColor];
+    [self.view setBackgroundColor:UIColor.systemGroupedBackgroundColor];
+    [self.navigationController.navigationBar setBackgroundColor:UIColor.systemGroupedBackgroundColor];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -115,7 +115,7 @@
             
             if (address.length == 0)
             {
-                address = @"https://ceviixx.com";
+                address = @"example.com";
             }
             
             NSURLComponents *components = [NSURLComponents componentsWithString:address];
