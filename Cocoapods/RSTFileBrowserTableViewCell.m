@@ -12,7 +12,7 @@
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
-    self = [super initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:reuseIdentifier];
+    self = [super initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdentifier];
     if (self)
     {
     }
@@ -30,6 +30,7 @@
 {
     [super layoutSubviews];
     
+    /*
     [self.detailTextLabel sizeToFit];
     
     CGFloat padding = self.textLabel.frame.origin.x;
@@ -44,6 +45,7 @@
     
     self.textLabel.frame = CGRectMake(self.textLabel.frame.origin.x, self.textLabel.frame.origin.y, maximumWidth, self.textLabel.frame.size.height);
     self.detailTextLabel.frame = CGRectMake(CGRectGetMaxX(self.textLabel.frame) + padding, self.detailTextLabel.frame.origin.y, self.detailTextLabel.frame.size.width, self.detailTextLabel.frame.size.height);
+    */
 }
 
 @end

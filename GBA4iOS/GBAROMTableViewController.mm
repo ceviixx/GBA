@@ -179,6 +179,8 @@ dispatch_queue_t directoryContentsChangedQueue() {
     self.filterButton.menu = filterMenu;
 }
 
+UITapGestureRecognizer *cancelRenamingGesture;
+
 - (UIContextMenuConfiguration *)tableView:(UITableView *)tableView contextMenuConfigurationForRowAtIndexPath:(NSIndexPath *)indexPath point:(CGPoint)point {
     NSString *filepath = [self filepathForIndexPath:indexPath];
     NSString *romName = [[filepath lastPathComponent] stringByDeletingPathExtension];
@@ -194,17 +196,13 @@ dispatch_queue_t directoryContentsChangedQueue() {
         }];
         
         UIAction *renameAction = [UIAction actionWithTitle:NSLocalizedString(@"Rename", @"") image:[UIImage systemImageNamed:@"pencil"] identifier:nil handler:^(__kindof UIAction* _Nonnull action) {
-            UITapGestureRecognizer *cancelRenamingGesture = [[UITapGestureRecognizer alloc] initWithTarget:self
-                                                                      action:@selector(cancelRenameRomName:)];
-            [self.view addGestureRecognizer:cancelRenamingGesture];
-            
             
             [tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionMiddle animated:true];
             RSTFileBrowserTableViewCell *renamingCell = [tableView cellForRowAtIndexPath:indexPath];
             [[renamingCell textLabel] setHidden:true];
             [[renamingCell detailTextLabel] setHidden:true];
             
-            UITextField *renameText = [[UITextField alloc] initWithFrame:CGRectMake(15, 0, renamingCell.frame.size.width - 25, renamingCell.frame.size.height)];
+            UITextField *renameText = [[UITextField alloc] initWithFrame:CGRectMake(16, 0, renamingCell.frame.size.width - 25, renamingCell.frame.size.height)];
             [renameText setTag:99];
             [renameText setAutocorrectionType:UITextAutocorrectionTypeYes];
             [renameText setReturnKeyType:UIReturnKeyDone];
@@ -213,14 +211,9 @@ dispatch_queue_t directoryContentsChangedQueue() {
             [renameText setClearButtonMode:UITextFieldViewModeAlways];
             [renameText setDelegate:self];
             [renameText addTarget:self action:@selector(updateRomName:) forControlEvents:UIControlEventEditingDidEndOnExit];
-            [renameText forwardingTargetForSelector:@selector(updateRomName:)];
             
             [renamingCell addSubview:renameText];
             [renameText becomeFirstResponder];
-            
-            [[self tableView] setScrollEnabled:false];
-            [[self tableView] setAllowsSelection:false];
-
         }];
         
         UIMenu* editMenu = [UIMenu menuWithTitle:@"" image:nil identifier:nil options:UIMenuOptionsDisplayInline children:@[renameAction, deleteAction]];
@@ -262,35 +255,12 @@ dispatch_queue_t directoryContentsChangedQueue() {
         
         UIAction *showCheatsAction = [UIAction actionWithTitle:NSLocalizedString(@"Cheats", @"") image:[UIImage systemImageNamed:@"ellipsis.curlybraces"] identifier:nil handler:^(__kindof UIAction* _Nonnull action) {
             GBACheatManagerViewController *cheatManagerViewController = [[GBACheatManagerViewController alloc] initWithROM:rom];
+            
             UINavigationController *navigationController = RST_CONTAIN_IN_NAVIGATION_CONTROLLER(cheatManagerViewController);
-            
-            [cheatManagerViewController setTitle:nil];
-            
-            UILabel *title = [[UILabel alloc]init];
-            UILabel *subtitle = [[UILabel alloc]init];
-
-            [title setFont:[UIFont systemFontOfSize:12]];
-            [title setTextColor:[UIColor labelColor]];
-            [title setFont:[UIFont systemFontOfSize:17]];
-            [title sizeToFit];
-            title.text = NSLocalizedString(@"Cheats", @"");
-
-            [subtitle setTextColor:[UIColor secondaryLabelColor]];
-            [subtitle setFont:[UIFont systemFontOfSize:12]];
-            [subtitle setTextAlignment:NSTextAlignmentCenter];
-            [subtitle sizeToFit];
-            subtitle.text = romName;
-
-            UIStackView *stackVw = [[UIStackView alloc]initWithArrangedSubviews:@[title,subtitle]];
-            stackVw.distribution = UIStackViewDistributionEqualCentering;
-            stackVw.axis = UILayoutConstraintAxisVertical;
-            stackVw.alignment = UIStackViewAlignmentCenter;
-            
-            [stackVw setFrame:CGRectMake(0, 0, MAX(title.frame.size.width, subtitle.frame.size.width), 35)];
-            
-            [[cheatManagerViewController navigationItem] setTitleView:stackVw];
-            
             [self presentViewController:navigationController animated:true completion:nil];
+            
+            cheatManagerViewController.navigationItem.prompt = romName;
+            navigationController.navigationBar.tintColor = UIColor.secondaryLabelColor;
         }];
         
         
@@ -304,6 +274,34 @@ dispatch_queue_t directoryContentsChangedQueue() {
     
 }
 
+UITapGestureRecognizer *endEditingTapRecognizer;
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    NSLog(@"Did begin editing");
+    
+    endEditingTapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(cancelRenameRomName:)];
+    [endEditingTapRecognizer setNumberOfTapsRequired:1];
+    [self.view addGestureRecognizer:endEditingTapRecognizer];
+    
+    [[self tableView] setScrollEnabled:false];
+    [[self tableView] setAllowsSelection:false];
+}
+
+
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+    NSLog(@"Did end editing");
+    RSTFileBrowserTableViewCell *cell = [textField superview];
+    
+    [[cell textLabel] setHidden:false];
+    [[cell detailTextLabel] setHidden:false];
+    [textField removeFromSuperview];
+    
+    [[self tableView] setScrollEnabled:true];
+    [[self tableView] setAllowsSelection:true];
+    
+    [[self view] removeGestureRecognizer:endEditingTapRecognizer];
+}
+
+
 - (void) updateRomName:(UITextField*) textField {
     RSTFileBrowserTableViewCell *cell = [textField superview];
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:cell.detailTextLabel.tag inSection:cell.textLabel.tag];
@@ -315,33 +313,17 @@ dispatch_queue_t directoryContentsChangedQueue() {
     
     [self renameROMAtIndexPath:indexPath toName:newName];
     
-    [[cell textLabel] setText:newName];
-    [[cell textLabel] setHidden:false];
-    [[cell detailTextLabel] setHidden:false];
-    [textField removeFromSuperview];
-    [[self tableView] setScrollEnabled:true];
-    [[self tableView] setAllowsSelection:true];
+    [self.view endEditing:true];
 }
 
 
-// Takes a long time or multible touches to go back to normal view
-// Check this out later
 - (void) cancelRenameRomName:(UITapGestureRecognizer *)recognizer {
     NSLog(@"Cancel renaming tap");
-    
     CGPoint location = [recognizer locationInView:[recognizer.view superview]];
-    NSIndexPath *indexPath = [[self tableView] indexPathForRowAtPoint:location];
-    RSTFileBrowserTableViewCell *cell = [[self tableView] cellForRowAtIndexPath:indexPath];
     
-    UITextField *textField = [cell viewWithTag:99];
-    [textField resignFirstResponder];
-    [textField removeFromSuperview];
+    [self.view endEditing:true];
+    [self.view removeGestureRecognizer:recognizer];
     
-    [[cell textLabel] setHidden:false];
-    [[cell detailTextLabel] setHidden:false];
-    
-    [[self tableView] setScrollEnabled:true];
-    [[self tableView] setAllowsSelection:true];
 }
 
 - (void)viewWillAppear:(BOOL)animated

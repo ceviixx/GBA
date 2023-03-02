@@ -54,7 +54,7 @@
     self.tableView.allowsSelectionDuringEditing = YES;
     
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
-
+    
     UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(dismissCheatManagerViewController:)];
     self.navigationItem.rightBarButtonItem = doneButton;
     
