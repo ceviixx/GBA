@@ -249,9 +249,6 @@ UITapGestureRecognizer *cancelRenamingGesture;
         
         UIMenu *closeGameMenu = [UIMenu menuWithTitle:@"" image:nil identifier:nil options:UIMenuOptionsDisplayInline children:@[closeGameAction]];
         
-        
-        
-        
         UIAction *shareAction = [UIAction actionWithTitle:NSLocalizedString(@"Share", @"") image:[UIImage systemImageNamed:@"square.and.arrow.up"] identifier:nil handler:^(__kindof UIAction* _Nonnull action) {
             [self shareROMAtIndexPath:indexPath];
         }];
@@ -746,7 +743,7 @@ UITapGestureRecognizer *endEditingTapRecognizer;
     {
         cell.userInteractionEnabled = NO;
         cell.textLabel.textColor = [UIColor grayColor];
-        cell.selectionStyle = UITableViewCellSelectionStyleDefault;
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
         
         cell.textLabel.textColor = UIColor.systemRedColor;
         cell.detailTextLabel.textColor = UIColor.systemRedColor;
