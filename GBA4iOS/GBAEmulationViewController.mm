@@ -116,7 +116,9 @@ static GBAEmulationViewController *_emulationViewController;
     return self;
 }
 
-
+- (BOOL)prefersHomeIndicatorAutoHidden {
+    return true;
+}
 
 - (void)viewDidLoad
 {
