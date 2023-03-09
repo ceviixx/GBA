@@ -1,16 +1,17 @@
 {
   "images" : [
     {
+      "filename" : "60.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "GBA4iOS_App_Icon_v3_light-60@2x.png",
+      "filename" : "120.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "GBA4iOS_App_Icon_v3_light-60@3x.png",
+      "filename" : "180.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

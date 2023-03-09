@@ -1,109 +1,109 @@
 {
   "images" : [
     {
-      "filename" : "GBA4iOS_App_Icon_v3_light-20@2x.png",
+      "filename" : "GBA4iOA_App_Icon__SC-20@2x.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "20x20"
     },
     {
-      "filename" : "GBA4iOS_App_Icon_v3_light-20@3x.png",
+      "filename" : "GBA4iOA_App_Icon__SC-20@3x.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "20x20"
     },
     {
-      "filename" : "GBA4iOS_App_Icon_v3_light-29@2x.png",
+      "filename" : "GBA4iOA_App_Icon__SC-29@2x.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
-      "filename" : "GBA4iOS_App_Icon_v3_light-29@3x.png",
+      "filename" : "GBA4iOA_App_Icon__SC-29@3x.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "29x29"
     },
     {
-      "filename" : "GBA4iOS_App_Icon_v3_light-40@2x.png",
+      "filename" : "GBA4iOA_App_Icon__SC-40@2x.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "40x40"
     },
     {
-      "filename" : "GBA4iOS_App_Icon_v3_light-40@3x.png",
+      "filename" : "GBA4iOA_App_Icon__SC-40@3x.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "40x40"
     },
     {
-      "filename" : "GBA4iOS_App_Icon_v3_light-60@2x.png",
+      "filename" : "GBA4iOA_App_Icon__SC-60@2x.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "60x60"
     },
     {
-      "filename" : "GBA4iOS_App_Icon_v3_light-60@3x.png",
+      "filename" : "GBA4iOA_App_Icon__SC-60@3x.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "60x60"
     },
     {
-      "filename" : "GBA4iOS_App_Icon_v3_light-20.png",
+      "filename" : "GBA4iOA_App_Icon__SC-20.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "20x20"
     },
     {
-      "filename" : "GBA4iOS_App_Icon_v3_light-20@2x.png",
+      "filename" : "GBA4iOA_App_Icon__SC-20@2x.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "20x20"
     },
     {
-      "filename" : "GBA4iOS_App_Icon_v3_light-29.png",
+      "filename" : "GBA4iOA_App_Icon__SC-29.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "29x29"
     },
     {
-      "filename" : "GBA4iOS_App_Icon_v3_light-29@2x.png",
+      "filename" : "GBA4iOA_App_Icon__SC-29@2x.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
-      "filename" : "GBA4iOS_App_Icon_v3_light-40.png",
+      "filename" : "GBA4iOA_App_Icon__SC-40.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "40x40"
     },
     {
-      "filename" : "GBA4iOS_App_Icon_v3_light-40@2x.png",
+      "filename" : "GBA4iOA_App_Icon__SC-40@2x.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "40x40"
     },
     {
-      "filename" : "GBA4iOS_App_Icon_v3_light-76.png",
+      "filename" : "GBA4iOA_App_Icon__SC-76.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "76x76"
     },
     {
-      "filename" : "GBA4iOS_App_Icon_v3_light-76@2x.png",
+      "filename" : "GBA4iOA_App_Icon__SC-76@2x.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "76x76"
     },
     {
-      "filename" : "GBA4iOS_App_Icon_v3_light-83.5@2x.png",
+      "filename" : "GBA4iOA_App_Icon__SC-83.5@2x.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "83.5x83.5"
     },
     {
-      "filename" : "GBA4iOS_App_Icon_v3_light-1024.png",
+      "filename" : "GBA4iOA_App_Icon__SC-1024.png",
       "idiom" : "ios-marketing",
       "scale" : "1x",
       "size" : "1024x1024"
