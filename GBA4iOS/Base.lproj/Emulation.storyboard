@@ -154,6 +154,7 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="filterButton" destination="a1o-ls-KMJ" id="nsc-25-m7h"/>
+                        <outlet property="searchForRomButton" destination="lhi-LK-iGI" id="f9c-xx-HjR"/>
                         <outlet property="settingsButton" destination="hbZ-3u-c9Y" id="oIS-j2-UYi"/>
                     </connections>
                 </tableViewController>

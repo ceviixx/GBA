@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "GBA4iOA_App_Icon__SC.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

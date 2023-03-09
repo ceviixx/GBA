@@ -57,7 +57,7 @@ typedef NS_ENUM(NSInteger, GBAVisibleROMType) {
 @property (strong, nonatomic) NSMutableSet *currentUnzippingOperations;
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *filterButton;
-
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *searchForRomButton;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *settingsButton;
 @property (strong, nonatomic) UIPopoverController *activityPopoverController;
 @property (strong, nonatomic) NSIndexPath *selectedROMIndexPath;
@@ -163,7 +163,7 @@ dispatch_queue_t directoryContentsChangedQueue() {
     [filterActions addObject:[UIAction actionWithTitle:NSLocalizedString(@"Gameboy Advance", @"") image:nil identifier:@"gba" handler:^(__kindof UIAction* _Nonnull action) {
         [self setRomType: GBAVisibleROMTypeGBA];
     }]];
-    [filterActions addObject:[UIAction actionWithTitle:NSLocalizedString(@"Comeboy Color", @"") image:nil identifier:@"gbc" handler:^(__kindof UIAction* _Nonnull action) {
+    [filterActions addObject:[UIAction actionWithTitle:NSLocalizedString(@"Gameboy Color", @"") image:nil identifier:@"gbc" handler:^(__kindof UIAction* _Nonnull action) {
         [self setRomType: GBAVisibleROMTypeGBC];
     }]];
     
@@ -362,7 +362,6 @@ UITapGestureRecognizer *endEditingTapRecognizer;
     }
     
     self.navigationController.navigationBar.prefersLargeTitles = true;
-    self.navigationController.navigationBar.tintColor = UIColor.secondaryLabelColor;
 }
 
 - (void)viewWillDisappear:(BOOL)animated

@@ -1,8 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "GBA4iOA_App_Icon__SC.pdf",
-      "idiom" : "universal"
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "GBA4iOS_App_Icon_v3_clear.pdf",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
     }
   ],
   "info" : {
