@@ -12,8 +12,6 @@
 #import "GBAControllerSkinGroup.h"
 #import "GBAControllerSkinDownloadController.h"
 
-#import <RSTWebViewController.h>
-
 #import "UIAlertView+RSTAdditions.h"
 #import "UITableViewController+ControllerSkins.h"
 
@@ -210,8 +208,6 @@
         return;
     }
     
-    RSTWebViewController *webViewController = [[RSTWebViewController alloc] initWithURL:skin.designerURL];
-    [self.navigationController pushViewController:webViewController animated:YES];
 }
 
 @end

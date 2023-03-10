@@ -15,6 +15,7 @@
 			dependencies = (
 			);
 			name = CrashlyticsFramework;
+			productName = CrashlyticsFramework;
 		};
 /* End PBXAggregateTarget section */
 
@@ -29,7 +30,6 @@
 		00862BA220858C951B6BE2176B1F7F13 /* DBOAuthMobileManager-iOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F4FAB399F46BBB0650BEF960F2BDC2 /* DBOAuthMobileManager-iOS.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		008686C3BCEE15041B0EBA058544969E /* DBTEAMRevokeDeviceSessionBatchError.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B908234A5668AC3329FC558C086C8E3 /* DBTEAMRevokeDeviceSessionBatchError.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		00AB2109BCCD09DF52F4F8987AA96073 /* DBSDKConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = F522E8D69E35C041148546E16A394461 /* DBSDKConstants.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		00C45CF47C7DFC97F335888C5D04EB6F /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 412296CC4A4898CB9655FF3EA13D3397 /* UIActivityIndicatorView+AFNetworking.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		015252D141D904EAFEAAA1D1A734D6F7 /* DBFILESPreviewError.h in Headers */ = {isa = PBXBuildFile; fileRef = CEBDF9F90AB02DB48F2BCEEFA4E38F53 /* DBFILESPreviewError.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		01CABEF00D11E9B36355AC2DE8330740 /* DBASYNCLaunchResultBase.h in Headers */ = {isa = PBXBuildFile; fileRef = AAB96AB3E67A4218EC409333821F23DB /* DBASYNCLaunchResultBase.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		025C349B133EDEEB3845A77905DF9E58 /* DBTEAMLOGSharedContentViewDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 57528EEAF33E00E18D5B7DC9D70C920A /* DBTEAMLOGSharedContentViewDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -59,7 +59,6 @@
 		08A386D10C3B6844084E82FCE6860DFF /* DBTEAMLOGSharedFolderChangeConfidentialityDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A05D05B1B33414F8555C2082A44B1EE /* DBTEAMLOGSharedFolderChangeConfidentialityDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		08FF72BA38308C3C53489FE59D399AC0 /* DBAuthObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4339627D32B59A457889F43EDEF422 /* DBAuthObjects.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		0982877E10D9683A0DC154D01B9CE041 /* DBTEAMLOGEmmLoginSuccessDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 7876D110A8030EED18711391CF80F461 /* DBTEAMLOGEmmLoginSuccessDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		09C2DC2F3A0C3081414F064A54C558B2 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6190F7372937A6701F0673AF0C07CEF7 /* AFURLSessionManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		0A10A28637B6E16817F5D1D34888F777 /* DBTEAMLOGTeamActivityCreateReportDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AD4C7B00A2EC03D746D0AAAEDA553BD /* DBTEAMLOGTeamActivityCreateReportDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		0A344A6587290F470118098F77AF4C66 /* DBTEAMApiApp.h in Headers */ = {isa = PBXBuildFile; fileRef = 0763DC90E7F660AD7080D7EF8A2E8FE4 /* DBTEAMApiApp.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		0A49D725835D9FA5AE5ABC1B9FFBF4CA /* DBSDKReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A8B96B7CF8BC6557371161083656AA /* DBSDKReachability.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -80,7 +79,6 @@
 		0D5F306B3ED87F423CDC21B79B88BAD8 /* DBTEAMLOGGroupChangeManagementTypeDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 16A0DAD6F5FC60EB80A3B364FED02601 /* DBTEAMLOGGroupChangeManagementTypeDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		0DB827C299AEE8B87504E321B3B4D013 /* DBTEAMGetStorageReport.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B2B12B5A316CD7EC6F075E289FF6524 /* DBTEAMGetStorageReport.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		0DD9D7AC4E72E23964F50ED2B7233B3E /* DBTEAMLOGAppLinkTeamDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 7542E385177CCFE197D0D5CDAE2C5633 /* DBTEAMLOGAppLinkTeamDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		0E6803A0FC972D94A81F7D90DF347351 /* UIAlertView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 27DD9C7E54FA21C93D4A27092C2DFCDE /* UIAlertView+AFNetworking.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		0EBBE6FEB0B32D92A15DF8C158533DF3 /* DBTEAMTeamFolderMetadata.h in Headers */ = {isa = PBXBuildFile; fileRef = 23B09D685F61904929003F8BA8893FE5 /* DBTEAMTeamFolderMetadata.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		0EBCEA62CCEF7DEF0F9EAA29C10A92A5 /* DBTEAMLOGEmmRefreshAuthTokenDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E0C5953E78AD9330D126B957BA42883 /* DBTEAMLOGEmmRefreshAuthTokenDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		0FBF322A5BBD7841998358304FB32957 /* DBTEAMLOGSsoAddLoginUrlDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A07ED29D902B906D95AAAE1627455AA /* DBTEAMLOGSsoAddLoginUrlDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -93,7 +91,6 @@
 		111331D75612BB53275340C393ADBFE0 /* DBTEAMLOGNoteAclInviteOnlyDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = FA3D0935D4B5F5EF386A2BCE8F6067CC /* DBTEAMLOGNoteAclInviteOnlyDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		115FBB93E6728D2B5775F94D34A8B418 /* DBTEAMTokenGetAuthenticatedAdminError.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C5EDD11B0CC638E440EF5668BEFF0D1 /* DBTEAMTokenGetAuthenticatedAdminError.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		120AED85A6071B9DEFE9BEBA89B056A6 /* DBTEAMLOGSharingChangeFolderJoinPolicyDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = D629C9DCBD05DE0D15066F175B86BEA0 /* DBTEAMLOGSharingChangeFolderJoinPolicyDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		12E297984AF7D742A78203CD7D932460 /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 45B401705DEBE14D15C1860E4097228B /* UIWebView+AFNetworking.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		12F4665E9FBF15DC334AAD17D32B4FFA /* DBTEAMLOGFileRequestsEmailsRestrictedToTeamOnlyDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A6EF8419CA4189437124FC169222F07 /* DBTEAMLOGFileRequestsEmailsRestrictedToTeamOnlyDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		131B13AB4342E994BAC83FA430AEDB7C /* DBFILEREQUESTSGracePeriod.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD7B53B372B5A1790905AF508120DB1 /* DBFILEREQUESTSGracePeriod.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		1343F5CEFFC8E0D98BABDE69167D4F6E /* DBTEAMLOGNamespaceRelativePathLogInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E9B73BC9FFCE0D279DD2CA1BB2EDBDF /* DBTEAMLOGNamespaceRelativePathLogInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -105,7 +102,6 @@
 		1416DB7913A7CCFD1409AE086422F63B /* DBTEAMLOGSfAllowNonMembersToViewSharedLinksDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = E3369CF308D3102AA6E9CE42418CF8E5 /* DBTEAMLOGSfAllowNonMembersToViewSharedLinksDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		146A9AA159F15D7F5DA4014468EA4306 /* DBTEAMLOGPaperDocDeletedDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F8D6AD4317B2E0BEDA7643AC0E5EE6A /* DBTEAMLOGPaperDocDeletedDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		1481E54BAA004F68C9B13AC54D16758C /* DBTEAMLOGEmmChangePolicyDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = A9000062896B32D8D4F98B927B02177B /* DBTEAMLOGEmmChangePolicyDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1494AE8283B35875E548CF0402386D82 /* RSTSafariActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 7939D396E73594A86EE63E126826A5AA /* RSTSafariActivity.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		14B306C2280566C7E6AB4E67036B7404 /* DBTEAMGroupSelectorWithTeamGroupError.h in Headers */ = {isa = PBXBuildFile; fileRef = 708C7C72F13F187961AF1A14338708A8 /* DBTEAMGroupSelectorWithTeamGroupError.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		14DAD2F2EF4D4FB65C7286FE3AB8B6FA /* DBTEAMLOGTfaRemoveBackupPhoneDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 4308991466B7BE38B2790F9CCCF568C6 /* DBTEAMLOGTfaRemoveBackupPhoneDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		14E3A44E0CC425B1D4CC58B93B986B1F /* DBTEAMListTeamAppsArg.h in Headers */ = {isa = PBXBuildFile; fileRef = 9633E0160378A0E5896F0D5D67F029C8 /* DBTEAMListTeamAppsArg.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -128,7 +124,6 @@
 		184AECCD41F4143347DA3C4ADCBD979B /* DBTEAMLOGGroupMovedDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = BE6E962036EBD73BBFF1AAD6CB53F199 /* DBTEAMLOGGroupMovedDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		18A6EBF6F1A78E6DFFAEE20B0689A0D3 /* DBTEAMTeamFolderIdArg.h in Headers */ = {isa = PBXBuildFile; fileRef = DEB9ABDC95692796509BA45973D69CB5 /* DBTEAMTeamFolderIdArg.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		1934C97DC0A9DB371E74E5370E4F3B65 /* DBFILEREQUESTSUpdateFileRequestError.h in Headers */ = {isa = PBXBuildFile; fileRef = D47963016A055C58E83F2D89AC64A865 /* DBFILEREQUESTSUpdateFileRequestError.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		19518C098C42EFF8557FDDCBB6DD93C9 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 937D86191B6CF9FBCF0830CE93F2DD56 /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		196240146E5C185436ADE1028BAEE0C3 /* DBTEAMGroupAccessType.h in Headers */ = {isa = PBXBuildFile; fileRef = B841D9B7C9AAA942D690C4152FD150E2 /* DBTEAMGroupAccessType.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		199C785FFD92DB040FB8D1511549265A /* DBTEAMLOGFileGetCopyReferenceDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = AA466538040062C13CA264AE2C31FA09 /* DBTEAMLOGFileGetCopyReferenceDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		19B8D59952714F2F3BE7B875073D5C90 /* DBFILESThumbnailError.h in Headers */ = {isa = PBXBuildFile; fileRef = 90365C6D6344F81348D801D9931EECD5 /* DBFILESThumbnailError.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -139,7 +134,6 @@
 		1BB9DCA674B0C3DD91B91F5F407C98DE /* DBTEAMLOGPasswordChangeDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 728763B4140EE1EED7C475F45E8317F1 /* DBTEAMLOGPasswordChangeDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		1BED09DB1EA331D552A811DF362742CA /* DBSHARINGTransferFolderArg.h in Headers */ = {isa = PBXBuildFile; fileRef = 54FBDC3786053C06F347EA8B8F1830ED /* DBSHARINGTransferFolderArg.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		1C1746D664A2998951CEFB5814851158 /* DBTEAMGetMembershipReport.h in Headers */ = {isa = PBXBuildFile; fileRef = E05E3EB1D740F063F1F6144A609B21B4 /* DBTEAMGetMembershipReport.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1C2AE5DFB1C1D933568EC8390C746F47 /* RSTWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7998CC6F0012F34BB121D9016D345873 /* RSTWebViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		1CB878E5C83E5636B43DA24A94F3AD0C /* DBTEAMLOGDeviceDeleteOnUnlinkSuccessDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 811775046AC563C9DE675F0DF4FA7D8A /* DBTEAMLOGDeviceDeleteOnUnlinkSuccessDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		1D1459C0C6E337F6B45B0D0FC7C851E6 /* PSPDFTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BC23AB02691448B2D8DA20A83D11B6 /* PSPDFTextView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		1D218878E9639829B6673F1758B19D26 /* DBTEAMLOGUserLinkedAppLogInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 66C8E363971DB92C4C1057CE942CA5E8 /* DBTEAMLOGUserLinkedAppLogInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -159,7 +153,6 @@
 		218686A88DAB3AEB711A458956D51CAB /* DBFILESFolderSharingInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CF312ED2B1737616A96E68FADA0F963 /* DBFILESFolderSharingInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		21D8006066D7F9496364C8F8C646A895 /* DBFILESFileOpsResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F61BE6C670275D0B3B54227DAA43532 /* DBFILESFileOpsResult.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2220F2BD82094419F070BF8FC6062288 /* DBTEAMLOGMemberSpaceLimitsChangePolicyDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = F4263EF831F1DD695E486D077249BB8D /* DBTEAMLOGMemberSpaceLimitsChangePolicyDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		2235388255EF4507D409730A27C49EE1 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = FC04BBAF220BBCCFA2086BF335043E99 /* AFNetworking.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		223E1BF26D1BE83991567D6A4EA0D2A7 /* DBFILESDeleteBatchArg.h in Headers */ = {isa = PBXBuildFile; fileRef = FEB122AC17F0F70F07E8E0179A615176 /* DBFILESDeleteBatchArg.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2275A5A53FFB1DE530D3D82F2C768E2A /* DBTEAMLOGTeamName.h in Headers */ = {isa = PBXBuildFile; fileRef = DF3EB57BD677F8EF87491ED8AFFA75C4 /* DBTEAMLOGTeamName.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		22AD6F41C7750320750900C4EDFDEE40 /* DBSHARINGExpectedSharedContentLinkMetadata.h in Headers */ = {isa = PBXBuildFile; fileRef = F980718E8070BD8DB9A2DAEED9402C07 /* DBSHARINGExpectedSharedContentLinkMetadata.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -182,18 +175,15 @@
 		2680281381B4BCE6611B5FC70E1108EA /* DBGlobalErrorResponseHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 5176E622BBA21CF46565302F95962B42 /* DBGlobalErrorResponseHandler.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		26AF311F66181B1A12BE6D193562D03B /* DBPAPERRouteObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = 7382720E5AC3806A013D719E907DE528 /* DBPAPERRouteObjects.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		26E5B8498DB4E084B09B35D0D09ED355 /* DBTEAMMembersRemoveArg.h in Headers */ = {isa = PBXBuildFile; fileRef = 255C25914C31676F21BB7DA538471B17 /* DBTEAMMembersRemoveArg.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		278590C19AF6D296D5A4098087131172 /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 34CD153C8364C30C739786B5072CE122 /* AFNetworking-dummy.m */; };
 		27B3D9926A5F60AC777FD4DCEC1D6D98 /* DBTEAMLOGTeamProfileChangeLogoDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 110E5F3A4F59D2AC394B3BDAAF219170 /* DBTEAMLOGTeamProfileChangeLogoDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		27FA42C1D663E91923FC29BF2B8BF5EF /* DBTEAMMembersSetProfileArg.h in Headers */ = {isa = PBXBuildFile; fileRef = A8F285D2C5ED722883D03839FA223919 /* DBTEAMMembersSetProfileArg.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		28333C8E0E9605ADECB5EB6195226579 /* DBTEAMLOGAccessMethodLogInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = C368625944B54430BAAFE9B1DBD98FB4 /* DBTEAMLOGAccessMethodLogInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		285E867EC470B811F7FF6C9B15BE4E84 /* DBTEAMLOGPasswordResetAllDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = A4FBE111FFC16BA97FFFBF3807545F07 /* DBTEAMLOGPasswordResetAllDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2862B2F3036F8640DD03A59B5B3A93CD /* DBTEAMLOGPaperContentPermanentlyDeleteDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD8DE95ED3A9C91FCB0DD6A6E4A9D50 /* DBTEAMLOGPaperContentPermanentlyDeleteDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		28B3675B819BC1D1DE0AFD2B2ADFF8ED /* DBAUTHRateLimitReason.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B974559C1A0815BB857AEC3097D395C /* DBAUTHRateLimitReason.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		28D6D9679953DD4883739A1330D225D3 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0717F52264D60BEFCB81DF552C027D51 /* AFHTTPRequestOperationManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		28E8640ABB342FA217337236FC0357FC /* DBTEAMLOGDomainVerificationRemoveDomainDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B2552F24527627876D759079C93C057 /* DBTEAMLOGDomainVerificationRemoveDomainDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		28F3841B59B69C42BED211600B808313 /* DBCommonObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D4C607316B79FEE7BE190E8E09F8D9 /* DBCommonObjects.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		298BD04342605D1A990176E7227EA561 /* DBSHARINGFolderPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B598309999AC27B07662452CB76C2D0 /* DBSHARINGFolderPolicy.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		2A3B3CE419A270B333847D7FF722C1DF /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = AF6D254B53455F8F8350D683E02EC91F /* AFHTTPRequestOperation.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2A541ED4A3EFD72D0D746CCF0BEFDB98 /* DBFILEPROPERTIESPropertyField.h in Headers */ = {isa = PBXBuildFile; fileRef = E30930ED6628CA1C6A921713AE5A336F /* DBFILEPROPERTIESPropertyField.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2A6C02536D33ED8F718C7D6522D1DECA /* DBTEAMMembersDeactivateError.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B0F0D82040F5E464D9BDCD81E364031 /* DBTEAMMembersDeactivateError.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2AA26708202BCF299F1DFA4338C16B8F /* DBPAPERInviteeInfoWithPermissionLevel.h in Headers */ = {isa = PBXBuildFile; fileRef = 91B1997FCF3DE51303F9E6D624FB87FF /* DBPAPERInviteeInfoWithPermissionLevel.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -210,7 +200,6 @@
 		2D05B708595D237D1DB7528504391D7C /* DBTEAMFeaturesGetValuesBatchError.h in Headers */ = {isa = PBXBuildFile; fileRef = 64188AC8E4C905B0BE580260EAC10A93 /* DBTEAMFeaturesGetValuesBatchError.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2D4D9F129171BA6380BB89A39FC2BAF3 /* DBFILEPROPERTIESRouteObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = AD8D94F53E178CC2345BAFC8C5041A43 /* DBFILEPROPERTIESRouteObjects.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		2D56A3930E25C1E613CD0737DAD25D4D /* DBTEAMLOGDomainInvitesEmailExistingUsersDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 93798B4B0C0A4405E4CE36B6FCD822DE /* DBTEAMLOGDomainInvitesEmailExistingUsersDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		2D8FFD4E9554BD70BBE38F6D5D482E86 /* UIImage+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 571A5D342D3C49FA4195EDA72FCF82E6 /* UIImage+AFNetworking.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2E943D42612CD2626885E62960ED2936 /* DBFILEPROPERTIESRemovePropertiesArg.h in Headers */ = {isa = PBXBuildFile; fileRef = 112CAC4870B370AF50E89C84831F5AEC /* DBFILEPROPERTIESRemovePropertiesArg.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2E988C881725072B60141DB59B941B08 /* DBSHARINGLinkPermissions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5239BE9CEAFAA4939C8168867CA78693 /* DBSHARINGLinkPermissions.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2EF316BBA334996124C21F2B08201A50 /* DBSHARINGListFileMembersContinueArg.h in Headers */ = {isa = PBXBuildFile; fileRef = 5817A7156989D592F8E7A7FB3C92400D /* DBSHARINGListFileMembersContinueArg.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -224,7 +213,6 @@
 		310BE157AFAADF12A0E21635587A5450 /* DBPAPERListPaperDocsSortOrder.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ADA4DD3C1EF6F391A0C182EA0BD8C74 /* DBPAPERListPaperDocsSortOrder.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		31561192D344D1E07483519EBE0A4766 /* DBFILESRestoreArg.h in Headers */ = {isa = PBXBuildFile; fileRef = AFAC0DCAC2871F9142027F9CA0AD4366 /* DBFILESRestoreArg.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		3158623D8982051354EB30AD00A4350B /* DBTEAMMembersSendWelcomeError.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C00F6BDB6232BF343456FB2983583D4 /* DBTEAMMembersSendWelcomeError.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		32B265E9D696C0E3E3BEBF68B4271F01 /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 9350E8ED241F5A8F150246810D511BF3 /* UIProgressView+AFNetworking.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		32C5658C7EEB6346587265E3DECC6D4F /* DBFILEPROPERTIESUserAuthRoutes.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E847BE03CD34B0CB84CAF23C55A4501 /* DBFILEPROPERTIESUserAuthRoutes.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		32CAB11B0A00041FBCAF8F2AA33B386C /* DBTEAMLOGTeamProfileChangeNameDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = C1B49FA3765B1D8E86F4A4B09DB1E527 /* DBTEAMLOGTeamProfileChangeNameDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		32D44819C067BBD915339224222C9059 /* DBAppBaseClient.h in Headers */ = {isa = PBXBuildFile; fileRef = AD2CC697B9F33594381D758334601027 /* DBAppBaseClient.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -236,7 +224,6 @@
 		345F9987C70637DA5D0C3114D397B86A /* DBTEAMLOGTfaRemoveSecurityKeyDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 072ED4D9606211C6A3367A0C2CB16D4B /* DBTEAMLOGTfaRemoveSecurityKeyDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		34B06A986F8BB385CB1D0C4D1827531B /* DBTEAMLOGNoteSharedDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 89615C230D2926175859EF7763491D2E /* DBTEAMLOGNoteSharedDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		34E2B1E1AB7A8C7B862A22AB4B91F311 /* DBTEAMLOGFileRequestReceiveFileDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 74ED96BFFD6079B477968E88637EFFA6 /* DBTEAMLOGFileRequestReceiveFileDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		351277C056538CE3C59CDF6D3A709EC1 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = F7967AC4CBF74A13B040D8D8B37C81BF /* UIProgressView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		3529CE2491BC65AE6FC26967A3CB3C7C /* DBFILEREQUESTSFileRequestError.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E1755D8597B5EE6B8E0D31829DE9DD9 /* DBFILEREQUESTSFileRequestError.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		35375BFA944D86101503ACDF0EEC3B38 /* NJKWebViewProgress-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3146DB65D7C9950599FE0D2922B74DF9 /* NJKWebViewProgress-dummy.m */; };
 		353EC678D8B2125E1006F3953F39F13E /* DBUserBaseClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B487C0203146305A6C9101B77D90045C /* DBUserBaseClient.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -274,10 +261,8 @@
 		3E027B8111C2AE224433D66B01ADB23C /* DBTEAMGroupMembersAddArg.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D56940F035EF543FBC9BAD62D5A543B /* DBTEAMGroupMembersAddArg.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		3E0DC052AB586CD2891F07786B3DD771 /* DBPAPERRemovePaperDocUser.h in Headers */ = {isa = PBXBuildFile; fileRef = E9177E330B85F292FD9F58BA2B1CA3E7 /* DBPAPERRemovePaperDocUser.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		3E2738E11FEE77EAC97F60CBBB5F9EF6 /* DBChunkInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B241DD513FD84B0C2D129F360C644DF /* DBChunkInputStream.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		3E322B1A65104971497A874B9E04CCC6 /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = B3C6DAD9CDF57F02E1915CC17E245CB3 /* UIKit+AFNetworking.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		3E3CA739DBD4DFA5F25FDA23883BDDA3 /* DBCOMMONInvalidPathRootError.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E12CD6217151BE3B2BD392289560C35 /* DBCOMMONInvalidPathRootError.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		3EB498FE2EE2B7374DFD7E0718DB92A4 /* ObjectiveDropboxOfficial-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A5D109ABD9BE05F9D3139A8C01D3FE2 /* ObjectiveDropboxOfficial-dummy.m */; };
-		3EC67BA582124DA751B2CE33850B1F5B /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E6AD5F5BE910DA986B75B6ACAF6EC6 /* UIRefreshControl+AFNetworking.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		3ECE4E7C789DA270096B2338720B29A4 /* DBSHARINGSharedLinkError.h in Headers */ = {isa = PBXBuildFile; fileRef = 48588F70A613340B51F4EB78A1879F23 /* DBSHARINGSharedLinkError.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		3ED239C70B89FD1858C2627C82B1E908 /* DBFILESRelocationBatchResultData.h in Headers */ = {isa = PBXBuildFile; fileRef = FBB1380AE993B084CCD0B361E7EA9689 /* DBFILESRelocationBatchResultData.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		3F35CD606A9A63E8B56728AF6550D01F /* DBTEAMCustomQuotaUsersArg.h in Headers */ = {isa = PBXBuildFile; fileRef = 21D5B1867BBAB45118316828DA90E8C8 /* DBTEAMCustomQuotaUsersArg.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -379,7 +364,6 @@
 		551E85FAF951E7872E3D732EAC125335 /* DBTEAMLOGGroupRemoveExternalIdDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = E4B7892F571D5838D240D6E0B8D7F2F8 /* DBTEAMLOGGroupRemoveExternalIdDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		5540711FB468C2D59AECB27F8AF040E5 /* DBRequestErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = 1805490E55926D8C18A1AEBD14A2224D /* DBRequestErrors.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		558CBFB2CA6CBE550AC663264300A7B1 /* DBTEAMLOGPaperEnabledUsersGroupRemovalDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 82BF9F703753D77D31E52FEA51294903 /* DBTEAMLOGPaperEnabledUsersGroupRemovalDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		559925A88DE620872194AFD1F4FDF753 /* RSTWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2186B474DA7AE545D53A2403C49E1758 /* RSTWebViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		55EE813B3614F32D9EB908060CB6B44A /* DBFILESDeleteBatchError.h in Headers */ = {isa = PBXBuildFile; fileRef = 5642F1EFD324EC8AF9987458C30CFACC /* DBFILESDeleteBatchError.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		55EFAAEA16F4029440053C5F57727EB6 /* DBTEAMLOGSsoChangeLoginUrlDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DF1396F43864A86529B3F26E573FF7E /* DBTEAMLOGSsoChangeLoginUrlDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		56047C9EEC7C9D4D4802CEBC66A0F603 /* DBTEAMGroupsMembersListContinueError.h in Headers */ = {isa = PBXBuildFile; fileRef = CF313C59D746914BE003C8975F68C132 /* DBTEAMGroupsMembersListContinueError.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -483,7 +467,6 @@
 		6D00C7BD4C1E6BD2189D119F8E6F9856 /* DBFILEREQUESTSCreateFileRequestArgs.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DFA788572C4D5A42FBF5B0B16D81981 /* DBFILEREQUESTSCreateFileRequestArgs.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6D4DED1D550F05A9D7F9E23D931E1B5B /* DBTEAMGroupUpdateArgs.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A0F6DEB1C45C74806B8B958DF5093E8 /* DBTEAMGroupUpdateArgs.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6D866716053C7CABD20439C7A386BF02 /* DBTEAMLOGGroupAddMemberDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 27F271ACE8A3DF176E83405AB27E00CE /* DBTEAMLOGGroupAddMemberDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		6D8B01E2B557032611FC87BD471306EA /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CB7D0850E51E0B5DAED170310F87588 /* AFNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6DB7FF47BED25D893117FD9BEA033247 /* DBTasks+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = A74356FE80E531BEB2483400641B2181 /* DBTasks+Protected.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6E1642754D125FA2B16C9CE5DAC0D8DE /* DBAUTHTokenFromOAuth1Error.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A45734363E2FB69D7F21E7DFE138276 /* DBAUTHTokenFromOAuth1Error.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6E3621CE076B517586B784D594A92834 /* DBSHARINGLinkMetadata.h in Headers */ = {isa = PBXBuildFile; fileRef = 550ADB72C11AE3DD3A2E5BAF9FA220E8 /* DBSHARINGLinkMetadata.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -491,10 +474,8 @@
 		6E771E8E7E16132AD75BCB7E89F3EC64 /* DBPAPERPaperDocExport.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FFF78E494EB7F2BA3C159893E3AB9C7 /* DBPAPERPaperDocExport.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6E838DB2DFAD7E01C44A585A224C6732 /* DBTEAMLOGFileRequestCloseDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 50A6B2E5581A1ED2FD85D1B9054D1170 /* DBTEAMLOGFileRequestCloseDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6E8FD952F30EC7C6C64176D2B94D45D7 /* DBTEAMMemberAccess.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B14B9B9DA950624E54764C4253AA8BD /* DBTEAMMemberAccess.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		6F5B5AF540D68D37DD09627C1D1A3D9B /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF2F71AA0B453C9EA0A2BF5A5E62468 /* AFSecurityPolicy.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		6F64EEE26242E9185E4FC913B9F65D19 /* DBFILEREQUESTSUserAuthRoutes.h in Headers */ = {isa = PBXBuildFile; fileRef = B29AF7752D7BC94FABEEBD30D2022CCA /* DBFILEREQUESTSUserAuthRoutes.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6F8A3E4D9F6123A9FED5AF4BCB8F64C2 /* Pods-GBA4iOS-Simulator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84392DEDE432DE0FEA2143A648915D0F /* Pods-GBA4iOS-Simulator-dummy.m */; };
-		6FDDEDEE370C09CDEC453EA3184299EB /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A758313DE01A242BEC2C552100E90677 /* AFNetworkReachabilityManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		70080AFB3838CF84BD5D06B6C79975C5 /* DBSHARINGShareFolderLaunch.h in Headers */ = {isa = PBXBuildFile; fileRef = F78D47622113E11D6018F2688C9E3C08 /* DBSHARINGShareFolderLaunch.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		701D61CF7976E0AED6EBF78D9E20E33B /* DBSHARINGAudienceExceptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BCC2922CE0390615DE6518FD505DE69 /* DBSHARINGAudienceExceptions.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		70285B634F2D7BBD3295CD4422B14238 /* DBTEAMPOLICIESPaperEnabledPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = BCF3C99366CCFDF8F34D8488C39DC1D9 /* DBTEAMPOLICIESPaperEnabledPolicy.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -520,7 +501,6 @@
 		7528BAC54B65D733FE0ED7197945A09F /* DBTEAMLOGResellerLogInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 507ED4F980C86DD3F9740501BA8A777E /* DBTEAMLOGResellerLogInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		75365C79F3569CEFEB6B05D75848CDE1 /* DBTEAMTeamFolderRenameError.h in Headers */ = {isa = PBXBuildFile; fileRef = 37833F475C5656ED7C5968353253C213 /* DBTEAMTeamFolderRenameError.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		75505A4144CDE09B6E0C455F20376E62 /* DBTEAMListMemberDevicesArg.h in Headers */ = {isa = PBXBuildFile; fileRef = 45CE2DDDA104625DD348B915C32D4DAB /* DBTEAMListMemberDevicesArg.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		75A754F3860CB1267EDED5D9FBCCD990 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA079807D247B7DCE41058570811F9E5 /* AFHTTPSessionManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		75E59BA58080B12619227705412DD49E /* DBSHARINGChangeFileMemberAccessArgs.h in Headers */ = {isa = PBXBuildFile; fileRef = 107372096F417E3E693B53C91AB0AE5B /* DBSHARINGChangeFileMemberAccessArgs.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		76B0718410D37F3EEE1EC513BCA5A390 /* DBStoneValidators.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D39979FB0A43945157CE9193D78195 /* DBStoneValidators.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		76BC846A9556FE15F73EF67CC3CDFF62 /* DBSHARINGShareFolderErrorBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DD3A2C02E7BCF4DB56614C06BA42634 /* DBSHARINGShareFolderErrorBase.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -544,7 +524,6 @@
 		7AB99BFF9C0A8E31F23EDC3665DC4AB0 /* DBTEAMListMemberAppsResult.h in Headers */ = {isa = PBXBuildFile; fileRef = EF4F4CC8A006836ABD3508B3784E7F99 /* DBTEAMListMemberAppsResult.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		7ABFEA48FDCCED0F6DAF8078951F5A07 /* DBTEAMGroupMemberSelectorError.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D6FE1F6C55F8C4C83E2A8666C7390E /* DBTEAMGroupMemberSelectorError.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		7AD1D1CC2C9F0DA80B4D473A30BC8B6A /* DBTEAMListMembersAppsResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AC6ABB5338A2AFE876758C9CB635AF7 /* DBTEAMListMembersAppsResult.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		7B3115FF46CA70389FE6B659C883D1B1 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E4428D84EEE608632B0ABF89E04D9C9D /* AFURLConnectionOperation.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		7B34C2FA48D5CBF1B032803A01938A97 /* DBSHARINGRelinquishFileMembershipError.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B83A0FB74420349A7E546ADE99FF096 /* DBSHARINGRelinquishFileMembershipError.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		7B58D0C6AD0B4C684398F7570DF8EDB8 /* DBTransportDefaultConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 192FFC90450516107C89D9A2AEC071AC /* DBTransportDefaultConfig.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		7B831339BBAA26C93D5D3C9001E62DB3 /* DBTEAMGroupMembersRemoveError.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BE2DAA86FCD1F4B2ED46CB628E47FB4 /* DBTEAMGroupMembersRemoveError.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -584,7 +563,6 @@
 		83FBEFCF2A865999906AD5C605A09ED1 /* DBUSERSSpaceAllocation.h in Headers */ = {isa = PBXBuildFile; fileRef = F7C6B52FBB8B42E7781F3D3C171BC4AE /* DBUSERSSpaceAllocation.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		841370D9E8BC028AE4C4D2AC40387762 /* DBFILESDeleteResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B94DA156613DC39FDE39D82EB9D5F1A /* DBFILESDeleteResult.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		841AF48819B0D8C2436DFB359385DC93 /* DBSHARINGGetFileMetadataArg.h in Headers */ = {isa = PBXBuildFile; fileRef = F7045FC8BE89F927897E1DC152E1BFC0 /* DBSHARINGGetFileMetadataArg.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		84DFFE561ACB67A9E5889E80DEAF8F37 /* RSTChromeActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C2B94BB05CC28DB2FF2F52B342334 /* RSTChromeActivity.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		8509A97C2C223D76BAC517FD4FE8317C /* DBTEAMMemberSelectorError.h in Headers */ = {isa = PBXBuildFile; fileRef = 00554EE4171DC32F8EC2E9869CAE35A3 /* DBTEAMMemberSelectorError.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8526C44BB5FAF244B2F26A30A8320807 /* DBTEAMLOGMemberSuggestDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 9997E1BBE21FA583699E28900C0FE0A1 /* DBTEAMLOGMemberSuggestDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		85ABF549F117A9B95501B3B245F1FA70 /* DBPAPERAddPaperDocUserResult.h in Headers */ = {isa = PBXBuildFile; fileRef = FEF256FDA4E9034E3CA88EDA8A4D541B /* DBPAPERAddPaperDocUserResult.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -598,7 +576,6 @@
 		8789E7A38BDBD0FB2B48EB751D34F592 /* DBPAPERFoldersContainingPaperDoc.h in Headers */ = {isa = PBXBuildFile; fileRef = F18419E2371CD6CFC7C3255E7D03D988 /* DBPAPERFoldersContainingPaperDoc.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		87A5F6D2B12E544C72D7BA9D17C24CAA /* DBTEAMBaseDfbReport.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C6B1BE285C1A438072A8766E5EC8B00 /* DBTEAMBaseDfbReport.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		88093289CAEDD28E99200C3BA36F38DE /* DBTEAMLOGCertificate.h in Headers */ = {isa = PBXBuildFile; fileRef = A48100D860F9F3EEEF6510E56A6790CD /* DBTEAMLOGCertificate.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		88141CF7B8CCADC6933C9E9F7BE9AA46 /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = B127DB02CF6DB530DC2EB3E11099246C /* UIImageView+AFNetworking.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		882A7D1837A350950D4BC49C7CC4F391 /* DBTEAMLOGPaperMemberPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = B76983281CE20840F6B64D042FAE7BDE /* DBTEAMLOGPaperMemberPolicy.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		88352A7799F9134F39212FA598C8B017 /* DBTEAMTeamFolderIdListArg.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFDE0F91CEA55B42762F2C5B1F2972B /* DBTEAMTeamFolderIdListArg.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8846708B78E26D6AF6E0E7EF3D911995 /* DBSHARINGListFilesContinueError.h in Headers */ = {isa = PBXBuildFile; fileRef = EE94D25B955E8CCD57F936C5CFCEC7D2 /* DBSHARINGListFilesContinueError.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -610,7 +587,6 @@
 		88F494C32F6471582D063DD9EE94B544 /* DBTEAMCustomQuotaError.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E573412F85703610B1DFDC97C0981C8 /* DBTEAMCustomQuotaError.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		89E13624FC853B654BF40E8BA95E1F37 /* DBTEAMTeamFolderArchiveJobStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AF823A53A394DEADD82B9D937501469 /* DBTEAMTeamFolderArchiveJobStatus.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8A43D3FA64723BB0545074B6EDF887A5 /* DBTEAMDeviceSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 25D4376B2F0346C0BE89EC932DBCEDB5 /* DBTEAMDeviceSession.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		8A51A7E0C811BC2AD5B079837944B436 /* RSTSafariActivity.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E54760AD49C26E59179916106F1273B /* RSTSafariActivity.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8AF2343F79EC3F2D08D706D2DCEFE330 /* DBTEAMLOGAppLogInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = CB7A8A1FE3DD2BF1BAD9D0A3B9439122 /* DBTEAMLOGAppLogInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8B050D568DE2D5BE7A0231FD8DEB45D6 /* DBTEAMLOGAccountCaptureChangeAvailabilityDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 348D0432B61D86ABBF0F7051ACBD8A58 /* DBTEAMLOGAccountCaptureChangeAvailabilityDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8BDDD413282DA8F01A5EF5FFA0AE3E1B /* DBTEAMGroupMembersRemoveArg.h in Headers */ = {isa = PBXBuildFile; fileRef = FE2C47AA6D79CBB6144838924FC544F8 /* DBTEAMGroupMembersRemoveArg.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -628,13 +604,11 @@
 		8CF44CC983A413752BD503F22516175B /* DBTEAMLOGFileUnlikeCommentDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C92D69E2E44E73FB0EF2E5A27D406E3 /* DBTEAMLOGFileUnlikeCommentDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8D07A3AF1CCF477FFC3010C6A2D8DADE /* DBPAPERPaperDocCreateArgs.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D1D20C31238B07C420FA72CDB0347F1 /* DBPAPERPaperDocCreateArgs.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8D0F57C0B41CD8A5A9A2B2257D0CF24E /* DBTEAMGetActivityReport.h in Headers */ = {isa = PBXBuildFile; fileRef = 44F56A932069265596F682D783CD464F /* DBTEAMGetActivityReport.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		8D59DB18DD58C0CB764CBAE6B05D4D95 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 54542EB603AC074CC87059AA6F27C418 /* AFURLResponseSerialization.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		8D6E70488766331777F6E44DD8C80837 /* DBFILESRelocationBatchError.h in Headers */ = {isa = PBXBuildFile; fileRef = B7C4959E1056F6BDC9F90D5B16C89B8E /* DBFILESRelocationBatchError.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8DB988F92DCBFC17DDCCADC6EBDF0649 /* DBAUTHRouteObjects.h in Headers */ = {isa = PBXBuildFile; fileRef = 778B0729FBE73A7BEE18C8CA9536E744 /* DBAUTHRouteObjects.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8DF71F7C1A6DD256EA594619AA510285 /* DBTEAMLOGSharedContentRequestAccessDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 48C261E1B00777B7320EA469A2820EDB /* DBTEAMLOGSharedContentRequestAccessDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8E234243856261E69B920B1538FDDC46 /* DBPAPERDocLookupError.h in Headers */ = {isa = PBXBuildFile; fileRef = 762B9F28BA14A16A79EEAE2849681AE6 /* DBPAPERDocLookupError.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8E9AC7998976EFD1A48F7BAEE4BE90D9 /* DBTEAMLOGCollectionShareDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = A76358A3988E1CFF9B012DFB14BB7127 /* DBTEAMLOGCollectionShareDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		8EAFFE9B511CF4E58B3EB468622D88CD /* RSTChromeActivity.h in Headers */ = {isa = PBXBuildFile; fileRef = 69AF23290878125733B5D4DF32972B03 /* RSTChromeActivity.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8EB5657B0BFBD77817599363E142CC1E /* DBTEAMLOGPaperContentAddMemberDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F16302256E0AB130006BBB1EDB471D0 /* DBTEAMLOGPaperContentAddMemberDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8ED273D2622B5BC2058EF9DA5A093BA6 /* DBTEAMMobileClientSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E7EB1A2CE1EC829630D8F530607DCDF /* DBTEAMMobileClientSession.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8ED850F29CE91741239038706FEFFD8F /* DBTEAMLOGDeviceLogInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BB4783F374C26A588AE8E5A2B3441CA /* DBTEAMLOGDeviceLogInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -646,8 +620,6 @@
 		8FA87A147CE425BEFDF6A198F4205354 /* DBTEAMLOGDeviceLinkFailDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EF379EDD1677545064F8EB238D36E41 /* DBTEAMLOGDeviceLinkFailDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8FC5870C20FA7DDC823BB9643F0DC24A /* DBTEAMLOGAccountCapturePolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DB81CB40056DBD97BD5C28A4DC6140A /* DBTEAMLOGAccountCapturePolicy.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		90105B1DE6BF4CEFC32C4ED97D271EA3 /* DBTEAMLOGFileRestoreDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 3872805F4C3D9C8F8284D9A13194D6AE /* DBTEAMLOGFileRestoreDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		9032289F8F85B64E5D3C8B1963D10124 /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 076AA30EA4E57305B0E9B43710F80C64 /* AFNetworkActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		904447CC4CCB83B04DE3DA64CF242D79 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3206EAFDD6D36A91EB767ED2F50BBB /* AFURLRequestSerialization.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		904E238EAD537169AA74F5EC9D498E0B /* DBFILESListFolderResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 0469926A32C81634D619D26F3BA13CAE /* DBFILESListFolderResult.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		906C52BEC3984CA12D54CB7A582EC1EE /* DBTEAMLOGGroupUserManagementChangePolicyDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A9707DF77DEF3EB1CE9D3C437ED66C8 /* DBTEAMLOGGroupUserManagementChangePolicyDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		9087EA5280B0D21533B1A0A66E81D213 /* DBTEAMTeamFolderActivateError.h in Headers */ = {isa = PBXBuildFile; fileRef = B63A01CB47F4390EAD6012579439E3B8 /* DBTEAMTeamFolderActivateError.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -680,7 +652,6 @@
 		96329EB87DDDA40EABB631DABEF9F447 /* DBTEAMLOGSharedContentDownloadDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F7B57CFE1C83E826045F6928D2DE50B /* DBTEAMLOGSharedContentDownloadDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		96339B267795A09C81C8BC6D733B4951 /* DBTEAMMemberProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A04A289C80C5352B0594F51CB75C850 /* DBTEAMMemberProfile.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		963D05664E81E393D17548D90DBD3BC4 /* DBTEAMLOGShmodelTeamShareDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = A304DB75FA26103E4907C7F15EFB4406 /* DBTEAMLOGShmodelTeamShareDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		96A59940868D89941D001F7BA247D9E5 /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F21348CBE56747B0854B59AED0269A5C /* AFHTTPSessionManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		96BD5C68ACA951A59914CE4217B03B37 /* DBTEAMLOGPaperContentRemoveFromFolderDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 634D0B6834EFF89211A4452398972116 /* DBTEAMLOGPaperContentRemoveFromFolderDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		977F699ED4BC4257B8603B3EF2702641 /* DBTEAMLOGOpenNoteSharedDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 48075377E4B009C63B9C93B89770199B /* DBTEAMLOGOpenNoteSharedDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		98037D05D476E6D244CFBDFF35B46764 /* DBSHARINGMemberAccessLevelResult.h in Headers */ = {isa = PBXBuildFile; fileRef = ACFD5FCBA0945425326650FE57553CF1 /* DBSHARINGMemberAccessLevelResult.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -694,7 +665,6 @@
 		99B2182141DB28E51A8A5818893E4F89 /* DBTEAMTeamAuthRoutes.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C04A04A66BFA07216854A83A07AB5C2 /* DBTEAMTeamAuthRoutes.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		99D33A2F4841CD9FA290905750188DF8 /* DBUSERSGetAccountError.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C14A69BB608A46CA865E3BEEE16127 /* DBUSERSGetAccountError.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		9A16E89FC4E191EB8753E7053E442EC6 /* DBHandlerTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = A752EFA67182463503CF6C103DB7BBA9 /* DBHandlerTypes.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		9A41BC1C15AC85B100A80E1C6701D338 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AFB87C299B8C68DF25906082ACFB94 /* UIButton+AFNetworking.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		9A640C01CBC01EE5C0B69BFED6983203 /* DBSHARINGSharedLinkPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B9AAF44AA282C0CC5F55C58E286540B /* DBSHARINGSharedLinkPolicy.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		9A9F46AC50C576DE3A2565C7F8A28151 /* DBSHARINGFileMemberActionResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 02D76732A19A74B487B1F6528CDC3522 /* DBSHARINGFileMemberActionResult.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		9B981D356B0A469FCFCF73CB8A54400F /* DBTEAMLOGSharedContentChangeInviteeRoleDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 44C4B3DDE634F41E2576644B0D0893BE /* DBTEAMLOGSharedContentChangeInviteeRoleDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -706,7 +676,6 @@
 		9C9F6109610934862D18BCE2F6EDEEC4 /* DBTEAMLOGSharedContentCopyDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 757F3C7124C7C8F1E0C78EC5624778F3 /* DBTEAMLOGSharedContentCopyDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		9CA0A0D57BD15FBBC5BF7AE12BFA538B /* DBFILEPROPERTIESOverwritePropertyGroupArg.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D273075BB2B22BCA4D9D5BDE74F3448 /* DBFILEPROPERTIESOverwritePropertyGroupArg.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		9CEAC3253F147126AB0413FF9C57732D /* DBFILEPROPERTIESTemplateFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = FD137720094372DB6824F3D879700057 /* DBFILEPROPERTIESTemplateFilter.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		9CEE5ED4B3F858DDE4C5C383B99C860F /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = ABE03BB1B0E61CDC293F779D0144D934 /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		9D5366603ED85589643BB27826DBEB6F /* DBTEAMLOGSharedFolderMembershipManagementPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 261EBA49C2A61091BD6C8D81D58B336A /* DBTEAMLOGSharedFolderMembershipManagementPolicy.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		9DC3900833305FAD07001B09BC087BCB /* DBTEAMTeamFolderArchiveLaunch.h in Headers */ = {isa = PBXBuildFile; fileRef = C01EE629B7853A1E9EA87F5B86C8E994 /* DBTEAMTeamFolderArchiveLaunch.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		9E077EB3B5660BD3ABFC274A9E059837 /* DBSHARINGGetSharedLinkMetadataArg.h in Headers */ = {isa = PBXBuildFile; fileRef = 12AB3B5ED0339F2233E55EA608589360 /* DBSHARINGGetSharedLinkMetadataArg.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -723,7 +692,6 @@
 		A085E9E388B481353849C0D0D34357B0 /* DBTEAMLOGPasswordResetDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E84811D33211EFA608FE215A76F3650 /* DBTEAMLOGPasswordResetDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A0B87E5BB154940755479C301A8452AC /* DBTEAMLOGPaperContentRenameDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 679DCC2B44326D4288605ED1DFC8A3F1 /* DBTEAMLOGPaperContentRenameDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A14BB877AAC36164EA5F9FB84DF76606 /* DBSHARINGUpdateFolderMemberArg.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F6BA4C82EFDB448A02F5403391AC9D9 /* DBSHARINGUpdateFolderMemberArg.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A196F6DDD4298CF4F259FD34B6B3D046 /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 59BB32E55B1A27A1D39680855DA50CDA /* UIAlertView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		A1A5BC017B0E4AFD040878B6A0B56CBF /* DBPAPERListPaperDocsResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D3B8E8DC359556F89E43FE2EF0B7B36 /* DBPAPERListPaperDocsResponse.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A1C1145E7F8EFF6527B58CFA5FB2F6A7 /* DBRequestErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = E08860D54E8839FEE6D05F4FB5F00646 /* DBRequestErrors.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		A1C3DD52DC2D43D18FD1C3DBEDF673F6 /* DBHandlerTypesInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = E6F49D35D7BDA8914B3A6AB9E4C8B1FE /* DBHandlerTypesInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -751,7 +719,6 @@
 		A781CE3579998524C5CC21B9EB081AF4 /* DBTEAMLOGPaperEnabledUsersGroupAdditionDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = C27C5A10F830C6C29326014CB4D7C871 /* DBTEAMLOGPaperEnabledUsersGroupAdditionDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A838EDCDEC9B5CD67F91FB45237021A9 /* DBFILESMediaMetadata.h in Headers */ = {isa = PBXBuildFile; fileRef = 974493E586BB9298C32CE0FF838E7EA8 /* DBFILESMediaMetadata.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A95A9FC790F2ED9FE5B08CC88E694BA6 /* DBTEAMLOGUserOrTeamLinkedAppLogInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 04D90FEE72085F2F885F0C3AA7C8F6DB /* DBTEAMLOGUserOrTeamLinkedAppLogInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A970930F42820DA65F46354A88641C03 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F6DFC1751ED4D86B652C8BE4FFD7A78 /* UIWebView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		A990AF42F90FAA7F33C28F0E51191696 /* DBTEAMLOGWebSessionsChangeIdleLengthPolicyDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = C296C284CF1C38B2DBA62A4458E7987A /* DBTEAMLOGWebSessionsChangeIdleLengthPolicyDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A9B869336242F787600E373F02BE1FBD /* DBSHARINGUpdateFolderPolicyError.h in Headers */ = {isa = PBXBuildFile; fileRef = F9D90052E1ADA50DDD095FD61C8FB985 /* DBSHARINGUpdateFolderPolicyError.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A9CE43E7DDF217668AA4103F1A7D30AB /* DBFILESSearchMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D0E9D6FDA66BEA3E4F0202CA2172A8C /* DBFILESSearchMode.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -775,10 +742,8 @@
 		ADF38F023CBA1881D9D3A717B093E2F8 /* DBTEAMCOMMONGroupType.h in Headers */ = {isa = PBXBuildFile; fileRef = A05520C57E6A64086CF73759ED5007AD /* DBTEAMCOMMONGroupType.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		AE1B88BF5FEA568809A0BF5A7E5029F0 /* DBTasksStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = F53352B7A07FD68736E563B673609C16 /* DBTasksStorage.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		AE4359CB9575BF1189AB75373C358E12 /* DBFILESLookupError.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AF0BF9A16DD7D55FC5DD9BE14DF666F /* DBFILESLookupError.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		AE476E52747218A84981A4414BB4588E /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A0B1F193F1E45F8D733B89BF6541365 /* AFHTTPRequestOperation.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		AE4CCB1ECD48E5CE3AE673E5D7A16BB8 /* DBSHARINGSharedContentLinkMetadata.h in Headers */ = {isa = PBXBuildFile; fileRef = 45BE908E0713E97B6FBF531DA54A56B9 /* DBSHARINGSharedContentLinkMetadata.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		AE63090D86FE60BE2A2EB637F98FE45E /* DBTEAMLOGDeviceApprovalsChangeUnlinkActionDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E18327907D646EB9F99FDA18D8AC6A /* DBTEAMLOGDeviceApprovalsChangeUnlinkActionDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		AE810CBBEC23CC8F984FB03F66CD7E6B /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = B37D2D58246A5BECD7B30C23986CA012 /* UIActivityIndicatorView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		AEB20A8950230380AD45347275FBB29B /* DBFILESGetMetadataArg.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5A7D8B1C113F1085DBCD7E8F902778 /* DBFILESGetMetadataArg.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		AEE8A7C54DEB54A399936003416DD297 /* DBTEAMLOGAssetLogInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 1110826AF1BEF27AF075F2313F0C93B4 /* DBTEAMLOGAssetLogInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		AF458D33E6DCB328BB2CA535A28CCAC0 /* DBTEAMLOGTwoAccountPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 057EAD0CCF9AC672856BF0CA51D372C4 /* DBTEAMLOGTwoAccountPolicy.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -837,7 +802,6 @@
 		BB31CA28778FA9E9D8CCE6920C5FD05D /* DBTEAMLOGFileCopyDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 05605C8A007ED6B757E521DA5F926533 /* DBTEAMLOGFileCopyDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		BB93E14621D4B03EDB15A1CD7F981208 /* DBTEAMLOGLinkAudience.h in Headers */ = {isa = PBXBuildFile; fileRef = C74CB2AC35E1BC46FB95A9084B086A98 /* DBTEAMLOGLinkAudience.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		BBA46D7DA772979FA4B1E072A46C621F /* DBFILESDownloadError.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C47E5B3D1E479AE8B6E3AF6975ED5AD /* DBFILESDownloadError.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		BBAF21D98C086BEC14640638EE9BEB34 /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D1ABDC4483815BD4AFBE2D9ACA83F9A /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		BBC02CB35C546E266B00827374D89D56 /* DBTEAMLOGShmodelTeamDownloadDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A9247B37A00AFCD3EBA002926FCB608 /* DBTEAMLOGShmodelTeamDownloadDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		BBC62AE54522BA8FBA13DB74DC584785 /* DBTEAMLOGDeviceType.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F68FEDC3BE7A937C99D8396BB8D8B5D /* DBTEAMLOGDeviceType.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		BBC6BE5A7DFC2EBC9285FDCF559E6E72 /* DBTEAMSetCustomQuotaArg.h in Headers */ = {isa = PBXBuildFile; fileRef = 095C00AF5A944B1CADE323A448C0C13A /* DBTEAMSetCustomQuotaArg.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -854,7 +818,6 @@
 		BDDB06F2335EE0E80F62996E9717C0B6 /* DBTEAMDesktopClientSession.h in Headers */ = {isa = PBXBuildFile; fileRef = FA9457DE34B2F318B7282ED6DD9D6847 /* DBTEAMDesktopClientSession.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		BE17E3836AA198375B91ECE607BA4815 /* DBFILESRelocationError.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AC22D45BBCA4D47DF20F2EED8D7C3F0 /* DBFILESRelocationError.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		BE201B568F03B2B92995259DC9B9AE19 /* DBSHARINGUnmountFolderArg.h in Headers */ = {isa = PBXBuildFile; fileRef = AC7C29DFAC4FE0C4705196220DBC4E1B /* DBSHARINGUnmountFolderArg.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		BE46D758513936E18DDD1BCC5E05C6F2 /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 7ACE43A4C96861C9142B1FE11AF6FA39 /* AFURLRequestSerialization.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		BE70C4C32BB9987C892EE2846397B79C /* DBTEAMLOGFileDeleteDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 54B09C61D343D23AF1A239DDC5EBE021 /* DBTEAMLOGFileDeleteDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		BE7624AD50C1A6F7DD07F6E7C9C0144B /* DBGlobalErrorResponseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F8724701B9A8569468A50EDBC4D780 /* DBGlobalErrorResponseHandler.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		BE9A9BB7A2B9DC93899DBAEB922BA729 /* DBSHARINGGetMetadataArgs.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B6CE477B0CEF20A7CF5B7DDFAD81703 /* DBSHARINGGetMetadataArgs.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -898,7 +861,6 @@
 		C5AF817580883EEF120188345C46F2E3 /* DBTEAMLOGRouteObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = 852A782558DFC66422D492B6D7DF1260 /* DBTEAMLOGRouteObjects.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C5C5D23C4C2B459426540EDF3EF20C53 /* DBSHARINGSharedContentLinkMetadataBase.h in Headers */ = {isa = PBXBuildFile; fileRef = DCA09B0639312130308449A316FD6286 /* DBSHARINGSharedContentLinkMetadataBase.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		C5F4BE7283FB31F490829B697616DC58 /* DBFILESGetCopyReferenceResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 350FA196CC132B94BD5B6BC260E2064F /* DBFILESGetCopyReferenceResult.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C606A57CB3B582A55FC2156397704230 /* RSTWebViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9641DD5FF9945DEC558B88625C888A7C /* RSTWebViewController-dummy.m */; };
 		C62081AD5900102333B38B223AA842E3 /* DBFILESDeleteBatchResultData.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A567F60BA627059F408AF204636DCC9 /* DBFILESDeleteBatchResultData.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		C66B3BEF00B58E9E77CE347B620C9178 /* DBTeamBaseClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F08EAD6C59380F207E568240489B51D /* DBTeamBaseClient.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C70A14C256D67E40715D365EA264BA8D /* DBTEAMLOGGroupJoinPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 74FDEB73E1876DA5DDD58F1965663893 /* DBTEAMLOGGroupJoinPolicy.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -909,7 +871,6 @@
 		C89C68690A888CB6C02DB926FE0CA21F /* DBTEAMLOGWebSessionsChangeFixedLengthPolicyDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BCED80E5E84C581719A027EA3EBC3DB /* DBTEAMLOGWebSessionsChangeFixedLengthPolicyDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		C8A8492D44ACAC73D4DA8AC2717AB7D3 /* DBFILESGetTemporaryLinkArg.h in Headers */ = {isa = PBXBuildFile; fileRef = 21EFCF63AA4A5225FD0463DBDC7C027E /* DBFILESGetTemporaryLinkArg.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		C8AA10DAECEC09905691733C7E58452E /* DBFILEPROPERTIESLookUpPropertiesError.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AEAE6D88DD363C183C959726F3BEB75 /* DBFILEPROPERTIESLookUpPropertiesError.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C8C0A7A298E01766EE27FBDFAB68442D /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C6B3CE38D30A80BF55629D816C4854 /* UIImageView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C8EE7322D6780D1C4B3E64FA6381C946 /* DBTEAMLOGJoinTeamDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 0760F28EAAD6B852131A0B95FBA34153 /* DBTEAMLOGJoinTeamDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		C910D0C1B6F151221F7A286221F101A2 /* DBAppClient.m in Sources */ = {isa = PBXBuildFile; fileRef = D246D9A2B2E1240488EB47E6DD128ECA /* DBAppClient.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C921BD66399C456682C2C70E71327159 /* DBFILESSearchMatchType.h in Headers */ = {isa = PBXBuildFile; fileRef = 336F8015FFBAC1E4BB7DE9F47CB89D5F /* DBFILESSearchMatchType.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -922,7 +883,6 @@
 		CB595DEA5A59CB4E0A9243980E653524 /* DBFILESCommitInfoWithProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = B6DFB2A071CAF85F08AABC2BBB2D773C /* DBFILESCommitInfoWithProperties.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		CB6DE6B932DD3042AEAA8EC82AF0C357 /* DBTEAMLOGSharingMemberPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DC9747DD93248827408B9E7A95D2349 /* DBTEAMLOGSharingMemberPolicy.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		CB710B6A5D629BDF5242CF2E196A1146 /* DBTEAMLOGPaperChangeMemberLinkPolicyDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = C0B994672A53BA7C3AB473DC09167011 /* DBTEAMLOGPaperChangeMemberLinkPolicyDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		CBBFFF0091C603CFFC6D1035799A6FE9 /* AFHTTPRequestOperationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C6D32D51ACF6C084D8837DA43170E322 /* AFHTTPRequestOperationManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		CBDB54FC2A6F6EB2A6D671A95D39A3F6 /* DBFILEPROPERTIESGetTemplateArg.h in Headers */ = {isa = PBXBuildFile; fileRef = FADD2C92A25D8455D28795F7061AE6EB /* DBFILEPROPERTIESGetTemplateArg.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		CC0FC86E39BE657976E3B8F26DDFCF07 /* DBTEAMUserCustomQuotaArg.h in Headers */ = {isa = PBXBuildFile; fileRef = 037860B3D6B2089AE025D4099876AAC0 /* DBTEAMUserCustomQuotaArg.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		CC27ECE75CD9049C9E660451927A1C1C /* DBTEAMGroupMembersSelectorError.h in Headers */ = {isa = PBXBuildFile; fileRef = EA68EA4A63123688251318F36427C5A7 /* DBTEAMGroupMembersSelectorError.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -948,7 +908,6 @@
 		D370ABFD21DB9F61FA9765C3E1F5F211 /* DBTEAMRevokeDeviceSessionArg.h in Headers */ = {isa = PBXBuildFile; fileRef = E5BB0C3C25912124BD6E1AB467AE1348 /* DBTEAMRevokeDeviceSessionArg.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D3A331E95059E0D73A1209DB2DB177F4 /* DBTEAMLOGMemberSuggestionsChangePolicyDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA08C3275749C3AD6F5DFCD8B7E1C9A /* DBTEAMLOGMemberSuggestionsChangePolicyDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D3DF9EEA41479C9103A564DE8A115C61 /* DBTEAMTeamFolderArchiveArg.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E16E60794A2F32FB149F3F5AF62B5A6 /* DBTEAMTeamFolderArchiveArg.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D3EA70C23134451657164E6F89D08966 /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = D2AE073B0322271D9BD7389BB575F719 /* UIButton+AFNetworking.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D4356BD9AB2525C593C0BBD770DF3876 /* DBTEAMActiveWebSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E8ADE8104E66B44C26B67250EFA9860 /* DBTEAMActiveWebSession.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D4B0FABDBEFB5E40F5D506EF8ED065C1 /* DBSHARINGUpdateFolderPolicyArg.h in Headers */ = {isa = PBXBuildFile; fileRef = E806B6892923CB8CDCD8A891D93946E9 /* DBSHARINGUpdateFolderPolicyArg.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D4B2C945B6A54268390C692B2C8E77FF /* DBTEAMRevokeDesktopClientArg.h in Headers */ = {isa = PBXBuildFile; fileRef = 16D100C6EB53B5D595F7D8D6EB375E39 /* DBTEAMRevokeDesktopClientArg.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -970,7 +929,6 @@
 		D85AEBAD319E2067559EBA471E2F837E /* DBTEAMLOGFileRequestsEmailsEnabledDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = F0DEA5D66A506E4EF6BD3F852CF32E75 /* DBTEAMLOGFileRequestsEmailsEnabledDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D90653D16E3461EB0D3AEE45D7BCF844 /* DBFILEREQUESTSGetFileRequestArgs.h in Headers */ = {isa = PBXBuildFile; fileRef = D81B83AEF5A7E1EA2F129BE4D3DE5092 /* DBFILEREQUESTSGetFileRequestArgs.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D9483EE648F9D5AF7F2069CB0267BA46 /* DBTEAMLOGGroupAddExternalIdDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BA482792C36FFC3FAA4FFAA42D93DFB /* DBTEAMLOGGroupAddExternalIdDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D9945A881238EF441819FF4A21943411 /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 34F6C90FAE34F3008B80EA75F60C5E7B /* AFURLConnectionOperation.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D9BC6C5967D41ED56EBB29389BDE2F4D /* DBSHARINGListFileMembersBatchResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 74C435B47071B1D1DFEE437524363C65 /* DBSHARINGListFileMembersBatchResult.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D9D9B783EB1F7664ADF8114BD039F84D /* DBFILEPROPERTIESPropertiesSearchArg.h in Headers */ = {isa = PBXBuildFile; fileRef = 452AAA044D8D012F36FA960FC5DEBD66 /* DBFILEPROPERTIESPropertiesSearchArg.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D9F2E9AD7B71A721792A7603DBA6E786 /* DBTEAMTeamMembershipType.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A0455D3D6370813C3BC1C07B293857F /* DBTEAMTeamMembershipType.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -980,7 +938,6 @@
 		DA97776DD67908AD89592E1040916CFB /* DBPAPERRouteObjects.h in Headers */ = {isa = PBXBuildFile; fileRef = EC13C046DB8D381A31A377CB1AB6D7F0 /* DBPAPERRouteObjects.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		DAC20E27B3ADC06F693394A20CCED111 /* DBPAPERPaperApiCursorError.h in Headers */ = {isa = PBXBuildFile; fileRef = 59F2D6F9CAEAD3F7D5871FAC0B60C6DA /* DBPAPERPaperApiCursorError.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		DACEE0783A6926765CE7DF383138F3B7 /* DBTEAMLOGLogoutDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E700EA5672BABFE85EFFC9518C60AEC /* DBTEAMLOGLogoutDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		DB06DEC15FEB0344B47DBD8834388691 /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F400267977C2030E5BD7B4C5F0DED79 /* UIRefreshControl+AFNetworking.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		DB2AC968E236D63F318AC2CD4F0908EC /* DBFILEPROPERTIESListTemplateResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 936089D313C6EBEB965CA9206A67B60B /* DBFILEPROPERTIESListTemplateResult.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		DB4384780A6D7DD8184DA11C88B099AE /* DBTEAMLOGShmodelAppCreateDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EC56A83EE57B1D1CE0BC33AC1D08A6F /* DBTEAMLOGShmodelAppCreateDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		DBD0D917387AE77190713B1552631FBA /* DBSHARINGMemberPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = EA6BA48843A27F3E639B1C5796507624 /* DBSHARINGMemberPolicy.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -1007,7 +964,6 @@
 		E049AF08C4B4554A5BC43163CE793B39 /* DBTEAMLOGShmodelFbShareDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = B7183D2F29005D1E3F4DAF1AB3130CB8 /* DBTEAMLOGShmodelFbShareDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E08F041FED4DA65D591975706B0AB2E6 /* DBTEAMUsersSelectorArg.h in Headers */ = {isa = PBXBuildFile; fileRef = 01385750B3005CEE3EEEB6C0A0835B7A /* DBTEAMUsersSelectorArg.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E093E99A131D169A5BEEC506974B8555 /* DBTEAMLOGPaperDocChangeSharingPolicyDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C903E520E177AE8E7FB6BD754DCF4FA /* DBTEAMLOGPaperDocChangeSharingPolicyDetails.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E1384E47BC0EB2C464B9F6C8605606F6 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4A0C8038F5B2088A70467A01BF23C1 /* AFNetworkActivityIndicatorManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		E154758FA74520BB7CA93FFB44E435D0 /* DBTEAMLOGSmartSyncOptOutPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = AD8F7254D5766EB57707257F920B4C9D /* DBTEAMLOGSmartSyncOptOutPolicy.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E15745F5B40C08AC2D827A62DD7B07C2 /* DBTEAMLOGRouteObjects.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AE2EB73AFC1197861BCD24210FFFA61 /* DBTEAMLOGRouteObjects.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E202E245A549F368918E2D0E61F9518D /* DBTEAMRevokeLinkedAppStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C18797A0662CD8C1748B78D53CB9FF5 /* DBTEAMRevokeLinkedAppStatus.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -1165,13 +1121,6 @@
 			remoteGlobalIDString = D19967FC808FC0CC82E22D1A114BD3F6;
 			remoteInfo = NJKWebViewProgress;
 		};
-		37C7E245ADF9E4F542272FD99267D340 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0130B3724283586C0E9D2A112D4F2AA1;
-			remoteInfo = AFNetworking;
-		};
 		5A8855BBC569345500BD287643430E72 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -1193,20 +1142,6 @@
 			remoteGlobalIDString = E8319B94C47A277813B18A2560C7E5AD;
 			remoteInfo = ObjectiveDropboxOfficial;
 		};
-		7C801DCB5BF316264106A5BAE0BDD38A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 694D74196578EDC597B8A5875BA7A3C8;
-			remoteInfo = RSTWebViewController;
-		};
-		9DD6CF25F3027DB0C1CD753F524F7F8F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0130B3724283586C0E9D2A112D4F2AA1;
-			remoteInfo = AFNetworking;
-		};
 		B1C7EB79385E38549FFFF4569EB1441F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -1221,26 +1156,12 @@
 			remoteGlobalIDString = E8319B94C47A277813B18A2560C7E5AD;
 			remoteInfo = ObjectiveDropboxOfficial;
 		};
-		CB76DD9C75763F2EEA1B4E42B94056D0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 694D74196578EDC597B8A5875BA7A3C8;
-			remoteInfo = RSTWebViewController;
-		};
 		D436BE39AA4D60AEE13DA87089FBBDD0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E75F2E3FBFC70D056D3E1AB5606C5D9A;
 			remoteInfo = PSPDFTextView;
-		};
-		DCC7F24CE2DB065CE04C6B53607149BF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D19967FC808FC0CC82E22D1A114BD3F6;
-			remoteInfo = NJKWebViewProgress;
 		};
 		E6DD3650DA31E8F001460591F71B0D84 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1327,7 +1248,6 @@
 		0E63DA72379C3875DDF0A6EA51877D7C /* DBTEAMLOGSmartSyncPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBTEAMLOGSmartSyncPolicy.h; path = Source/ObjectiveDropboxOfficial/Shared/Generated/ApiObjects/TeamLog/Headers/DBTEAMLOGSmartSyncPolicy.h; sourceTree = "<group>"; };
 		0F3139347C21B4F4F65932CE0E1070D5 /* PSPDFTextView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PSPDFTextView.debug.xcconfig; sourceTree = "<group>"; };
 		0FB2AAFBCE82AA1D087162C6F974DAB3 /* DBPAPERPaperDocPermissionLevel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBPAPERPaperDocPermissionLevel.h; path = Source/ObjectiveDropboxOfficial/Shared/Generated/ApiObjects/Paper/Headers/DBPAPERPaperDocPermissionLevel.h; sourceTree = "<group>"; };
-		0FBB9F28F19496CFCB15A1980B4F66AB /* RSTWebViewController */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = RSTWebViewController; path = libRSTWebViewController.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FF2F71AA0B453C9EA0A2BF5A5E62468 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
 		103E999F8F822FFD0B548466197F21CB /* DBSHARINGFolderAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBSHARINGFolderAction.h; path = Source/ObjectiveDropboxOfficial/Shared/Generated/ApiObjects/Sharing/Headers/DBSHARINGFolderAction.h; sourceTree = "<group>"; };
 		107372096F417E3E693B53C91AB0AE5B /* DBSHARINGChangeFileMemberAccessArgs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBSHARINGChangeFileMemberAccessArgs.h; path = Source/ObjectiveDropboxOfficial/Shared/Generated/ApiObjects/Sharing/Headers/DBSHARINGChangeFileMemberAccessArgs.h; sourceTree = "<group>"; };
@@ -1629,7 +1549,7 @@
 		4EF957A7941C4A62E541AA9CD04D5559 /* DBSHARINGFileMemberActionError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBSHARINGFileMemberActionError.h; path = Source/ObjectiveDropboxOfficial/Shared/Generated/ApiObjects/Sharing/Headers/DBSHARINGFileMemberActionError.h; sourceTree = "<group>"; };
 		4F05D7F81EF7F63B64DFC9C8E26B0E3A /* DBTEAMLOGSignInAsSessionEndDetails.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBTEAMLOGSignInAsSessionEndDetails.h; path = Source/ObjectiveDropboxOfficial/Shared/Generated/ApiObjects/TeamLog/Headers/DBTEAMLOGSignInAsSessionEndDetails.h; sourceTree = "<group>"; };
 		4F2C0141F7AD21E4BB2DDAF44B0BF1ED /* ObjectiveDropboxOfficialLib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ObjectiveDropboxOfficialLib.h; path = Source/ObjectiveDropboxOfficial/Headers/Umbrella/ObjectiveDropboxOfficialLib.h; sourceTree = "<group>"; };
-		4F2D493580D553CB7376ED7D40BD63C4 /* Pods-GBA4iOS */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-GBA4iOS"; path = "libPods-GBA4iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F2D493580D553CB7376ED7D40BD63C4 /* libPods-GBA4iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GBA4iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F7B57CFE1C83E826045F6928D2DE50B /* DBTEAMLOGSharedContentDownloadDetails.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBTEAMLOGSharedContentDownloadDetails.h; path = Source/ObjectiveDropboxOfficial/Shared/Generated/ApiObjects/TeamLog/Headers/DBTEAMLOGSharedContentDownloadDetails.h; sourceTree = "<group>"; };
 		4FB8B14FC39BDE1CA41444D093AF4E00 /* DBTEAMLOGFileLogInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBTEAMLOGFileLogInfo.h; path = Source/ObjectiveDropboxOfficial/Shared/Generated/ApiObjects/TeamLog/Headers/DBTEAMLOGFileLogInfo.h; sourceTree = "<group>"; };
 		4FF56C8149F09FC3DD90CB70E80EB918 /* DBTEAMTeamFolderCreateArg.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBTEAMTeamFolderCreateArg.h; path = Source/ObjectiveDropboxOfficial/Shared/Generated/ApiObjects/Team/Headers/DBTEAMTeamFolderCreateArg.h; sourceTree = "<group>"; };
@@ -1995,7 +1915,7 @@
 		9D1ABDC4483815BD4AFBE2D9ACA83F9A /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
 		9D2B42C841A0D3979ADB20E5DCC25D7D /* DBTEAMGroupFullInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBTEAMGroupFullInfo.h; path = Source/ObjectiveDropboxOfficial/Shared/Generated/ApiObjects/Team/Headers/DBTEAMGroupFullInfo.h; sourceTree = "<group>"; };
 		9D804B820E92AC6C444E847C9A4A8E63 /* DBAppBaseClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBAppBaseClient.m; path = Source/ObjectiveDropboxOfficial/Shared/Generated/Client/DBAppBaseClient.m; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DACA3108BB3B3354F9928841C632517 /* DBTEAMGroupMembersSelector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBTEAMGroupMembersSelector.h; path = Source/ObjectiveDropboxOfficial/Shared/Generated/ApiObjects/Team/Headers/DBTEAMGroupMembersSelector.h; sourceTree = "<group>"; };
 		9DD37C24D0852386F1E2FE766630D592 /* DBSDKConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBSDKConstants.h; path = Source/ObjectiveDropboxOfficial/Shared/Handwritten/Resources/DBSDKConstants.h; sourceTree = "<group>"; };
 		9E097C81D904100F394A2D992FC70E2F /* DBSHARINGJobError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBSHARINGJobError.h; path = Source/ObjectiveDropboxOfficial/Shared/Generated/ApiObjects/Sharing/Headers/DBSHARINGJobError.h; sourceTree = "<group>"; };
@@ -2032,7 +1952,6 @@
 		A48100D860F9F3EEEF6510E56A6790CD /* DBTEAMLOGCertificate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBTEAMLOGCertificate.h; path = Source/ObjectiveDropboxOfficial/Shared/Generated/ApiObjects/TeamLog/Headers/DBTEAMLOGCertificate.h; sourceTree = "<group>"; };
 		A4899D29156FFB122DA7A8C60D1E75F8 /* DBFILESAlphaGetMetadataArg.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBFILESAlphaGetMetadataArg.h; path = Source/ObjectiveDropboxOfficial/Shared/Generated/ApiObjects/Files/Headers/DBFILESAlphaGetMetadataArg.h; sourceTree = "<group>"; };
 		A4B8470E151B6EC28EB3B7AC73DFEF19 /* DBTEAMLOGFileRequestRemoveDeadlineDetails.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBTEAMLOGFileRequestRemoveDeadlineDetails.h; path = Source/ObjectiveDropboxOfficial/Shared/Generated/ApiObjects/TeamLog/Headers/DBTEAMLOGFileRequestRemoveDeadlineDetails.h; sourceTree = "<group>"; };
-		A4FA15D44DF6BAC7550EDEED10862AA3 /* AFNetworking */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = AFNetworking; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4FBE111FFC16BA97FFFBF3807545F07 /* DBTEAMLOGPasswordResetAllDetails.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBTEAMLOGPasswordResetAllDetails.h; path = Source/ObjectiveDropboxOfficial/Shared/Generated/ApiObjects/TeamLog/Headers/DBTEAMLOGPasswordResetAllDetails.h; sourceTree = "<group>"; };
 		A54335385189048E3AC872898ABBE7D8 /* DBFILEREQUESTSRouteObjects.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DBFILEREQUESTSRouteObjects.m; path = Source/ObjectiveDropboxOfficial/Shared/Generated/Routes/RouteObjects/DBFILEREQUESTSRouteObjects.m; sourceTree = "<group>"; };
 		A5454B46004CCA7F1AF88C3CCF1DA1F8 /* DBTEAMMemberAddResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DBTEAMMemberAddResult.h; path = Source/ObjectiveDropboxOfficial/Shared/Generated/ApiObjects/Team/Headers/DBTEAMMemberAddResult.h; sourceTree = "<group>"; };
@@ -2460,13 +2379,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		65078E6BD8134A96C48E3AEEAF590533 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		855EA36DBB297CD3D79DF8F4A5603F46 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -2475,13 +2387,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A4B4387C7CA3FF1D397AF496F41EFA9F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E7E0557ED35B396A30066E1ADF4C500F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2572,7 +2477,6 @@
 				E4AAF3AF496CFD92805FD4CA52F03623 /* NJKWebViewProgress.m */,
 				2DD244E0093209AB03964FB4B47A6337 /* Support Files */,
 			);
-			name = NJKWebViewProgress;
 			path = NJKWebViewProgress;
 			sourceTree = "<group>";
 		};
@@ -3663,7 +3567,6 @@
 				4F2C0141F7AD21E4BB2DDAF44B0BF1ED /* ObjectiveDropboxOfficialLib.h */,
 				4BF214D0ECBD8B376F1E661E50A06B02 /* Support Files */,
 			);
-			name = ObjectiveDropboxOfficial;
 			path = ObjectiveDropboxOfficial;
 			sourceTree = "<group>";
 		};
@@ -3691,7 +3594,6 @@
 				0E8E5CA5E0A1A2923C8A42EBAB980F53 /* Resources */,
 				C345255C8739A511EA3285D8DB3BC1F4 /* Support Files */,
 			);
-			name = RSTWebViewController;
 			path = RSTWebViewController;
 			sourceTree = "<group>";
 		};
@@ -3716,7 +3618,6 @@
 				D6E8C77DD6A0F8172220F1916C9264B2 /* Support Files */,
 				C29B770B3FCD550D680A293C96D9B0E6 /* UIKit */,
 			);
-			name = AFNetworking;
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
@@ -3746,7 +3647,6 @@
 				E8BC23AB02691448B2D8DA20A83D11B6 /* PSPDFTextView.m */,
 				074FDBD0FE655196E3BE3283190193B9 /* Support Files */,
 			);
-			name = PSPDFTextView;
 			path = PSPDFTextView;
 			sourceTree = "<group>";
 		};
@@ -3790,7 +3690,6 @@
 				EC128B4EC1E0FEE2D0906158674E158E /* Frameworks */,
 				8F1653B6732340B61A517548D6812690 /* Support Files */,
 			);
-			name = CrashlyticsFramework;
 			path = CrashlyticsFramework;
 			sourceTree = "<group>";
 		};
@@ -3906,13 +3805,11 @@
 		F19170DB0286639619C7773ED2466BD4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A4FA15D44DF6BAC7550EDEED10862AA3 /* AFNetworking */,
 				A47916549A5A527E5391B0308C0B6DF1 /* NJKWebViewProgress */,
 				16A7C573A86FC3FD2BEAABE3A94781E5 /* ObjectiveDropboxOfficial */,
-				4F2D493580D553CB7376ED7D40BD63C4 /* Pods-GBA4iOS */,
+				4F2D493580D553CB7376ED7D40BD63C4 /* libPods-GBA4iOS.a */,
 				DC5B4CB0BA3D0912B801A4B2630F81D2 /* Pods-GBA4iOS-Simulator */,
 				DF9D29C36F152C778D945452F31DBCF8 /* PSPDFTextView */,
-				0FBB9F28F19496CFCB15A1980B4F66AB /* RSTWebViewController */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -3920,43 +3817,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0658E80A84AC602CE129D99159F6C6CF /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2A3B3CE419A270B333847D7FF722C1DF /* AFHTTPRequestOperation.h in Headers */,
-				CBBFFF0091C603CFFC6D1035799A6FE9 /* AFHTTPRequestOperationManager.h in Headers */,
-				96A59940868D89941D001F7BA247D9E5 /* AFHTTPSessionManager.h in Headers */,
-				9032289F8F85B64E5D3C8B1963D10124 /* AFNetworkActivityIndicatorManager.h in Headers */,
-				2235388255EF4507D409730A27C49EE1 /* AFNetworking.h in Headers */,
-				6D8B01E2B557032611FC87BD471306EA /* AFNetworkReachabilityManager.h in Headers */,
-				9CEE5ED4B3F858DDE4C5C383B99C860F /* AFSecurityPolicy.h in Headers */,
-				D9945A881238EF441819FF4A21943411 /* AFURLConnectionOperation.h in Headers */,
-				BE46D758513936E18DDD1BCC5E05C6F2 /* AFURLRequestSerialization.h in Headers */,
-				BBAF21D98C086BEC14640638EE9BEB34 /* AFURLResponseSerialization.h in Headers */,
-				19518C098C42EFF8557FDDCBB6DD93C9 /* AFURLSessionManager.h in Headers */,
-				00C45CF47C7DFC97F335888C5D04EB6F /* UIActivityIndicatorView+AFNetworking.h in Headers */,
-				0E6803A0FC972D94A81F7D90DF347351 /* UIAlertView+AFNetworking.h in Headers */,
-				D3EA70C23134451657164E6F89D08966 /* UIButton+AFNetworking.h in Headers */,
-				2D8FFD4E9554BD70BBE38F6D5D482E86 /* UIImage+AFNetworking.h in Headers */,
-				88141CF7B8CCADC6933C9E9F7BE9AA46 /* UIImageView+AFNetworking.h in Headers */,
-				3E322B1A65104971497A874B9E04CCC6 /* UIKit+AFNetworking.h in Headers */,
-				32B265E9D696C0E3E3BEBF68B4271F01 /* UIProgressView+AFNetworking.h in Headers */,
-				DB06DEC15FEB0344B47DBD8834388691 /* UIRefreshControl+AFNetworking.h in Headers */,
-				12E297984AF7D742A78203CD7D932460 /* UIWebView+AFNetworking.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0F94D5FF1DBE63D6E1FE197BB6BD8A91 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8EAFFE9B511CF4E58B3EB468622D88CD /* RSTChromeActivity.h in Headers */,
-				8A51A7E0C811BC2AD5B079837944B436 /* RSTSafariActivity.h in Headers */,
-				1C2AE5DFB1C1D933568EC8390C746F47 /* RSTWebViewController.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7B3A7818CDBD0D24D78D5780F82FBDF8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -5009,23 +4869,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0130B3724283586C0E9D2A112D4F2AA1 /* AFNetworking */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B213CFCA8F9BD8072A1359A43AAA8AC2 /* Build configuration list for PBXNativeTarget "AFNetworking" */;
-			buildPhases = (
-				0658E80A84AC602CE129D99159F6C6CF /* Headers */,
-				F1134A4C49D68CCF50C1651CF77C1760 /* Sources */,
-				65078E6BD8134A96C48E3AEEAF590533 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = AFNetworking;
-			productName = AFNetworking;
-			productReference = A4FA15D44DF6BAC7550EDEED10862AA3 /* AFNetworking */;
-			productType = "com.apple.product-type.library.static";
-		};
 		43A268F977805C8AC96F32A07EC98503 /* Pods-GBA4iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1630175A1AE47B1E5A4BAE5ABED947CC /* Build configuration list for PBXNativeTarget "Pods-GBA4iOS" */;
@@ -5037,34 +4880,14 @@
 			buildRules = (
 			);
 			dependencies = (
-				8DEB16FB318E032AD2F511661DBF12E1 /* PBXTargetDependency */,
 				D7B2B9D6D7098E49AB9D9F78ECDA1A89 /* PBXTargetDependency */,
 				C281C98DC1E2530A970EFCD6A80A2BD1 /* PBXTargetDependency */,
 				13E078CE8B223BCF42F38088060D4CD9 /* PBXTargetDependency */,
 				116CAB6D408446AB1A9179D2311C3A8F /* PBXTargetDependency */,
-				914E4D3C00160360B7FBF2BA9BF0A0FA /* PBXTargetDependency */,
 			);
 			name = "Pods-GBA4iOS";
 			productName = "Pods-GBA4iOS";
-			productReference = 4F2D493580D553CB7376ED7D40BD63C4 /* Pods-GBA4iOS */;
-			productType = "com.apple.product-type.library.static";
-		};
-		694D74196578EDC597B8A5875BA7A3C8 /* RSTWebViewController */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 241F1DAFAAB671E99F4F4068CE725365 /* Build configuration list for PBXNativeTarget "RSTWebViewController" */;
-			buildPhases = (
-				0F94D5FF1DBE63D6E1FE197BB6BD8A91 /* Headers */,
-				9EC1D9EB64490B4B439321FF2F3D72C9 /* Sources */,
-				E7E0557ED35B396A30066E1ADF4C500F /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				93F1F61E7F9185246FA417D087C59415 /* PBXTargetDependency */,
-			);
-			name = RSTWebViewController;
-			productName = RSTWebViewController;
-			productReference = 0FBB9F28F19496CFCB15A1980B4F66AB /* RSTWebViewController */;
+			productReference = 4F2D493580D553CB7376ED7D40BD63C4 /* libPods-GBA4iOS.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		87C3087C0F4EE8032C13362BD4B4E3C5 /* Pods-GBA4iOS-Simulator */ = {
@@ -5078,12 +4901,10 @@
 			buildRules = (
 			);
 			dependencies = (
-				2A4D5EC73853BBDAC89926BCE68D823F /* PBXTargetDependency */,
 				1C554D0DD56AE61899A979D7D284BE6D /* PBXTargetDependency */,
 				E1A6CE3D605BDD09D327BE6822460528 /* PBXTargetDependency */,
 				A220FC05606DEB7647FB6FC866D8321E /* PBXTargetDependency */,
 				5AEF4538FCD02BCE5DBA801EB5328C1C /* PBXTargetDependency */,
-				D15AE86E7D252F946AE9E0CB8F5717FA /* PBXTargetDependency */,
 			);
 			name = "Pods-GBA4iOS-Simulator";
 			productName = "Pods-GBA4iOS-Simulator";
@@ -5163,14 +4984,12 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0130B3724283586C0E9D2A112D4F2AA1 /* AFNetworking */,
 				1DD844644C36A4B6FFAD5F8D6F1A1DDA /* CrashlyticsFramework */,
 				D19967FC808FC0CC82E22D1A114BD3F6 /* NJKWebViewProgress */,
 				E8319B94C47A277813B18A2560C7E5AD /* ObjectiveDropboxOfficial */,
 				43A268F977805C8AC96F32A07EC98503 /* Pods-GBA4iOS */,
 				87C3087C0F4EE8032C13362BD4B4E3C5 /* Pods-GBA4iOS-Simulator */,
 				E75F2E3FBFC70D056D3E1AB5606C5D9A /* PSPDFTextView */,
-				694D74196578EDC597B8A5875BA7A3C8 /* RSTWebViewController */,
 			);
 		};
 /* End PBXProject section */
@@ -5262,17 +5081,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9EC1D9EB64490B4B439321FF2F3D72C9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				84DFFE561ACB67A9E5889E80DEAF8F37 /* RSTChromeActivity.m in Sources */,
-				1494AE8283B35875E548CF0402386D82 /* RSTSafariActivity.m in Sources */,
-				559925A88DE620872194AFD1F4FDF753 /* RSTWebViewController.m in Sources */,
-				C606A57CB3B582A55FC2156397704230 /* RSTWebViewController-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		AA6DABD7094C1136A982C9462566AEDB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -5288,31 +5096,6 @@
 			files = (
 				1D1459C0C6E337F6B45B0D0FC7C851E6 /* PSPDFTextView.m in Sources */,
 				E8E5290D26CCFEAF787FD93120E7BA29 /* PSPDFTextView-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F1134A4C49D68CCF50C1651CF77C1760 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AE476E52747218A84981A4414BB4588E /* AFHTTPRequestOperation.m in Sources */,
-				28D6D9679953DD4883739A1330D225D3 /* AFHTTPRequestOperationManager.m in Sources */,
-				75A754F3860CB1267EDED5D9FBCCD990 /* AFHTTPSessionManager.m in Sources */,
-				E1384E47BC0EB2C464B9F6C8605606F6 /* AFNetworkActivityIndicatorManager.m in Sources */,
-				278590C19AF6D296D5A4098087131172 /* AFNetworking-dummy.m in Sources */,
-				6FDDEDEE370C09CDEC453EA3184299EB /* AFNetworkReachabilityManager.m in Sources */,
-				6F5B5AF540D68D37DD09627C1D1A3D9B /* AFSecurityPolicy.m in Sources */,
-				7B3115FF46CA70389FE6B659C883D1B1 /* AFURLConnectionOperation.m in Sources */,
-				904447CC4CCB83B04DE3DA64CF242D79 /* AFURLRequestSerialization.m in Sources */,
-				8D59DB18DD58C0CB764CBAE6B05D4D95 /* AFURLResponseSerialization.m in Sources */,
-				09C2DC2F3A0C3081414F064A54C558B2 /* AFURLSessionManager.m in Sources */,
-				AE810CBBEC23CC8F984FB03F66CD7E6B /* UIActivityIndicatorView+AFNetworking.m in Sources */,
-				A196F6DDD4298CF4F259FD34B6B3D046 /* UIAlertView+AFNetworking.m in Sources */,
-				9A41BC1C15AC85B100A80E1C6701D338 /* UIButton+AFNetworking.m in Sources */,
-				C8C0A7A298E01766EE27FBDFAB68442D /* UIImageView+AFNetworking.m in Sources */,
-				351277C056538CE3C59CDF6D3A709EC1 /* UIProgressView+AFNetworking.m in Sources */,
-				3EC67BA582124DA751B2CE33850B1F5B /* UIRefreshControl+AFNetworking.m in Sources */,
-				A970930F42820DA65F46354A88641C03 /* UIWebView+AFNetworking.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5345,35 +5128,11 @@
 			target = 1DD844644C36A4B6FFAD5F8D6F1A1DDA /* CrashlyticsFramework */;
 			targetProxy = 6FEDDD3B1CB94A85AA9F98669DD5C78E /* PBXContainerItemProxy */;
 		};
-		2A4D5EC73853BBDAC89926BCE68D823F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AFNetworking;
-			target = 0130B3724283586C0E9D2A112D4F2AA1 /* AFNetworking */;
-			targetProxy = 37C7E245ADF9E4F542272FD99267D340 /* PBXContainerItemProxy */;
-		};
 		5AEF4538FCD02BCE5DBA801EB5328C1C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PSPDFTextView;
 			target = E75F2E3FBFC70D056D3E1AB5606C5D9A /* PSPDFTextView */;
 			targetProxy = E6DD3650DA31E8F001460591F71B0D84 /* PBXContainerItemProxy */;
-		};
-		8DEB16FB318E032AD2F511661DBF12E1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AFNetworking;
-			target = 0130B3724283586C0E9D2A112D4F2AA1 /* AFNetworking */;
-			targetProxy = 9DD6CF25F3027DB0C1CD753F524F7F8F /* PBXContainerItemProxy */;
-		};
-		914E4D3C00160360B7FBF2BA9BF0A0FA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RSTWebViewController;
-			target = 694D74196578EDC597B8A5875BA7A3C8 /* RSTWebViewController */;
-			targetProxy = CB76DD9C75763F2EEA1B4E42B94056D0 /* PBXContainerItemProxy */;
-		};
-		93F1F61E7F9185246FA417D087C59415 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = NJKWebViewProgress;
-			target = D19967FC808FC0CC82E22D1A114BD3F6 /* NJKWebViewProgress */;
-			targetProxy = DCC7F24CE2DB065CE04C6B53607149BF /* PBXContainerItemProxy */;
 		};
 		A220FC05606DEB7647FB6FC866D8321E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -5386,12 +5145,6 @@
 			name = NJKWebViewProgress;
 			target = D19967FC808FC0CC82E22D1A114BD3F6 /* NJKWebViewProgress */;
 			targetProxy = 5A8855BBC569345500BD287643430E72 /* PBXContainerItemProxy */;
-		};
-		D15AE86E7D252F946AE9E0CB8F5717FA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RSTWebViewController;
-			target = 694D74196578EDC597B8A5875BA7A3C8 /* RSTWebViewController */;
-			targetProxy = 7C801DCB5BF316264106A5BAE0BDD38A /* PBXContainerItemProxy */;
 		};
 		D7B2B9D6D7098E49AB9D9F78ECDA1A89 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -5429,29 +5182,6 @@
 			};
 			name = Jailbreak;
 		};
-		05753AB0E7CC8824EA5F4C66BB8AB985 /* Enterprise */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D902388DFB8118DEA03306396D2245F /* RSTWebViewController.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/RSTWebViewController/RSTWebViewController-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = RSTWebViewController;
-				PRODUCT_NAME = RSTWebViewController;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Enterprise;
-		};
 		153A9DEC0E2D139750132A9E1FD0F3FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E0B016261763F74BC2F173C7AAE2DD7E /* ObjectiveDropboxOfficial.debug.xcconfig */;
@@ -5473,29 +5203,6 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
-		};
-		1D6B203BB4626454C5253534EBF73DD1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4AEA26C115ED2BC1DCBF932B6FC53C74 /* AFNetworking.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = AFNetworking;
-				PRODUCT_NAME = AFNetworking;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
 		};
 		1E3741DD64FE75AFD65FD89716E3457D /* Enterprise */ = {
 			isa = XCBuildConfiguration;
@@ -5634,97 +5341,6 @@
 			};
 			name = Jailbreak;
 		};
-		3CF67FE0AE55C0CC224A413E9B2DF396 /* Ad Hoc */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4AEA26C115ED2BC1DCBF932B6FC53C74 /* AFNetworking.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = AFNetworking;
-				PRODUCT_NAME = AFNetworking;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = "Ad Hoc";
-		};
-		3F69DB00D8DE390488860B6E6E89CE86 /* Jailbreak */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D902388DFB8118DEA03306396D2245F /* RSTWebViewController.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/RSTWebViewController/RSTWebViewController-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = RSTWebViewController;
-				PRODUCT_NAME = RSTWebViewController;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Jailbreak;
-		};
-		41D5426ADF28E12A6AD62C118EC780B5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35DECAACFED48D3D1AF981DE78F35D84 /* RSTWebViewController.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/RSTWebViewController/RSTWebViewController-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = RSTWebViewController;
-				PRODUCT_NAME = RSTWebViewController;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		4B30C8F7FE01BDE75FF459DF3C752197 /* Ad Hoc */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D902388DFB8118DEA03306396D2245F /* RSTWebViewController.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/RSTWebViewController/RSTWebViewController-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = RSTWebViewController;
-				PRODUCT_NAME = RSTWebViewController;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = "Ad Hoc";
-		};
 		4BE95FEB0B9D75B8F26B4AD8FB76D3BE /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 672AF29B6424AFA03A08D0F3BE5A1E7A /* PSPDFTextView.release.xcconfig */;
@@ -5817,8 +5433,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -5913,29 +5528,6 @@
 			};
 			name = Debug;
 		};
-		6B9865B18942377DA43F0E5300F3B6BA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D902388DFB8118DEA03306396D2245F /* RSTWebViewController.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/RSTWebViewController/RSTWebViewController-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = RSTWebViewController;
-				PRODUCT_NAME = RSTWebViewController;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		72A101FCEC5DD7EBD199D970040D936A /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 47C44A9298F4B679795B8C5FD85CD3E4 /* CrashlyticsFramework.release.xcconfig */;
@@ -5949,28 +5541,6 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
-		};
-		7434CF1DBA2B6DB7FCC00A3362A70D4A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 38934C9845C40E9A9832E33FDD4B52CE /* AFNetworking.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = AFNetworking;
-				PRODUCT_NAME = AFNetworking;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
 		};
 		85E443B0A863E69EF511E1A9256BCB9D /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -6039,29 +5609,6 @@
 			};
 			name = "Ad Hoc";
 		};
-		93B9EECFE3747399C009BFA0C801CB91 /* Jailbreak */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4AEA26C115ED2BC1DCBF932B6FC53C74 /* AFNetworking.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = AFNetworking;
-				PRODUCT_NAME = AFNetworking;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Jailbreak;
-		};
 		94C0521D648831F24A9DBABBB79A9164 /* Enterprise */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 62A7A5C693DF85499A2C24ED2E895B12 /* Pods-GBA4iOS-Simulator.enterprise.xcconfig */;
@@ -6078,29 +5625,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Enterprise;
-		};
-		960FB5829EC3072C3D612D53F198682F /* Enterprise */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4AEA26C115ED2BC1DCBF932B6FC53C74 /* AFNetworking.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = AFNetworking;
-				PRODUCT_NAME = AFNetworking;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -6288,8 +5812,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -6374,8 +5897,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -6523,8 +6045,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -6601,18 +6122,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		241F1DAFAAB671E99F4F4068CE725365 /* Build configuration list for PBXNativeTarget "RSTWebViewController" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4B30C8F7FE01BDE75FF459DF3C752197 /* Ad Hoc */,
-				41D5426ADF28E12A6AD62C118EC780B5 /* Debug */,
-				05753AB0E7CC8824EA5F4C66BB8AB985 /* Enterprise */,
-				3F69DB00D8DE390488860B6E6E89CE86 /* Jailbreak */,
-				6B9865B18942377DA43F0E5300F3B6BA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -6633,18 +6142,6 @@
 				94C0521D648831F24A9DBABBB79A9164 /* Enterprise */,
 				37E719739C7F7591C048311111E4AE4A /* Jailbreak */,
 				E21400C8DCF76250E5ADC0EC1413C250 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B213CFCA8F9BD8072A1359A43AAA8AC2 /* Build configuration list for PBXNativeTarget "AFNetworking" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3CF67FE0AE55C0CC224A413E9B2DF396 /* Ad Hoc */,
-				7434CF1DBA2B6DB7FCC00A3362A70D4A /* Debug */,
-				960FB5829EC3072C3D612D53F198682F /* Enterprise */,
-				93B9EECFE3747399C009BFA0C801CB91 /* Jailbreak */,
-				1D6B203BB4626454C5253534EBF73DD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

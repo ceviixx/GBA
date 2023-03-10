@@ -6,7 +6,6 @@ inhibit_all_warnings!
 
 
 def all_pods
-	pod 'RSTWebViewController', :git => 'https://github.com/rileytestut/RSTWebViewController-Legacy.git'
 	pod "AFNetworking", "~> 2.4"
 	pod "PSPDFTextView", :git => 'https://github.com/steipete/PSPDFTextView.git'
 	pod "ObjectiveDropboxOfficial", "~> 3.3.4"
