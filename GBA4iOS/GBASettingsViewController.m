@@ -27,15 +27,14 @@
 #define SAVING_SECTION 3
 #define PUSH_NOTIFICATIONS_SECTION 4
 #define EMULATION_SECTION 5
-#define WEB_BROWSER_SECTION 6
-#define CONTROLLER_SKINS_SECTION 7
-#define CONTROLLER_OPACITY_SECTION 8
-#define VIBRATION_SECTION 9
-#define EXTERNAL_CONTROLLER_SECTION 10
-#define AIRPLAY_SECTION 11
-#define DROPBOX_SYNC_SECTION 12
-#define SOFTWARE_UPDATE_SECTION 13
-#define CREDITS_SECTION 14
+#define CONTROLLER_SKINS_SECTION 6
+#define CONTROLLER_OPACITY_SECTION 7
+#define VIBRATION_SECTION 8
+#define EXTERNAL_CONTROLLER_SECTION 9
+#define AIRPLAY_SECTION 10
+#define DROPBOX_SYNC_SECTION 11
+#define SOFTWARE_UPDATE_SECTION 12
+#define CREDITS_SECTION 13
 
 NSString *const GBASettingsDidChangeNotification = @"GBASettingsDidChangeNotification";
 NSString *const GBASettingsDropboxStatusChangedNotification = @"GBASettingsDropboxStatusChangedNotification";
@@ -425,14 +424,6 @@ NSString *const GBASettingsDropboxStatusChangedNotification = @"GBASettingsDropb
     {
         GBAPushNotificationsViewController *pushNotificationsViewController = [GBAPushNotificationsViewController new];
         [self.navigationController pushViewController:pushNotificationsViewController animated:YES];
-    }
-    else if (indexPath.section == WEB_BROWSER_SECTION)
-    {
-        if (indexPath.row == 0)
-        {
-            GBAWebBrowserHomepageViewController *homepageViewController = [GBAWebBrowserHomepageViewController new];
-            [self.navigationController pushViewController:homepageViewController animated:YES];
-        }
     }
     else if (indexPath.section == CONTROLLER_SKINS_SECTION)
     {

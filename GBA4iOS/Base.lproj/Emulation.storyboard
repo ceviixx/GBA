@@ -139,22 +139,13 @@
                                 <action selector="presentSettings:" destination="8cV-d5-THO" id="rOE-bb-Ca1"/>
                             </connections>
                         </barButtonItem>
-                        <rightBarButtonItems>
-                            <barButtonItem title="Item" image="plus.circle" catalog="system" landscapeImage="plus.circle" style="plain" id="lhi-LK-iGI">
-                                <inset key="imageInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <connections>
-                                    <action selector="searchForROMs:" destination="8cV-d5-THO" id="4U1-ve-tRv"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem title="Item" image="line.3.horizontal.decrease.circle" catalog="system" landscapeImage="line.3.horizontal.decrease.circle" style="plain" id="a1o-ls-KMJ">
-                                <inset key="imageInsets" minX="17" minY="0.0" maxX="0.0" maxY="0.0"/>
-                            </barButtonItem>
-                        </rightBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="line.3.horizontal.decrease.circle" catalog="system" landscapeImage="line.3.horizontal.decrease.circle" style="plain" id="a1o-ls-KMJ">
+                            <inset key="imageInsets" minX="17" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="filterButton" destination="a1o-ls-KMJ" id="nsc-25-m7h"/>
-                        <outlet property="searchForRomButton" destination="lhi-LK-iGI" id="f9c-xx-HjR"/>
                         <outlet property="settingsButton" destination="hbZ-3u-c9Y" id="oIS-j2-UYi"/>
                     </connections>
                 </tableViewController>
@@ -364,7 +355,6 @@
     <resources>
         <image name="gear.circle" catalog="system" width="128" height="123"/>
         <image name="line.3.horizontal.decrease.circle" catalog="system" width="128" height="123"/>
-        <image name="plus.circle" catalog="system" width="128" height="123"/>
         <systemColor name="darkTextColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

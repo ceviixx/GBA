@@ -19,7 +19,6 @@
 #import "GBASyncingDetailViewController.h"
 #import "GBAAppDelegate.h"
 #import "NSFileManager+ForcefulMove.h"
-#import "GBAWebViewController.h"
 #import "WelcomeScreen.h"
 #import "GBACheatManagerViewController.h"
 
@@ -48,7 +47,7 @@ typedef NS_ENUM(NSInteger, GBAVisibleROMType) {
 
 // PEEK POP
 // UIViewControllerPreviewingDelegate, UIViewControllerPreviewing
-@interface GBAROMTableViewController () <RSTWebViewControllerDownloadDelegate, UIAlertViewDelegate, UIViewControllerTransitioningDelegate, UIPopoverControllerDelegate, RSTWebViewControllerDelegate, GBASettingsViewControllerDelegate, GBASyncingDetailViewControllerDelegate, GBASplitViewControllerEmulationDelegate, UITextFieldDelegate>
+@interface GBAROMTableViewController () <UIAlertViewDelegate, UIViewControllerTransitioningDelegate, UIPopoverControllerDelegate, GBASettingsViewControllerDelegate, GBASyncingDetailViewControllerDelegate, GBASplitViewControllerEmulationDelegate, UITextFieldDelegate>
 {
     BOOL _performedInitialRefreshDirectory;
 }
@@ -57,7 +56,6 @@ typedef NS_ENUM(NSInteger, GBAVisibleROMType) {
 @property (strong, nonatomic) NSMutableSet *currentUnzippingOperations;
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *filterButton;
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *searchForRomButton;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *settingsButton;
 @property (strong, nonatomic) UIPopoverController *activityPopoverController;
 @property (strong, nonatomic) NSIndexPath *selectedROMIndexPath;
@@ -67,13 +65,11 @@ typedef NS_ENUM(NSInteger, GBAVisibleROMType) {
 
 @property (assign, nonatomic) BOOL dismissModalViewControllerUponKeyboardHide;
 
-@property (strong, nonatomic) GBAWebViewController *webViewController;
 @property (assign, nonatomic, getter = isAwaitingDownloadHTTPResponse) BOOL awaitingDownloadHTTPResponse;
 @property (strong, nonatomic) NSProgress *downloadProgress;
 @property (strong, nonatomic) UIProgressView *downloadProgressView;
 @property (strong, nonatomic) NSMutableDictionary *currentDownloadsDictionary;
 
-- (IBAction)searchForROMs:(UIBarButtonItem *)barButtonItem;
 - (IBAction)presentSettings:(UIBarButtonItem *)barButtonItem;
 
 
@@ -434,193 +430,6 @@ UITapGestureRecognizer *endEditingTapRecognizer;
 
 #pragma mark - Downloading Games
 
-- (IBAction)searchForROMs:(UIBarButtonItem *)barButtonItem
-{
-    GBAROMType romType = GBAROMTypeGBA;
-    
-    if (self.visibleRomType == GBAVisibleROMTypeGBC) // If ALL or GBA is selected, show GBA search results. If GBC, show GBC results
-    {
-        romType = GBAROMTypeGBC;
-    }
-    
-    GBAWebViewController *webViewController = self.webViewController;
-    
-    if (webViewController == nil)
-    {
-        webViewController = [[GBAWebViewController alloc] init];
-        webViewController.showsDoneButton = YES;
-        webViewController.downloadDelegate = self;
-        webViewController.delegate = self;
-        webViewController.tabBarController.tabBar.tintColor = UIColor.labelColor;
-    }
-    
-//    [[UIApplication sharedApplication] setStatusBarStyle:[webViewController preferredStatusBarStyle] animated:YES];
-    
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:webViewController];
-    [self presentViewController:navigationController animated:YES completion:NULL];
-    
-    if ([[NSUserDefaults standardUserDefaults] boolForKey:GBASettingsRememberLastWebpageKey] && self.webViewController == nil)
-    {
-        self.webViewController = webViewController;
-    }
-}
-
-
-- (BOOL)webViewController:(RSTWebViewController *)webViewController shouldInterceptDownloadRequest:(NSURLRequest *)request
-{
-    NSString *fileExtension = request.URL.pathExtension.lowercaseString;
-
-    if ((([fileExtension isEqualToString:@"gb"] || [fileExtension isEqualToString:@"gbc"] || [fileExtension isEqualToString:@"gba"] || [fileExtension isEqualToString:@"zip"]) ||
-         ([request.URL.host.lowercaseString rangeOfString:@"m.coolrom"].location == NSNotFound && [request.URL.host.lowercaseString rangeOfString:@".coolrom"].location != NSNotFound)) &&
-        ![self isAwaitingDownloadHTTPResponse])
-    {
-        self.awaitingDownloadHTTPResponse = YES;
-        return YES;
-    }
-    
-    return NO;
-}
-
-- (void)webViewController:(RSTWebViewController *)webViewController shouldStartDownloadTask:(NSURLSessionDownloadTask *)downloadTask startDownloadBlock:(RSTWebViewControllerStartDownloadBlock)startDownloadBlock
-{
-    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:downloadTask.originalRequest.URL];
-    [request setHTTPMethod:@"HEAD"];
-    
-    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
-        
-        self.awaitingDownloadHTTPResponse = NO;
-        
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"By tapping “Download” below, you confirm that you legally own a physical copy of this game. GBA4iOS does not promote pirating in any form.", @"")
-                                                        message:nil delegate:nil cancelButtonTitle:NSLocalizedString(@"Cancel", @"") otherButtonTitles:NSLocalizedString(@"Download", @""), nil];
-        alert.tag = LEGAL_NOTICE_ALERT_TAG;
-            [alert showWithSelectionHandler:^(UIAlertView *alertView, NSInteger buttonIndex) {
-                
-                if (buttonIndex == 1)
-                {
-                    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Game Name", @"")
-                                                                    message:nil
-                                                                   delegate:self
-                                                          cancelButtonTitle:NSLocalizedString(@"Cancel", @"") otherButtonTitles:NSLocalizedString(@"Save", @""), nil];
-                    alert.alertViewStyle = UIAlertViewStylePlainTextInput;
-                    alert.tag = NAME_ROM_ALERT_TAG;
-                    
-                    UITextField *textField = [alert textFieldAtIndex:0];
-                    textField.text = [[response suggestedFilename] stringByDeletingPathExtension];
-                    textField.autocapitalizationType = UITextAutocapitalizationTypeSentences;
-                    
-                    [alert showWithSelectionHandler:^(UIAlertView *namingAlertView, NSInteger namingButtonIndex) {
-                        
-                        if (namingButtonIndex == 1)
-                        {
-                            NSString *filename = [[namingAlertView textFieldAtIndex:0] text];
-                            [self startDownloadWithFilename:filename downloadTask:downloadTask startDownloadBlock:startDownloadBlock];
-                        }
-                        else
-                        {
-                            startDownloadBlock(NO, nil);
-                        }
-                        
-                    }];
-                }
-                else
-                {
-                    startDownloadBlock(NO, nil);
-                }
-                
-            }];
-        
-    }];
-}
-
-- (void)startDownloadWithFilename:(NSString *)filename downloadTask:(NSURLSessionDownloadTask *)downloadTask startDownloadBlock:(RSTWebViewControllerStartDownloadBlock)startDownloadBlock
-{
-    if ([filename length] == 0)
-    {
-        filename = @" ";
-    }
-    
-    NSString *fileExtension = downloadTask.originalRequest.URL.pathExtension;
-    
-    if (fileExtension == nil || [fileExtension isEqualToString:@""])
-    {
-        fileExtension = @"zip";
-    }
-    
-    filename = [filename stringByAppendingPathExtension:fileExtension];
-    
-    if (self.downloadProgressView.alpha == 0)
-    {
-        rst_dispatch_sync_on_main_thread(^{
-            [self showDownloadProgressView];
-        });
-    }
-    
-    [self.downloadProgress setTotalUnitCount:self.downloadProgress.totalUnitCount + 1];
-    [self.downloadProgress becomeCurrentWithPendingUnitCount:1];
-    
-    NSProgress *progress = [[NSProgress alloc] initWithParent:[NSProgress currentProgress] userInfo:@{@"filename": filename}];
-    
-    [self.downloadProgress resignCurrent];
-    
-    self.currentDownloadsDictionary[downloadTask] = filename;
-    
-    // Write temp file so it shows up in the file browser, but we'll then gray it out.
-    [filename writeToFile:[self.currentDirectory stringByAppendingPathComponent:filename] atomically:YES encoding:NSUTF8StringEncoding error:nil];
-    
-    startDownloadBlock(YES, progress);
-    
-    [self dismissedModalViewController];
-    
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
-    {
-        [self dismissViewControllerAnimated:YES completion:nil];
-    }
-    else
-    {
-        self.dismissModalViewControllerUponKeyboardHide = YES;
-    }
-}
-
-- (void)webViewController:(RSTWebViewController *)webViewController didCompleteDownloadTask:(NSURLSessionDownloadTask *)downloadTask destinationURL:(NSURL *)url error:(NSError *)error
-{
-    NSString *filename = self.currentDownloadsDictionary[downloadTask];
-    
-    // Must check if nil, or it attempts to delete the documents directory, which for some reason deletes the cheats directory
-    if (filename == nil)
-    {
-        return;
-    }
-    
-    NSString *destinationPath = [self.currentDirectory stringByAppendingPathComponent:filename];
-    NSURL *destinationURL = [NSURL fileURLWithPath:destinationPath];
-    
-    [self setIgnoreDirectoryContentChanges:YES];
-    
-    // Delete temporary file
-    [[NSFileManager defaultManager] removeItemAtURL:destinationURL error:&error];
-    
-    if (error)
-    {
-        ELog(error);
-    }
-    else
-    {
-        [[NSFileManager defaultManager] moveItemAtURL:url toURL:destinationURL error:nil];
-    }
-    
-    [self setIgnoreDirectoryContentChanges:NO];
-    
-    // Must go after file system changes
-    [self.currentDownloadsDictionary removeObjectForKey:downloadTask];
-    
-    if ([self.currentDownloadsDictionary count] == 0)
-    {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self.downloadProgressView setProgress:1.0 animated:YES];
-            [self hideDownloadProgressView];
-        });
-    }
-}
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 {
@@ -641,10 +450,6 @@ UITapGestureRecognizer *endEditingTapRecognizer;
     [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
 }
 
-- (void)webViewControllerWillDismiss:(RSTWebViewController *)webViewController
-{
-    [self dismissedModalViewController];
-}
 
 - (void)keyboardDidHide:(NSNotification *)notification
 {
@@ -1815,7 +1620,7 @@ UITapGestureRecognizer *endEditingTapRecognizer;
 {
     if ([notification.userInfo[@"key"] isEqualToString:GBASettingsRememberLastWebpageKey])
     {
-        self.webViewController = nil;
+        
     }
 }
 
