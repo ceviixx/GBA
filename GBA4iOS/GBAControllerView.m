@@ -242,12 +242,12 @@
     }
 }
 
-void AudioServicesStopSystemSound(int);
-void AudioServicesPlaySystemSoundWithVibration(int, id, NSDictionary *);
+//void AudioServicesStopSystemSound(int);
+//void AudioServicesPlaySystemSoundWithVibration(int, id, NSDictionary *);
 
 - (void)vibrate
 {
-    AudioServicesStopSystemSound(kSystemSoundID_Vibrate);
+//    AudioServicesStopSystemSound(kSystemSoundID_Vibrate);
     
     int64_t vibrationLength = 30;
     
@@ -263,7 +263,7 @@ void AudioServicesPlaySystemSoundWithVibration(int, id, NSDictionary *);
     dictionary[@"VibePattern"] = pattern;
     dictionary[@"Intensity"] = @1;
     
-    AudioServicesPlaySystemSoundWithVibration(kSystemSoundID_Vibrate, nil, dictionary);
+//    AudioServicesPlaySystemSoundWithVibration(kSystemSoundID_Vibrate, nil, dictionary);
 }
 
 - (NSSet *)buttonsForTouch:(UITouch *)touch

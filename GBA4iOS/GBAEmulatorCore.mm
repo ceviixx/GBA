@@ -1480,8 +1480,8 @@ uint16_t deviceGetGyroRotationRateZ()
     return 0x6C0 - (gyroData.rotationRate.z * 25);
 }
 
-UIKIT_EXTERN void AudioServicesStopSystemSound(int);
-UIKIT_EXTERN void AudioServicesPlaySystemSoundWithVibration(int, id, NSDictionary *);
+//UIKIT_EXTERN void AudioServicesStopSystemSound(int);
+//UIKIT_EXTERN void AudioServicesPlaySystemSoundWithVibration(int, id, NSDictionary *);
 
 
 void rumbleDevice(bool vibrate)
